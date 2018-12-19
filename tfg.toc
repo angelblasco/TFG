@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
@@ -22,5 +22,8 @@
 \contentsline {subsubsection}{Primer teorema de isomorf'ia.}{10}
 \contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{11}
 \contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{11}
-\contentsline {chapter}{\numberline {2}Capitulo}{12}
-\contentsline {chapter}{\numberline {3}Capitulo}{13}
+\contentsline {section}{\numberline {1.8}Estructura de los grupos abelianos finitos.}{12}
+\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{12}
+\contentsline {section}{\numberline {1.10}Acci'on de un grupo sobre un conjunto.}{12}
+\contentsline {chapter}{\numberline {2}Capitulo}{13}
+\contentsline {chapter}{\numberline {3}Capitulo}{14}
