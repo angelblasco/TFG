@@ -546,6 +546,23 @@ Consid'erese la acci'on de $G$ sobre si mismo por traslaciones por la izquierda,
 La funci'on $\lambda_{g}:G \rightarrow G : h \mapsto gh$ es una biyecci'on de $G$ en si mismo, esto es, una permutaci'on del conjunto $G$. El homomorfismo asociado $\lambda : G \rightarrow S_{G}: g \mapsto \lambda_{g}$ es inyectivo, porque $\lambda_{g}=\lambda_{h}$ implica que $gk=hk$ para todo $k \in G$, asi que $g=h$ por cancelaci'on. Por lo tanto, $\lambda$ es un isomorfismo de $G$ en un subgrupo $\lambda(G)\leq S_{G}$.\\
 En particular, si $o(G)=n$, de modo que $G=\{g_{1},g_{2},\ldots g_{n}\}$, hay un isomorfismo de grupos $\psi : S_{G}\rightarrow S_{n}$ que lleva cualquier permutaci'on de elementos $g_{i}\mapsto g_{j}$ es la permutaci'on correspondiente $i \mapsto j$ del conjunto $\{1,2,\ldots n\}$. Luego $\psi \circ \lambda : G \rightarrow S_{n}$ es un homorfismo inyectivo cuya imagen es un subgrupo de $S_{n}$.
 \end{proof}
+\begin{definicion}
+Sea $\phi : G \times X \rightarrow X$ una acci'on de un grupo sobre un conjunto. El \textbf{subgrupo de isotropia} para un elemento $x \in X$ es el subgrupo
+\[
+G_{X}=\{g \in G\,:\,g \cdot x = x  \} \leq G
+\]
+\end{definicion}
+\begin{proposicion}
+Dada una acci'on de un grupo $G$ sobre un conjunto $X$, el n'umero de elementos de la 'orbita $G \cdot x$ coincide con el 'indice $[G:G_{X}]$.
+\end{proposicion}
+\begin{proof}
+Si $h,g \in G$ y $x \in X$, entonces
+\[
+g \cdot x = h \cdot x \Longleftrightarrow g^{-1}h \cdot x = x \Longleftrightarrow g^{-1}h \in G_{X} \Longleftrightarrow gG_{X} = hG_{X} \in G/G_{X}
+\]
+luego la aplicaci'on $g \cdot x \mapsto gG_{X}$ es una biyecci'on de la 'orbita $G \cdot x$ en el conjunto cociente $G/G_{X}$. Por lo tanto $o(G \cdot x)=o(G/G_ {X})=[G:G_{X}]$
+\end{proof}
+
 \chapter{Capitulo}
 %%% Capitulo 3
 \chapter{Capitulo}

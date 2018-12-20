@@ -25,5 +25,5 @@
 \contentsline {section}{\numberline {1.8}Estructura de los grupos abelianos finitos.}{12}
 \contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{12}
 \contentsline {section}{\numberline {1.10}Acci'on de un grupo sobre un conjunto.}{12}
-\contentsline {chapter}{\numberline {2}Capitulo}{13}
-\contentsline {chapter}{\numberline {3}Capitulo}{14}
+\contentsline {chapter}{\numberline {2}Capitulo}{14}
+\contentsline {chapter}{\numberline {3}Capitulo}{15}
