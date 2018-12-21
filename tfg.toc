@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
