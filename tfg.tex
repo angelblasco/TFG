@@ -340,16 +340,17 @@ Sea $G$ un grupo. Un subgrupo $H$ de $G$ es un subgrupo normal si
 \[
 ghg^{-1}\in H, \, \forall g\in G, h\in H
 \]
+Si $H$ es un subgrupo normal de $G$ se representa como $H \triangleleft G$.
 \end{definicion}
 \begin{teorema}
 Si $G$ es un grupo abeliano y $H$ es un subgrupo de $G$, entonces $H$ es un subgrupo normal de $G$.
 \end{teorema}
 \begin{proof}
-Como $G$ es abeliano, $ghg^{-1}=hgg^{-1}=h \in H$ para todo $g \in G$ y todo $h \in H$, luego $H$ es subgrupo normal de $G$.
+Como $G$ es abeliano, $ghg^{-1}=hgg^{-1}=h \in H$ para todo $g \in G$ y todo $h \in H$, luego $H \triangleleft G$.
 \end{proof}
 \\
 \\
-Sea $G$ un grupo. Sea $H$ un subgrupo normal de $G$. Recordemos que, para $g \in G$, las clases laterales izquierda y derecha son, respectivamente,
+Sea $G$ un grupo. Sea $H \triangleleft G$. Recordemos que, para $g \in G$, las clases laterales izquierda y derecha son, respectivamente,
 \[
 gH=\{gh\,:\, h\in H\}
 \]
@@ -360,13 +361,13 @@ Para un subgrupo normal estas clases son iguales pues si $h\in H$, entonces $ghg
 Notar tambi'en que $gH=Hg$ significa que para cada $h \in H$ hay $h_{1} \in H$ tal que $gh=gh_{1}$.\\
 Lo anterior no ocurre cuando $H$ no es subgrupo normal.
 \subsection{Grupo cociente.}
-Sea $H$ un subgrupo normal de un grupo $G$ (no usamos un s'imbolo especial para la operaci'on). Denotamos por $G/H$ el conjunto de las clases laterales izquierdas de $H$ en $G$, es decir
+Sea $H \triangleleft G$ (no usamos un s'imbolo especial para la operaci'on). Denotamos por $G/H$ el conjunto de las clases laterales izquierdas de $H$ en $G$, es decir
 \[
 G/H=\{gH\,:\, g\in G\}
 \]
 Observar que $gH=Hg$ pues $H$ es un subgrupo normal. Definiremos una operaci'on en este conjunto de clases.
 \begin{teorema}
-Sea $H$ un subgrupo normal de un grupo $G$. Dados $a,b \in G$ sea 
+Sea $H \triangleleft G$. Dados $a,b \in G$ sea 
 \[
 (aH)(bH)=(ab)H
 \]
@@ -377,7 +378,7 @@ Si $aH=cH$ y $bH=dH$, queremos probar que $(ab)H=(cd)H$. Como $a \in aH = cH$, e
 \end{proof}
 \\
 \\
-Sea $H$ un subgrupo normal de un grupo $G$. El conjunto $G/H$ es un grupo con la operaci'on 
+Sea $H \triangleleft G$. El conjunto $G/H$ es un grupo con la operaci'on 
 \[
 (aH)(bH)=(ab)H
 \]
@@ -491,13 +492,30 @@ As'i, $\overline{\varphi}:G/ker(\varphi)\rightarrow im(\varphi)$ resulta un isom
 \end{proof}
 \subsubsection{Segundo teorema de isomorf'ia.}
 \begin{teorema}
-Sean $G,H,K$ grupos tales que $K$ es subgrupo de $H$, y este, a su vez, es subgrupo de $G$, con $K$ subgrupo normal de $G$ y $H$ subgrupo normal de $G$. Entonces se tiene que $(G/H)/(H/K)\simeq G/H$.
+Sean $N$ y $H$ subgrupos normales de un grupo $G$, tales que $N \subset H$. Entonces $H/N \triangleleft G/N$ y
+\[
+(G/N)/(H/N) \simeq G/H
+\]
 \end{teorema}
 \begin{proof}
-Para empezar, se debe verificar que las expresiones del enunciado est'an bi'en definidas. Es decir, que todos los grupos por los que se hace el cociente son normales. Por un lado $K$ es subgrupo normal de $H$, pues $H$ es un subconjunto de $G$, con lo que $gKg^{-1}=K$ para todo $g \in H$. Ademas, $H/K$ es subgrupo normal de $G/K$, ya que dados $gK \in G/K$ y $hK \in H/K$ se tiene $ghg^{-1} \in H$ y por lo tanto $ghg^{-1}K \in H/K$.\\
-Para el isomorfismo, consideramos primero la proyecci'on al cociente $\pi_{H}:G \rightarrow G/H$. Su n'ucleo es $H$, y $K\subseteq H$. Por lo tanto, se puede aplicar la factorizaci'on de homomorfismos de grupos para concluir que existe un 'unico homomorfismo $\psi:G/K \rightarrow G/H$ donde $\pi_{K}:G \rightarrow G/K$ es la proyecci'on al cociente sobre $K$.\\
-El homomorfismo $\psi$ es un epimorfismo, porque $\pi_{H}=\psi \cdot \pi_{K}$ lo es. Adem'as, $ker(\psi)=\{ xK \in G/K : \psi(xK)=0 \}$, es decir, $ker(\psi)=\{ xK \in G/K : \pi_{H}(x)=0 \}$. Esto a su vez equivale a afirmar que $ker(\psi)=\{ xK \in G/K : x \in H \}=H/K$.\\
-Resumiendo, $\psi: G/K \rightarrow G/H$ es un epimorfismo tal que $ker(\psi)=H/K$, con lo cual, por el primer teorema de isomorfismo, se concluye $(G/K)/(H/K)\simeq G/H$.
+Consideramos la aplicaci'on 
+\[
+f:G/N \rightarrow G/H :aN \mapsto aH
+\]
+que sabemos que esta bien definida, pues si $aN = bN$, entonces $a^{-1}b \in N \subset H$, por lo que $aH=bH$.\\
+Como $f((aN)(bN))=f(abN)=abH=(aH)(bH)=f(aN)f(bN)$, $f$ es homomorfismo.\\
+Cada $aH \in G/H$ es $aH=f(aN)$, luego $f$ es sobreyectiva. Finalmente $aN \in ker(f)$ si y solo si $aH = f(aN)=H$, esto es,
+\[
+ker(f)=\{aN \in G/N\, : \, a \in H \}=H/N  
+\]
+Como $f$ es un homomorfismo de gupos, aplicando el primer teorema de isomorfia tenemos que
+\[
+(G/N)/ker(f) \simeq im(f)
+\]
+esto es,
+\[
+(G/N)/(H/N) \simeq G/H
+\]
 \end{proof}
 \subsubsection{Tercer teorema de isomorf'ia.}
 \begin{teorema}
@@ -510,7 +528,64 @@ Por un lado, $\varphi$ es un epimorfismo. Para ver esto, considerar un elemento 
 Por otro lado, el n'ucleo $ker (varphi)$ es el conjunto $\{ t \in T:tS=S \}$, es decir, $T \cap S$.\\
 Resumiendo, $\varphi:T \rightarrow ST/S$ es un epimorfismo cuyo n'ucleo es $T \cap S$. Por el primer teorema de isomorfia se concluye entonces que $T/(T \cap S) \simeq ST/S$.
 \end{proof}
-\section{Estructura de los grupos abelianos finitos.}
+\section{Teorema de estructura de los grupos abelianos finitos.}
+El teorema de estructura de los grupos abelianos finitos constituye, por su naturaleza, una primera aproximaci'on a la clasificaci'on de los grupos, en nuestro caso de los grupos abelianos finitos.\\
+Apuntemos que todo grupo c'iclico es abeliano, pero no todo grupo abeliano es ciclico, ademas, los grupos abelianos finitos son producto directo de grupos ciclicos.\\
+Enunciamos a continuaci'on el teorema de estructura de los grupos abelianos finitos, del cual omitiremos su demostracion:
+\begin{teorema}[Estructura de los Grupos Abelianos Finitos.]
+Si $G$ es un grupo abeliano finito, existen enteros positivos $m_{1},\ldots ,m_{r}$ tales que:
+\[
+G \simeq Z/m_{1}Z \times \ldots \times Z/m_{r}Z
+\]
+y cada $m_{i}$ divide a $m_{i-1}$.
+\end{teorema}
+Queda claro que $o(G)=m_{1}\ldots m_{r}$. Ademas, los numeros $r, m_{1},\ldots ,m_{r}$ son 'unicos con esta propiedad. Se dice que $m_{1},\ldots ,m_{r}$ son los coficientes de torsi'on de $G$.\\
+Este teorema nos permite calcular el numero de grupos abelianos finitos no isomorfos de un orden dado.\\
+Pongamos un ejemplo aclarador de aplicaci'on de este teorema:\\
+\\
+Supongamos que deseamos calcular cuantos grupos abelianos no isomorfos existen de orden 200. El teorema de estructura reduce la cuesti'on a obtener todas las -uplas $(r,m_{1},\ldots ,m_{r})$ tales que $m_{1}\ldots m_{r}=200$ con $m_{i}$ divide a $m_{i-1}$. Asi tenemos que para:\\
+\\
+$r=1$:
+\[
+m_{1}=200
+\] 
+para $r=2$:
+\[
+m_{1}=100\, ; \,m_{2}=2
+\]
+\[
+m_{1}=40\, ; \,m_{2}=5
+\]
+\[
+m_{1}=20\, ; \,m_{2}=10
+\]
+para $r=3$:
+\[
+m_{1}=50\, ; \,m_{2}=2\, ; \, m_{3}=2
+\]
+\[
+m_{1}=10\, ; \,m_{2}=10\, ; \, m_{3}=2
+\]
+ya no es posible encontrar mas -uplas que cumplan las condiciones del teorema. Por lo tanto hay 6 grupos abelianos, no isomorfos, de orden 200 que son:
+\[
+Z/200Z
+\]
+\[
+Z/100Z \times Z/2Z
+\]
+\[
+Z/400Z \times Z/5Z
+\]
+\[
+Z/20Z \times Z/10Z
+\]
+\[
+Z/500Z \times Z/2Z \times Z/2Z
+\]
+\[
+Z/10Z \times Z/10Z \times Z/2Z
+\]
+por lo tanto, todos los grupos abelianos de orden 200 son isomorfos a alguno de ellos.
 \section{Automorfismos de grupos.}
 \section{Acci'on de un grupo sobre un conjunto.}
 El concepto de grupo tom'o importancia en la matem'atica cuando Lagrange y luego Galois consideraron las sustituciones de las raices de una ecuaci'on polinomial; los patrones de intercambios de las raices aportan informaci'on sobre la solubilidad de la ecuaci'on mediante f'ormulas expl'icitas. Posteriormente, Felix Klein enfatiz'o la importancia de las simetrias admisibles en la clasificaci'on de las geometrias. En los dos casos, los elementos de un grupo aparecen como transformaci'on de otros objetos (raices de una ecuaci'on algebraica; o puntos de un plano) y los objetos transformados no son menos importantes que las propias transformaciones.

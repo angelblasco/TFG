@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
@@ -15,15 +15,15 @@
 \contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{7}
 \contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{7}
 \contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{8}
-\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{8}
-\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{9}
+\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{9}
+\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{10}
 \contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{10}
-\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{10}
-\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{10}
+\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{11}
+\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{11}
 \contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{11}
 \contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{11}
-\contentsline {section}{\numberline {1.8}Estructura de los grupos abelianos finitos.}{12}
-\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{12}
-\contentsline {section}{\numberline {1.10}Acci'on de un grupo sobre un conjunto.}{12}
-\contentsline {chapter}{\numberline {2}Capitulo}{14}
-\contentsline {chapter}{\numberline {3}Capitulo}{15}
+\contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{12}
+\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{13}
+\contentsline {section}{\numberline {1.10}Acci'on de un grupo sobre un conjunto.}{13}
+\contentsline {chapter}{\numberline {2}Capitulo}{15}
+\contentsline {chapter}{\numberline {3}Capitulo}{16}
