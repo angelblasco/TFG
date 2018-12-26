@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  24 DEC 2018 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  26 DEC 2018 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -383,37 +383,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 252--256
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 277--284
+Underfull \hbox (badness 10000) in paragraph at lines 276--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--284
+Underfull \hbox (badness 10000) in paragraph at lines 276--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--310
+Underfull \hbox (badness 10000) in paragraph at lines 302--309
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 348--354
+Underfull \hbox (badness 10000) in paragraph at lines 347--353
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 376--382
+Underfull \hbox (badness 10000) in paragraph at lines 375--381
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 407--412
+Underfull \hbox (badness 10000) in paragraph at lines 406--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--442
+Underfull \hbox (badness 10000) in paragraph at lines 438--441
 
  []
 
@@ -421,57 +421,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 439--442
 File: ./factorizacion.png Graphic file (type png)
 
 <use ./factorizacion.png>
-Package pdftex.def Info: ./factorizacion.png used on input line 469.
+Package pdftex.def Info: ./factorizacion.png used on input line 468.
 (pdftex.def)             Requested size: 142.26378pt x 70.9314pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--478
-
- []
-
-[10 <./factorizacion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 484--493
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 542--549
+Underfull \hbox (badness 10000) in paragraph at lines 470--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--549
+Underfull \hbox (badness 10000) in paragraph at lines 483--492
+
+ []
+
+[10 <./factorizacion.png>] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 541--548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--548
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 612--616
+Underfull \hbox (badness 10000) in paragraph at lines 611--615
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 643--647
+Underfull \hbox (badness 10000) in paragraph at lines 642--646
 
  []
 
-[14]
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--672
+
+ []
+
+[14] [15]
 Cap\'{\i }tulo 2.
-[15
+[16
 
 ]
 Cap\'{\i }tulo 3.
-[16
+[17
 
-] [17] [18
+] [18] [19
 
 ] (./tfg.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 4475 strings out of 492995
- 63102 string characters out of 6132703
- 135415 words of memory out of 5000000
- 7934 multiletter control sequences out of 15000+600000
+ 4476 strings out of 492995
+ 63107 string characters out of 6132703
+ 135419 words of memory out of 5000000
+ 7935 multiletter control sequences out of 15000+600000
  12045 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,32p,693b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -489,10 +494,10 @@ texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfg.pdf (23 pages, 208809 bytes).
+Output written on tfg.pdf (24 pages, 211584 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

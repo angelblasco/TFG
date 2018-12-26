@@ -265,7 +265,6 @@ y, en general,
 b^{k}=p^{-1}a^{k}p
 \]
 de modo que si $a^{k}=1_{G}$, tenemos $b^{k}=p^{-1}1_{G}p=1_{G}$, y reciprocamente.
-\item El orden de cualquier potencia de $a$ no puede superar al orden de $a$. Porque si $a^{h}=1_{G}$ y $b=a^{s}$, entonces $b^{h}=a^{sh}=(a^{h})^{s}=1_{G}^{s}=1_{G}$. Y a'un mas: si $a$ es de orden $h$ y $s$ primo con $h$, entonces $a^{s}$ y $a$ son del mismo orden.
 \end{enumerate}
 \section{Grupos c'iclicos.}
 \begin{definicion}
@@ -610,7 +609,7 @@ La \textbf{'orbita} de $x \in X$ bajo la acci'on de $G$ es la clase de equivalen
 \[
 G \cdot x = \{g\cdot x \in X\, :\,g\in G \}\subseteq X
 \]
-La acci'on se llama \textbf{transitiva} si $G \cdot x=X$ para alg'un $x \in X$ (y por ende, para todo $x$). Es decir, una acci'on es transitiva si posee una sola 'orbita. \\
+Una acci'on de un grupo $G$ en un conjunto $X$ se dice que es \textit{transitiva} si para todo par de elementos $x,y \in X$ existe un $g \in G$ tal que $g \cdot x = y$. \\
 \\
 Anteriormente (teorema 1.7.3) enunciamos el teorema de Cayley, y dimos una prueba de el, ahora estamos en condiciones de puntualizar a'un mas este teorema y ofrecer una nueva demostraci'on.
 \begin{teorema}[Teorema de Cayley.]
@@ -622,7 +621,7 @@ La funci'on $\lambda_{g}:G \rightarrow G : h \mapsto gh$ es una biyecci'on de $G
 En particular, si $o(G)=n$, de modo que $G=\{g_{1},g_{2},\ldots g_{n}\}$, hay un isomorfismo de grupos $\psi : S_{G}\rightarrow S_{n}$ que lleva cualquier permutaci'on de elementos $g_{i}\mapsto g_{j}$ es la permutaci'on correspondiente $i \mapsto j$ del conjunto $\{1,2,\ldots n\}$. Luego $\psi \circ \lambda : G \rightarrow S_{n}$ es un homorfismo inyectivo cuya imagen es un subgrupo de $S_{n}$.
 \end{proof}
 \begin{definicion}
-Sea $\phi : G \times X \rightarrow X$ una acci'on de un grupo sobre un conjunto. El \textbf{subgrupo de isotropia} para un elemento $x \in X$ es el subgrupo
+Sea $\phi : G \times X \rightarrow X$ una acci'on de un grupo sobre un conjunto. El \textbf{subgrupo estabilizador} para un elemento $x \in X$ es el subgrupo
 \[
 G_{X}=\{g \in G\,:\,g \cdot x = x  \} \leq G
 \]
@@ -638,16 +637,38 @@ g \cdot x = h \cdot x \Longleftrightarrow g^{-1}h \cdot x = x \Longleftrightarro
 luego la aplicaci'on $g \cdot x \mapsto gG_{X}$ es una biyecci'on de la 'orbita $G \cdot x$ en el conjunto cociente $G/G_{X}$. Por lo tanto $o(G \cdot x)=o(G/G_ {X})=[G:G_{X}]$
 \end{proof}
 \begin{definicion}
-Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{eficaz} (o \textbf{fiel}) si el homomorfismo $\psi : G \rightarrow S_{X}$ es inyectivo. Una acci'on es eficaz si $g \cdot x=x$ para todo $x \in X$ implica $g=1_{G}$. Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{libre} para alg'un $x \in X$ implica $g=1_{G}$. Si la acci'on $\phi G \times X \rightarrow X$ es eficaz, libre y transitiva, entonces $X$ es un espacio homog'eneo principal de $G$.
+Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{eficaz} (o \textbf{fiel}) si el homomorfismo $\psi : G \rightarrow S_{X}$ es inyectivo. Una acci'on es eficaz si $g \cdot x=x$ para todo $x \in X$ implica $g=1_{G}$. Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{libre} para alg'un $x \in X$ implica $g=1_{G}$. Si la acci'on $\phi : G \times X \rightarrow X$ es eficaz, libre y transitiva, entonces $X$ es un espacio homog'eneo principal de $G$.
 \end{definicion}
-La acci'on de un grupo regular sobre si mismo, por traslaciones a la izquierda es un ejemplo de una acci'on eficaz, libre y transitiva. La utilidad del concepto de espacio homog'eneo principal consiste en "olvidar" la posici'on del elemento neutro.\\
+La acci'on de un grupo regular sobre si mismo, por traslaciones a la izquierda es un ejemplo de una acci'on eficaz, libre y transitiva. La utilidad del concepto de espacio homog'eneo principal consiste en ''olvidar" la posici'on del elemento neutro.\\
 \\
 Un grupo $G$ tambi'en act'ua por conjugaci'on sobre el conjunto de todos sus subgrupos, $X=\{H:H\leq G \}$. Esta acci'on est'a dada por la f'ormula $g \cdot H = gHg^{-1} $. La 'orbita de H bajo esta acci'on es la familia de subgrupos conjugados de $H$. \\
-El subgrupo de isotrop'ia de $H$ en este caso es el \textbf{normalizador} de $H$, definido como:
+El subgrupo estabilizador de $H$ en este caso es el \textbf{normalizador} de $H$, definido como:
 \[
 N_{G}(H)=\{g \in G : gHg^{-1}=H  \}
 \]
 Se puede observar que $N_{G}(H)$ es un subgrupo de $G$, no necesariamente normal, pero $H$ es un subgrupo normal de 'el: $H \triangleleft N_{G}(H)$.
+\section{Teorema de Sylow.}
+Antes de enunciar los teoremas de Sylow debemos introducir el concepto de \textit{p-grupo} y el \textit{Teorema de Cauchy}.
+\begin{definicion}
+Sea $p$ un n'umero primo. Un grupo finito $G$ se denomina \textit{p-grupo} si $o(G)=p^{r}$, con $r \in \mathbb{Z}^{+}$.
+\end{definicion}
+\begin{teorema}[Teorema de Cauchy]
+Sea $G$ un grupo finito de orden $n$ y $p$ un n'umero primo que divide a $n$. Entonces $G$ tiene un elemento (y por lo tanto un subgrupo) de orden $p$.
+\end{teorema}
+\begin{proof}
+Sea $X= \{ (x_{1},\ldots ,x_{p})\in G^{p}\, : \, x_{1}\ldots x_{p}=1\}$. Si $k \in \mathbb{Z}_{p}$, la relaci'on 
+\[
+k(x_{1},\ldots ,x_{p})=(x_{k+1},\ldots ,x_{p},x_{1},\ldots ,x_{k})
+\]
+define una acci'on de $\mathbb{Z}_{p}$ en $X$. Como $\mathbb{Z}_{p}$ es un p-grupo y $o(X)=n^{p-1}$, se tiene que $o(X_{0})$ es multiplo de $p$, siendo
+\[
+X_{0}=\{ (x,\ldots ,x)\, : \, x \in G \, ,x^{p}=1 \}
+\]
+Dado que $X_{0}$ contiene el elemento $(1, 1, \ldots ,1)$, resulta que $G$ tiene un elemento de orden $p$.
+\end{proof}\\
+\\
+Sea $G$ un grupo finito, ante el problema de estudiar los subgrupos de $G$ es natural empezar con los p-subgrupos, para cada primo $p$. El conocimiento de estos subgrupos es muy 'util para determinar la estructura de $G$. \\
+Con los teoremas de Sylow podremos conocer, si, dado un grupo finito $G$ y un primo $p$ que divida a $o(G)$, si existen p-subgrupos de cualquier orden permitido por el teorema de Lagrange, cuantos hay, y que relaci'on hay entre ellos. 
 \chapter{Capitulo}
 %%% Capitulo 3
 \chapter{Capitulo}
@@ -663,5 +684,6 @@ $\ $
 \bibitem{ser} J. P. Serre, \emph{Representaciones lineales de los grupos finitos}, Omega, Barcelona, 1970.
 \bibitem{var} J. C. Varilly, \emph{Grupos y anillos}, Escuela de Matem'atica, Universidad de Costa Rica, 2014. 
 \bibitem{suz} M. Suzuki, \emph{Group theory I}, Springer-Verlag, 1982. 
+\bibitem{xam} S. Xamb'o, F. Delgado, C. Fuertes, \emph{Introducci'on al 'algebra}, Editorial Complutense, Madrid, 1993.
 \end{thebibliography}
 \end{document}
