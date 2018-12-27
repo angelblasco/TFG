@@ -669,6 +669,37 @@ Dado que $X_{0}$ contiene el elemento $(1, 1, \ldots ,1)$, resulta que $G$ tiene
 \\
 Sea $G$ un grupo finito, ante el problema de estudiar los subgrupos de $G$ es natural empezar con los p-subgrupos, para cada primo $p$. El conocimiento de estos subgrupos es muy 'util para determinar la estructura de $G$. \\
 Con los teoremas de Sylow podremos conocer, si, dado un grupo finito $G$ y un primo $p$ que divida a $o(G)$, si existen p-subgrupos de cualquier orden permitido por el teorema de Lagrange, cuantos hay, y que relaci'on hay entre ellos. 
+\begin{teorema}[Primer teorema de Sylow]
+Sea $G$ un grupo finito, $p$ un n'umero primo y $r > 0$ un n'umero entero tales que $p^{r}$ divide a $o(G)$. Entonces existen subgrupos $H_{1}, \ldots ,H_{r}$ de $G$ tales que $o(H_{i})=p^{i}$ para $i=1,\ldots ,r$ y de modo que $H_{i} \triangleleft H_{i+1}$ para $i=1,\ldots ,r-1$.
+\end{teorema}
+\begin{proof}
+Si $r=1$ el resultado es consecuencia directa del teorema de Cauchy. Supongamos pues que $r \geq 2$. Entonces existen, por inducci'on, subgrupos $H_{1},\ldots ,H_{r-1}$ de $G$ tales que $o(H_{i}=p^{i}\,(1 \leq i \leq r-1)$ y con $H_{i}$ normal en $H_{i+1}\, (1 \leq r \leq r-2)$. Como $p$ divide a $[G:H_{r-1}]$, por la congruencia del normalizador, vemos que $p$ divide a $[N(H_{r-1}):H_{r-1}]$. Por el teorema de Cauchy el grupo cociente $N(H_{r-1})/H_{r-1}$ tiene un subgrupo $H_{r}/H_{r-1}$ de orden $p$, o lo que es lo mismo, $H_{r}$ es un subgrupo de $N(H_{r-1})$ que contiene a $H_{r-1}$ como subgrupo normal. Como $H_{r}$ tiene orden $p^{r}$, por el teorema de Lagrange, la demostraci'on es completa.
+\end{proof}\\
+\\
+Si $p$ es un divisor del orden $n$, de un grupo finito $G$, entonces existen p-subgrupos de Sylow de $G$. Basta con observar que si $n=p^{r}m$, $m$ primo con $p$, los p-subgrupos de Sylow de $G$ son los subgrupos de orden $p^{r}$. Si $G$ posee un 'unico p-subgrupo de Sylow $H$, entonces $H \triangleleft G$.
+\begin{teorema}[Segundo teorema de Sylow]
+Sea $G$ un grupo finito, $H$ un p-subgrupo de $G$ y $S$ un p-subgrupo de Sylow de $G$. Entonces existe $x \in G$ tal que
+\[
+H \subseteq xSx^{-1}
+\]
+en particular, dos p-subgrupos de Sylow de $G$ son conjugados.
+\end{teorema}
+\begin{proof}
+Consideremos la acci'on de $H$ en $X=G/S$ por traslaciones por la izquierda. Una clase $xS \in X$ es invariante por la acci'on anterior si y solo si $hxS=xS$ para todo $h \in H$, es decir, si y solo si $x^{-1}hx \in S$ para todo $h \in H$. Como esta relaci'on es equivalente a $H \subseteq xSx^{-1}$, vemos que
+\[
+X_{0}=\{ xS \in X \, : \, H \subseteq xSx^{-1} \}
+\]
+Ahora bien, como $H$ es un p-grupo y $o(X)=[G:S]$, la congruencia de puntos fijos nos da 
+\[
+o(X_{0}) \equiv [G:S] \, \, (mod \, p)
+\]
+Como $p$ no divide a $[G:S]$, concluimos que $X_{0}$ no es divisible por $p$ y por tanto que $X_{0}$ no es vac'io.
+\end{proof}\\
+\\
+El segundo teorema de Sylow se deduce trivialmente que la condici'on de que $G$ posea un 'unico p-subgrupo de Sylow es equivalente a que $G$ posea un p-subgrupo de Sylow normal.
+\begin{teorema}[Tercer teorema de Sylow]
+
+\end{teorema}
 \chapter{Capitulo}
 %%% Capitulo 3
 \chapter{Capitulo}
