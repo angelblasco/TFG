@@ -586,7 +586,32 @@ Z/10Z \times Z/10Z \times Z/2Z
 \]
 por lo tanto, todos los grupos abelianos de orden 200 son isomorfos a alguno de ellos.
 \section{Automorfismos de grupos.}
-\section{Acci'on de un grupo sobre un conjunto.}
+Los homomorfismos biyectivos de un grupo $G$ en si mismo se conocen como los automorfismos de $G$. Estas funciones conforman un grupo que tiene informaci'on importante relativa al grupo $G$.
+\subsection{Automorfismos interiores.}
+Veremos la relaci'on entre los automorfismos de un grupo, sus automorfismos interiores y su centro. El centro de un grupo, simbolizado por $Z(G)$ es un grupo normal de $G$ el cual esta definido por
+\[
+Z(G)=\{ x \in G\, : \, xa=ax, \, \forall a \in G \}
+\] 
+Notese que $G$ es abeliano si y solo si $G=Z(G)$.
+\begin{definicion}
+Sea $G$ un grupo, un \textbf{automorfismo} de $G$ es un homomorfismo biyectivo de $G$ en si mismo. Sea $x \in G$ la funci'on definida por
+\[
+f_{x}:G \rightarrow G
+\]
+\[
+a \mapsto x^{-1}ax
+\]
+es un automorfismo de $G$ y se denomina \textbf{automorfismo interior} de $G$ determinado por $x$.
+\end{definicion}
+\begin{teorema}
+Sea $G$ un grupo, $Aut(G)$ su colecci'on de automorfismos y sea $Int(G)$ el conjunto de automorfismos interiores de $G$. Entonces:
+\begin{enumerate}
+\item $Aut(G)$ es un subgrupo de grupo $S_{G}$ de funciones biyectivas de $G$ en $G$.
+\item $Int(G) \triangleleft Aut(G)$
+\end{enumerate}
+\end{teorema}
+
+\subsection{Acci'on de un grupo sobre un conjunto.}
 El concepto de grupo tom'o importancia en la matem'atica cuando Lagrange y luego Galois consideraron las sustituciones de las raices de una ecuaci'on polinomial; los patrones de intercambios de las raices aportan informaci'on sobre la solubilidad de la ecuaci'on mediante f'ormulas expl'icitas. Posteriormente, Felix Klein enfatiz'o la importancia de las simetrias admisibles en la clasificaci'on de las geometrias. En los dos casos, los elementos de un grupo aparecen como transformaci'on de otros objetos (raices de una ecuaci'on algebraica; o puntos de un plano) y los objetos transformados no son menos importantes que las propias transformaciones.
 \begin{definicion}
 Una acci'on (a la izquierda) de un grupo $G$ sobre un conjunto $X$ es una funci'on $\phi : G \times X \rightarrow X$ tal que: 
@@ -647,7 +672,7 @@ El subgrupo estabilizador de $H$ en este caso es el \textbf{normalizador} de $H$
 N_{G}(H)=\{g \in G : gHg^{-1}=H  \}
 \]
 Se puede observar que $N_{G}(H)$ es un subgrupo de $G$, no necesariamente normal, pero $H$ es un subgrupo normal de 'el: $H \triangleleft N_{G}(H)$.
-\section{Teorema de Sylow.}
+\subsection{Teorema de Sylow.}
 Antes de enunciar los teoremas de Sylow debemos introducir el concepto de \textit{p-grupo} y el \textit{Teorema de Cauchy}.
 \begin{definicion}
 Sea $p$ un n'umero primo. Un grupo finito $G$ se denomina \textit{p-grupo} si $o(G)=p^{r}$, con $r \in \mathbb{Z}^{+}$.
@@ -698,8 +723,24 @@ Como $p$ no divide a $[G:S]$, concluimos que $X_{0}$ no es divisible por $p$ y p
 \\
 El segundo teorema de Sylow se deduce trivialmente que la condici'on de que $G$ posea un 'unico p-subgrupo de Sylow es equivalente a que $G$ posea un p-subgrupo de Sylow normal.
 \begin{teorema}[Tercer teorema de Sylow]
-
+Sea $G$ un grupo finito, y $n_{p}$ el n'umero de p-subgrupos de Sylow de $G$. Entonces $n_{p}=[G:N(S)]$, para todo p-subgrupo de Sylow $S$ de $G$. Puesto que $[G:N(S)]$ divide a $[G:S]$, en particular tenemos que $n_{p}$ divide a $[G:S]$ para todo p-subgrupo de Sylow $S$ de $G$. Por 'ultimo, se verifica que $n_{p} \equiv 1(mod \, p)$.
 \end{teorema}
+\begin{proof}
+Por el segundo teorema de Sylow, $n_{p}$ es el cardinal de la 'orbita de un p-subgrupo de Sylow $S$ por la acci'on de $G$ (por conjugaci'on) en el conjunto de subgrupos de $G$. De ello se deduce que
+\[
+n_{p}=[G:N(S)]
+\]
+dado que el grupo estabilizador de $S$ es $N(S)$. La primera parte del enunciado se sigue de la relaci'on
+\[
+[G:S]=[G:N(S)][N(S):S]
+\]
+Sea ahora $X$ el conjunto de p-subgrupos de Sylow de $G$. Consideremos la acci'on de $S$ en $X$ por conjugaci'on. Entonces
+\[
+X_{0}=\{ T \in X \, : \, sTs^{-1}=T, \, \forall s \in S \} = \{T \in X \, : \, S \subseteq N(T) \}
+\]
+Veamos que $X_{0}=\{ S \}$. En efecto, si $T \in X_{0}$, entonces $S$ y $T$ son p-subgrupos de Sylow de $N(T)$ y $T \triangleleft N(T)$, de donde, por el segundo teorema de Sylow, $T=S$. Como $o(X)=n_{p}$ y $o(X_{0}=1$, obtenemos la congruencia enunciada usando la congruencia de puntos fijos.
+\end{proof}
+%%% Capitulo 2
 \chapter{Capitulo}
 %%% Capitulo 3
 \chapter{Capitulo}
