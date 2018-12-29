@@ -9,22 +9,24 @@
 \contentsline {subsubsection}{Producto de dos subgrupos.}{4}
 \contentsline {subsubsection}{Subgrupo generado.}{4}
 \contentsline {subsubsection}{Conjunto conjugado.}{5}
+\contentsline {subsubsection}{Normalizador.}{5}
 \contentsline {section}{\numberline {1.3}Orden de un elemento.}{5}
 \contentsline {section}{\numberline {1.4}Grupos c'iclicos.}{6}
 \contentsline {section}{\numberline {1.5}Coclases, 'indice de un grupo y Teorema de Lagrange.}{6}
 \contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{7}
 \contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{7}
 \contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{8}
-\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{8}
-\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{9}
+\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{9}
+\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{10}
 \contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{10}
-\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{10}
-\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{10}
+\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{11}
+\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{11}
 \contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{11}
 \contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{11}
 \contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{12}
 \contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{13}
-\contentsline {section}{\numberline {1.10}Acci'on de un grupo sobre un conjunto.}{13}
-\contentsline {section}{\numberline {1.11}Teorema de Sylow.}{14}
-\contentsline {chapter}{\numberline {2}Capitulo}{16}
-\contentsline {chapter}{\numberline {3}Capitulo}{17}
+\contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{13}
+\contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{14}
+\contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{16}
+\contentsline {chapter}{\numberline {2}Capitulo}{18}
+\contentsline {chapter}{\numberline {3}Capitulo}{19}

@@ -222,6 +222,7 @@ Este conjunto tiene las siguientes propiedades que pasaremos a enunciar:
 \item Si $S$ es subgrupo de $G$, tambien lo es $S^{a}$.
 \item Si $S \subset T$, entonces $S^{a} \subset T^{a}$.
 \end{enumerate}
+\subsubsection{Normalizador.}
 Si $S$ es un subconjunto no vac'io de un grupo $G$, se llama \textit{normalizador de S en G} a 
 \[
 N_{G}(S) = \{a \in G \,:\, S^{a}=S \}
@@ -588,7 +589,13 @@ por lo tanto, todos los grupos abelianos de orden 200 son isomorfos a alguno de 
 \section{Automorfismos de grupos.}
 Los homomorfismos biyectivos de un grupo $G$ en si mismo se conocen como los automorfismos de $G$. Estas funciones conforman un grupo que tiene informaci'on importante relativa al grupo $G$.
 \subsection{Automorfismos interiores.}
-Veremos la relaci'on entre los automorfismos de un grupo, sus automorfismos interiores y su centro. El centro de un grupo, simbolizado por $Z(G)$ es un grupo normal de $G$ el cual esta definido por
+Veremos la relaci'on entre los automorfismos de un grupo, sus automorfismos interiores y su centro.\\
+\\
+Si $H$ es un subgrupo de un grupo $G$, se llama \textit{centralizador} de $H$ en $G$ a
+\[
+C_{G}(H)=\{ x \in G : ax = xa \,\, \forall a \in H \}
+\]
+Al centralizador de $G$ en $G$, simbolizado por $Z(G)$ y llamado \textit{centro} de $G$, es un grupo normal de $G$ el cual esta definido como
 \[
 Z(G)=\{ x \in G\, : \, xa=ax, \, \forall a \in G \}
 \] 
@@ -596,13 +603,21 @@ Notese que $G$ es abeliano si y solo si $G=Z(G)$.
 \begin{definicion}
 Sea $G$ un grupo, un \textbf{automorfismo} de $G$ es un homomorfismo biyectivo de $G$ en si mismo. Sea $x \in G$ la funci'on definida por
 \[
-f_{x}:G \rightarrow G
+\phi_{x}:G \rightarrow G
 \]
 \[
 a \mapsto x^{-1}ax
 \]
-es un automorfismo de $G$ y se denomina \textbf{automorfismo interior} de $G$ determinado por $x$.
+es un automorfismo de $G$ y se denomina \textbf{automorfismo interior} de $G$ determinado por $x$. El conjunto de los automorfismos interiores de $G$ lo denotaremos como $Int(G)$.
 \end{definicion}
+Enunciamos ahora la siguiente proposici'on que nos sera de utilidad para demostrar el pr'oximo teorema:
+\begin{proposicion}
+Sean $G$ un grupo y $H$ un subgrupo de $G$. La aplicaci'on 
+\[
+\phi : N_{G}(H) \rightarrow Aut(H) \, : \, a \mapsto \phi_{a}
+\]
+es homomorfismo de grupos con imagen $Int(H)$ y n'ucleo $C_{G}(H)$.
+\end{proposicion}
 \begin{teorema}
 Sea $G$ un grupo, $Aut(G)$ su colecci'on de automorfismos y sea $Int(G)$ el conjunto de automorfismos interiores de $G$. Entonces:
 \begin{enumerate}
@@ -610,7 +625,25 @@ Sea $G$ un grupo, $Aut(G)$ su colecci'on de automorfismos y sea $Int(G)$ el conj
 \item $Int(G) \triangleleft Aut(G)$
 \end{enumerate}
 \end{teorema}
-
+\begin{proof}
+1) La primera afirmaci'on es evidente. 2) Por comodidad, llamando $K=Int(G)$ se trata de probar, como vimos en la definici'on 1.6.1, que:
+\[
+K^{f} \subset K, \,\, \forall f \in Aut(G)
+\]
+Sea pues $g \in K^{f}$. Asi $f \circ g \circ f^{-1} \in K$, luego existe $a \in G$ tal que $f \circ g \circ f^{-1}=\phi_{a}$, donde $\phi_{a}$ es un automorfismo interior, y asi $g=f^{-1}\circ \phi_{a} \circ f$. Entonces, dado $x \in G$ y llamando $b=f^{-1}(a)$ se tiene
+\[
+g(x)=(f^{-1} \circ \phi_{a})(f(x))=f^{-1}(af(x)a^{-1})=bxb^{-1}=\phi_{b}(x)
+\]
+por tanto, $g=\phi_{b} \in K$.\\
+Por 'ultimo, de la proposici'on 1.9.1 se deduce que la aplicaci'on 
+\[
+\phi : G \rightarrow Int(G) \,\, : a \mapsto \phi_{a}
+\]
+es homomorfismo sobreyectivo con n'ucleo $Z(G)$, y por ello
+\[
+G/Z(G) \cong Int(G)
+\]
+\end{proof}
 \subsection{Acci'on de un grupo sobre un conjunto.}
 El concepto de grupo tom'o importancia en la matem'atica cuando Lagrange y luego Galois consideraron las sustituciones de las raices de una ecuaci'on polinomial; los patrones de intercambios de las raices aportan informaci'on sobre la solubilidad de la ecuaci'on mediante f'ormulas expl'icitas. Posteriormente, Felix Klein enfatiz'o la importancia de las simetrias admisibles en la clasificaci'on de las geometrias. En los dos casos, los elementos de un grupo aparecen como transformaci'on de otros objetos (raices de una ecuaci'on algebraica; o puntos de un plano) y los objetos transformados no son menos importantes que las propias transformaciones.
 \begin{definicion}
