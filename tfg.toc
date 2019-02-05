@@ -28,5 +28,6 @@
 \contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{13}
 \contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{14}
 \contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{16}
-\contentsline {chapter}{\numberline {2}Capitulo}{18}
+\contentsline {chapter}{\numberline {2}Representaciones de grupos.}{18}
+\contentsline {section}{\numberline {2.1}Representaciones de grupos.}{18}
 \contentsline {chapter}{\numberline {3}Capitulo}{19}
