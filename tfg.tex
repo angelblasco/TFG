@@ -3,6 +3,7 @@
 \usepackage[a4paper,margin=2cm]{geometry} % margenes
 \usepackage[latin1]{inputenc} % acentos sin codigo
 \usepackage{graphicx} % graficos
+\usepackage{multirow} % para las tablas
 \usepackage{amsfonts}
 \usepackage{float}
 \usepackage{amsmath,amssymb,latexsym,stmaryrd}
@@ -786,6 +787,71 @@ Decir que $a$ es un isomorfismo equivale a decir que el determinante de $a$ es n
 \begin{definicion}
 .
 \end{definicion}
+\begin{ejemplo}
+Sea $G$ el grupo dihedral $D_8=\langle a,b:\, a^{4}=b^{2}=1,\, b^{-1}ab=a^{-1} \rangle$. Definimos las matrices $A$ y $B$ como:
+\[
+A= \left( \begin{array}{cc}
+0 & 1  \\
+-1 & 0  \end{array} \right),\,
+B= \left( \begin{array}{cc}
+1 & 0  \\
+0 & -1  \end{array} \right)
+\] 
+se comprueba que:
+\[
+A^{4}=B^{2}=I, \, B^{-1}AB=A^{-1}
+\]
+la funci'on
+\[
+\rho : G \rightarrow GL(2,V)
+\]
+definida como $\rho: a^{i}b^{j} \rightarrow A^{i}B^{j}$ para $0\leq i \leq 3$, $0\leq j \leq 1$, es una representaci'on de $D_{8}$ sobre $V$. Es una representaci'on de grado 2.\\
+En la siguiente tabla se representan las im'agenes de $\rho$ para cada elemento de $D_{8}$:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+g & $\rho (g)$ \\
+\hline \hline
+$1$ & $\left( \begin{array}{cc}
+1 & 0  \\
+0 & 1  \end{array} \right)$ \\ \hline 
+$a$ & $\left( \begin{array}{cc}
+0 & 1  \\
+-1 & 0  \end{array} \right)$ \\ \hline
+$a^{2}$ & $\left( \begin{array}{cc}
+-1 & 0  \\
+0 & -1  \end{array} \right)$ \\ \hline
+$a^{3}$ & $\left( \begin{array}{cc}
+0 & -1  \\
+1 & 0  \end{array} \right)$ \\ \hline
+$b$ & $\left( \begin{array}{cc}
+1 & 0  \\
+0 & -1  \end{array} \right)$ \\ \hline
+$ab$ & $\left( \begin{array}{cc}
+0 & -1  \\
+-1 & 0  \end{array} \right)$ \\ \hline
+$a^{2}b$ & $\left( \begin{array}{cc}
+-1 & 0  \\
+0 & 1  \end{array} \right)$ \\ \hline
+$a^{3}b$ & $\left( \begin{array}{cc}
+0 & 1  \\
+1 & 0  \end{array} \right)$ \\ \hline
+\end{tabular}
+\caption{Representaci'on del grupo dihedral 8.}
+\label{tabla:dihedral8}
+\end{center}
+\end{table}
+\end{ejemplo}
+\begin{ejemplo}
+Sea $G$ un grupo cualquiera. Definimos $\rho : G \rightarrow GL(n,V)$ como $\rho (g)=I_{n}$ para todo $g \in G$, donde $I_{n}$ es la matriz identidad $n \times n$. Entoces:
+\[
+\rho (gh) = I_{n}=I_{n}I_{n}=\rho (g) \rho (h)
+\]
+para todo $g,h \in G$, por lo tanto, $\rho$ es una representaci'on de $G$. Esto nos indica que todo grupo tiene representaciones de cualquier grado.
+\end{ejemplo}
+\section{Representaciones equivalentes.}
+\section{N'ucleo de una representaci'on.}
 %%% Capitulo 3
 \chapter{Capitulo}
 \newpage
