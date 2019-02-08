@@ -1,0 +1,98 @@
+\documentclass[a4paper,openright,12pt]{report}
+\usepackage[spanish,activeacute]{babel} % espanol
+\usepackage[a4paper,margin=2cm]{geometry} % margenes
+\usepackage[latin1]{inputenc} % acentos sin codigo
+\usepackage{graphicx} % graficos
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{amsmath,amssymb,latexsym,stmaryrd}
+\numberwithin{equation}{section} % para numerar ecuaciones
+\usepackage{fix-cm}
+\usepackage{anyfontsize}
+\newtheorem{teorema}{Teorema}[section] % para añadir teoremas
+\newtheorem{proposicion}{Proposicion}[section] % para añadir proposiciones
+\newtheorem{corolario}{Corolario}[section] % para añadir corolarios
+\newtheorem{definicion}{Definicion}[section] % para añadir definiciones
+\newtheorem{ejemplo}{Ejemplo}[section] % para añadir ejemplos
+\newenvironment{proof}{\noindent{\it Demostracion:}}{\hfill$\blacksquare$} % para las demostraciones, con cuadrado negro al final
+\begin{document}
+%%%%%% Portada
+%\begin{titlepage}
+
+%\begin{center}
+%\vspace*{0.6in}
+%\begin{figure}[htb]
+%\begin{center}
+%\includegraphics[width=8cm]{./logo_uned.png}
+%\end{center}
+%\end{figure}
+
+%\begin{large}
+%TRABAJO FIN DE GRADO.\\
+%GRADO EN CIENCIAS MATEM'ATICAS.\\
+%\end{large}
+%\vspace*{0.15in}
+%DEPARTAMENTO DE MATEM'ATICAS FUNDAMENTALES. \\
+%\vspace*{0.4in}
+
+%\begin{Large}
+%\textbf{REPRESENTACI'ON DE GRUPOS FINITOS.} \\
+%\end{Large}
+%\vspace*{0.3in}
+
+%\rule{80mm}{0.1mm}\\
+%\vspace*{0.1in}
+%\begin{large}
+%Alumno: \\
+%Angel Blasco Mu\~noz \\
+%\end{large}
+
+%\rule{80mm}{0.1mm}\\
+%\vspace*{0.1in}
+%\begin{large}
+%Tutor:\\
+%Dr. Javier Perez Alvarez\\
+%\end{large}
+%\rule{80mm}{0.1mm}\\
+
+%\end{center}
+%\vspace*{1in}
+%\begin{flushright}
+%Curso 2018 - 2019
+%\end{flushright}
+%\end{titlepage}
+%%%%%%%%%
+%Introduccion de pagina en blanco
+%\newpage
+%$\ $
+%\thispagestyle{empty}
+%
+%%%% Agradecimientos e indice
+\addtocontents{toc}{\hspace{-7.5mm} \textbf{Capitulos}}
+\addtocontents{toc}{\hfill \textbf{Pagina} \par}
+\addtocontents{toc}{\vspace{-2mm} \hspace{-7.5mm} \hrule \par}
+
+%\chapter*{}
+\pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
+%\begin{flushright}
+%\textit{A Mateo, mi hijo, \\
+%por ense\~narme que lo imposible solo tarda un poco mas.\\
+%A Bego\~na, mi mujer, \\
+%por toda la paciencia que tiene conmigo.\\
+%A Angel y Juliana, mis padres, \\
+%por todas las oportunidades que me han dado, incluso cuando no las he %merecido.}
+%\end{flushright}
+%\chapter*{Agradecimientos} 
+%Aqu'i los agradecimientos.
+%\begin{abstract}
+%Este trabajo versa sobre los grupos finitos y sus representaciones. Es importante destacar que en todo el trabajo al referirnos a \textit{grupo} nos referimos a un  \textbf{conjunto finito} en el cual se definir'a una operaci'on que debe cumplir unos condicionantes, al igual que en los grupos algebraicos propiamente dichos. En los grupos finitos se deben cumplir y respetar las mismas propiedades que en los grupos en general.\\
+%\\
+%Se introducir'a el concepto de representaci'on de un grupo finito, haciendo especial 'enfasis en el concepto de irreducibilidad, asi como en la teor'ia de caracteres para la determinaci'on de todas las representaciones irreducibles de un grupo dado. Se definir'a a su vez la matriz de caracteres y se calcular'an las representaciones irreducibles de algunos grupos finitos. 
+%\end{abstract}
+\pagenumbering{arabic} % para comenzar la numeracion de paginas en numeros arabigos
+%%% El documento se escribe a partir de aqui en cada chapter, section, etc
+%\tableofcontents
+%%% Capitulo 1
+\chapter{Capitulo 3.}
+
+\end{document}
