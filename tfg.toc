@@ -1,35 +1,35 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
-\contentsline {chapter}{\numberline {1}Conceptos b'asicos.}{2}% 
-\contentsline {section}{\numberline {1.1}Grupos.}{2}% 
-\contentsline {section}{\numberline {1.2}Subgrupos.}{3}% 
-\contentsline {subsubsection}{Intersecci'on de subgrupos.}{3}% 
-\contentsline {subsubsection}{Producto de dos subgrupos.}{4}% 
-\contentsline {subsubsection}{Subgrupo generado.}{4}% 
-\contentsline {subsubsection}{Conjunto conjugado.}{5}% 
-\contentsline {subsubsection}{Normalizador.}{5}% 
-\contentsline {section}{\numberline {1.3}Orden de un elemento.}{5}% 
-\contentsline {section}{\numberline {1.4}Grupos c'iclicos.}{6}% 
-\contentsline {section}{\numberline {1.5}Coclases, 'indice de un grupo y Teorema de Lagrange.}{6}% 
-\contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{7}% 
-\contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{7}% 
-\contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{8}% 
-\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{9}% 
-\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{10}% 
-\contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{10}% 
-\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{11}% 
-\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{11}% 
-\contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{11}% 
-\contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{11}% 
-\contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{12}% 
-\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{13}% 
-\contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{13}% 
-\contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{14}% 
-\contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{16}% 
-\contentsline {chapter}{\numberline {2}Representaciones de grupos.}{18}% 
-\contentsline {section}{\numberline {2.1}Representaciones de grupos.}{18}% 
-\contentsline {section}{\numberline {2.2}Representaciones equivalentes.}{19}% 
-\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{19}% 
-\contentsline {chapter}{\numberline {3}Capitulo}{20}% 
+\contentsline {chapter}{\numberline {1}Conceptos b'asicos.}{2}
+\contentsline {section}{\numberline {1.1}Grupos.}{2}
+\contentsline {section}{\numberline {1.2}Subgrupos.}{3}
+\contentsline {subsubsection}{Intersecci'on de subgrupos.}{3}
+\contentsline {subsubsection}{Producto de dos subgrupos.}{4}
+\contentsline {subsubsection}{Subgrupo generado.}{4}
+\contentsline {subsubsection}{Conjunto conjugado.}{5}
+\contentsline {subsubsection}{Normalizador.}{5}
+\contentsline {section}{\numberline {1.3}Orden de un elemento.}{5}
+\contentsline {section}{\numberline {1.4}Grupos c'iclicos.}{6}
+\contentsline {section}{\numberline {1.5}Coclases, 'indice de un grupo y Teorema de Lagrange.}{6}
+\contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{7}
+\contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{7}
+\contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{8}
+\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{9}
+\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{10}
+\contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{10}
+\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{11}
+\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{11}
+\contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{11}
+\contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{11}
+\contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{12}
+\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{13}
+\contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{13}
+\contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{14}
+\contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{16}
+\contentsline {chapter}{\numberline {2}Representaciones de grupos.}{18}
+\contentsline {section}{\numberline {2.1}Representaciones de grupos.}{18}
+\contentsline {section}{\numberline {2.2}Representaciones equivalentes.}{19}
+\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{19}
+\contentsline {chapter}{\numberline {3}Capitulo}{20}

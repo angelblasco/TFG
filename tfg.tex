@@ -783,10 +783,19 @@ Sea $V$ un espacio vectorial sobre el cuerpo $\mathbb{C}$ de los n'umeros comple
 \[
 a(e_{j})=\sum_{i} a_{ij}e_{i}
 \]
-Decir que $a$ es un isomorfismo equivale a decir que el determinante de $a$ es no nulo. El grupo $GL(V)$ se identifica as'i como el grupo de matrices cuadradas invertibles de orden $n$.
+Decir que $a$ es un isomorfismo equivale a decir que el determinante de $a$ es no nulo. El grupo $GL(V)$ se identifica as'i como el grupo de matrices cuadradas invertibles de orden $n$. En algunas ocasiones escribiremos $GL(n,V)$.
 \begin{definicion}
-.
+Sea $G$ un grupo finito. Una representaci'on de $G$ en $V$ es un homomorfismo $\rho$ del grupo $G$ en el grupo $GL(V)$:
+\[
+\rho : G \rightarrow GL(V)
+\]
+de modo que:
+\[
+\rho (st)=\rho (s)  \rho (t)
+\]
+cualesquiera que sean $s,t \in G$.
 \end{definicion}
+Supongamos que $V$ es de dimensi'on finita, y sea $n$ su dimensi'on; se dice tambi'en que $n$ es el \textit{grado} de la representaci'on considerada.
 \begin{ejemplo}
 Sea $G$ el grupo dihedral $D_8=\langle a,b:\, a^{4}=b^{2}=1,\, b^{-1}ab=a^{-1} \rangle$. Definimos las matrices $A$ y $B$ como:
 \[
@@ -846,7 +855,7 @@ $a^{3}b$ & $\left( \begin{array}{cc}
 \begin{ejemplo}
 Sea $G$ un grupo cualquiera. Definimos $\rho : G \rightarrow GL(n,V)$ como $\rho (g)=I_{n}$ para todo $g \in G$, donde $I_{n}$ es la matriz identidad $n \times n$. Entoces:
 \[
-\rho (gh) = I_{n}=I_{n}I_{n}=\rho (g) \rho (h)
+\rho (gh) = I_{n}=I_{n}I_{n}=\rho (g)  \rho (h)
 \]
 para todo $g,h \in G$, por lo tanto, $\rho$ es una representaci'on de $G$. Esto nos indica que todo grupo tiene representaciones de cualquier grado.
 \end{ejemplo}
