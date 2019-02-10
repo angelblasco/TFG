@@ -31,5 +31,5 @@
 \contentsline {chapter}{\numberline {2}Representaciones de grupos.}{18}
 \contentsline {section}{\numberline {2.1}Representaciones de grupos.}{18}
 \contentsline {section}{\numberline {2.2}Representaciones equivalentes.}{19}
-\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{19}
-\contentsline {chapter}{\numberline {3}Capitulo}{20}
+\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{20}
+\contentsline {chapter}{\numberline {3}Capitulo}{21}

@@ -860,6 +860,50 @@ Sea $G$ un grupo cualquiera. Definimos $\rho : G \rightarrow GL(n,V)$ como $\rho
 para todo $g,h \in G$, por lo tanto, $\rho$ es una representaci'on de $G$. Esto nos indica que todo grupo tiene representaciones de cualquier grado.
 \end{ejemplo}
 \section{Representaciones equivalentes.}
+Sean $\rho$ y $\rho'$ representaciones lineales de un grupo $G$ en espacios vectoriales $V$ y $V'$ respectivamente. Se dice que estas representaciones son equivalentes (o isomorfas) si existe un isomorfismo lineal $\tau : V \rightarrow V'$ que transforma $\rho$ en $\rho'$, es decir, que verifica la identidad:
+\[
+\tau \cdot \rho (s) = \rho' (s) \cdot \tau
+\]
+para todo $s \in G$.\\
+\\
+Si $\rho$ y $\rho'$ se dan en forma matricial por $R$ y $R'$ respectivamente, el isomorfismo se traduce en una matriz invertible $T$ tal que:
+\[
+T \cdot R = R' \cdot T
+\]
+o, equivalentemente, tal que:
+\[
+R' = TRT^{-1}
+\] 
+Sea $\rho : G \rightarrow GL(V)$ una representaci'on, Y sea $T$ una matriz invertible $n \times n$ de $V$. Para todas las $n \times n$ matrices $A$ y $B$ tenemos:
+\[
+(T^{-1}AT)(T^{-1}BT)=T^{-1}(AB)T
+\]
+Usamos esto para crear una reprsentacion $\sigma$ desde $\rho$; definimos
+\[
+\sigma (g) = T^{-1}\rho (g) T
+\]
+para todo $g \in G$. Por lo tanto, para todo $g,h \in G$, tenemos:
+\[
+\sigma (gh) = T^{-1} \rho (gh) T
+\]
+\[
+= T^{-1}\rho (g) \rho (h) T
+\]
+\[
+=T^{-1}\rho (g)T \cdot T^{-1}\rho (h)T 
+\]
+\[
+=\sigma (g) \sigma (h)
+\]
+por lo que, $\sigma$ es, en efecto, una representaci'on.\\
+\\
+Con esto podemos ya dar la siguiente definici'on:
+\begin{definicion}
+Sean $\rho : G \rightarrow GL(m,V)$ y $\sigma : G \rightarrow GL(n,V)$ representaciones de $G$ sobre $V$. Decimos que $\rho$ es equivalente a $\sigma$ si $n=m$ y existe una matriz invertible $n \times n$ $T$ tal que, para todo $g \in G$,
+\[
+\sigma (g) = T^{-1} \rho (g) T
+\]
+\end{definicion}
 \section{N'ucleo de una representaci'on.}
 %%% Capitulo 3
 \chapter{Capitulo}
