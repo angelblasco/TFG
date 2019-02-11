@@ -15,6 +15,7 @@
 \newtheorem{definicion}{Definicion}[section] % para añadir definiciones
 \newtheorem{ejemplo}{Ejemplo}[section] % para añadir ejemplos
 \newenvironment{proof}{\noindent{\it Demostracion:}}{\hfill$\blacksquare$} % para las demostraciones, con cuadrado negro al final
+\setcounter{chapter}{1} % para iniciar un capitulo con una numeracion diferente, el numero debe ser uno menos del numero de capitulo que queremos
 \begin{document}
 %%%%%% Portada
 %\begin{titlepage}
@@ -94,5 +95,132 @@
 %\tableofcontents
 %%% Capitulo 1
 \chapter{Representaciones de grupos.}
-
+Una representaci'on de un grupo finito $G$ nos proporciona una manera de visualizar $G$ como un grupo de matrices. Para ser mas preciso diremos que una representaci'on es un homomorfismo de $G$ en el grupo de matrices invertibles.\\
+La estructura de estos homomorfismos y sus propiedades seran objeto de estudio en este capitulo.   
+\section{Representaciones de grupos.}
+Sea $V$ un espacio vectorial sobre el cuerpo $\mathbb{C}$ de los n'umeros complejos, y sea $GL(V)$ el grupo de isomorfismos de $V$. Un elemento $a \in GL(V)$ es, por definici'on, una aplicaci'on lineal de $V$ en $V$ que admite inversa $a^{-1}$; $a^{-1}$ es tambi'en lineal. Si $V$ admite una base finita $(e_{i})$ de $n$ elementos, toda aplicaci'on lineal $a:V \rightarrow V$ se representa por una matriz cuadrada $(a_{ij})$ de orden $n$. Los coeficientes $a_{ij}$ son n'umeros complejos; se calculan expresando $a(e_{j})$ en la base $(e_{i})$:
+\[
+a(e_{j})=\sum_{i} a_{ij}e_{i}
+\]
+Decir que $a$ es un isomorfismo equivale a decir que el determinante de $a$ es no nulo. El grupo $GL(V)$ se identifica as'i como el grupo de matrices cuadradas invertibles de orden $n$. En algunas ocasiones escribiremos $GL(n,V)$.
+\begin{definicion}
+Sea $G$ un grupo finito. Una representaci'on de $G$ en $V$ es un homomorfismo $\rho$ del grupo $G$ en el grupo $GL(V)$:
+\[
+\rho : G \rightarrow GL(V)
+\]
+de modo que:
+\[
+\rho (st)=\rho (s)  \rho (t)
+\]
+cualesquiera que sean $s,t \in G$.
+\end{definicion}
+Supongamos que $V$ es de dimensi'on finita, y sea $n$ su dimensi'on; se dice tambi'en que $n$ es el \textit{grado} de la representaci'on considerada.
+\begin{ejemplo}
+Sea $G$ el grupo dihedral $D_8=\langle a,b:\, a^{4}=b^{2}=1,\, b^{-1}ab=a^{-1} \rangle$. Definimos las matrices $A$ y $B$ como:
+\[
+A= \left( \begin{array}{cc}
+0 & 1  \\
+-1 & 0  \end{array} \right),\,
+B= \left( \begin{array}{cc}
+1 & 0  \\
+0 & -1  \end{array} \right)
+\] 
+se comprueba que:
+\[
+A^{4}=B^{2}=I, \, B^{-1}AB=A^{-1}
+\]
+la funci'on
+\[
+\rho : G \rightarrow GL(2,V)
+\]
+definida como $\rho: a^{i}b^{j} \rightarrow A^{i}B^{j}$ para $0\leq i \leq 3$, $0\leq j \leq 1$, es una representaci'on de $D_{8}$ sobre $V$. Es una representaci'on de grado 2.\\
+En la siguiente tabla se representan las im'agenes de $\rho$ para cada elemento de $D_{8}$:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+g & $\rho (g)$ \\
+\hline \hline
+$1$ & $\left( \begin{array}{cc}
+1 & 0  \\
+0 & 1  \end{array} \right)$ \\ \hline 
+$a$ & $\left( \begin{array}{cc}
+0 & 1  \\
+-1 & 0  \end{array} \right)$ \\ \hline
+$a^{2}$ & $\left( \begin{array}{cc}
+-1 & 0  \\
+0 & -1  \end{array} \right)$ \\ \hline
+$a^{3}$ & $\left( \begin{array}{cc}
+0 & -1  \\
+1 & 0  \end{array} \right)$ \\ \hline
+$b$ & $\left( \begin{array}{cc}
+1 & 0  \\
+0 & -1  \end{array} \right)$ \\ \hline
+$ab$ & $\left( \begin{array}{cc}
+0 & -1  \\
+-1 & 0  \end{array} \right)$ \\ \hline
+$a^{2}b$ & $\left( \begin{array}{cc}
+-1 & 0  \\
+0 & 1  \end{array} \right)$ \\ \hline
+$a^{3}b$ & $\left( \begin{array}{cc}
+0 & 1  \\
+1 & 0  \end{array} \right)$ \\ \hline
+\end{tabular}
+\caption{Representaci'on del grupo dihedral 8.}
+\label{tabla:dihedral8}
+\end{center}
+\end{table}
+\end{ejemplo}
+\begin{ejemplo}
+Sea $G$ un grupo cualquiera. Definimos $\rho : G \rightarrow GL(n,V)$ como $\rho (g)=I_{n}$ para todo $g \in G$, donde $I_{n}$ es la matriz identidad $n \times n$. Entoces:
+\[
+\rho (gh) = I_{n}=I_{n}I_{n}=\rho (g)  \rho (h)
+\]
+para todo $g,h \in G$, por lo tanto, $\rho$ es una representaci'on de $G$. Esto nos indica que todo grupo tiene representaciones de cualquier grado.
+\end{ejemplo}
+\section{Representaciones equivalentes.}
+Sean $\rho$ y $\rho'$ representaciones lineales de un grupo $G$ en espacios vectoriales $V$ y $V'$ respectivamente. Se dice que estas representaciones son equivalentes (o isomorfas) si existe un isomorfismo lineal $\tau : V \rightarrow V'$ que transforma $\rho$ en $\rho'$, es decir, que verifica la identidad:
+\[
+\tau \cdot \rho (s) = \rho' (s) \cdot \tau
+\]
+para todo $s \in G$.\\
+\\
+Si $\rho$ y $\rho'$ se dan en forma matricial por $R$ y $R'$ respectivamente, el isomorfismo se traduce en una matriz invertible $T$ tal que:
+\[
+T \cdot R = R' \cdot T
+\]
+o, equivalentemente, tal que:
+\[
+R' = TRT^{-1}
+\] 
+Sea $\rho : G \rightarrow GL(V)$ una representaci'on, Y sea $T$ una matriz invertible $n \times n$ de $V$. Para todas las $n \times n$ matrices $A$ y $B$ tenemos:
+\[
+(T^{-1}AT)(T^{-1}BT)=T^{-1}(AB)T
+\]
+Usamos esto para crear una reprsentacion $\sigma$ desde $\rho$; definimos
+\[
+\sigma (g) = T^{-1}\rho (g) T
+\]
+para todo $g \in G$. Por lo tanto, para todo $g,h \in G$, tenemos:
+\[
+\sigma (gh) = T^{-1} \rho (gh) T
+\]
+\[
+= T^{-1}\rho (g) \rho (h) T
+\]
+\[
+=T^{-1}\rho (g)T \cdot T^{-1}\rho (h)T 
+\]
+\[
+=\sigma (g) \sigma (h)
+\]
+por lo que, $\sigma$ es, en efecto, una representaci'on.\\
+\\
+Con esto podemos ya dar la siguiente definici'on:
+\begin{definicion}
+Sean $\rho : G \rightarrow GL(m,V)$ y $\sigma : G \rightarrow GL(n,V)$ representaciones de $G$ sobre $V$. Decimos que $\rho$ es equivalente a $\sigma$ si $n=m$ y existe una matriz invertible $n \times n$ $T$ tal que, para todo $g \in G$,
+\[
+\sigma (g) = T^{-1} \rho (g) T
+\]
+\end{definicion}
 \end{document}
