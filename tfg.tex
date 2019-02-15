@@ -910,6 +910,54 @@ Sean $\rho : G \rightarrow GL(m,V)$ y $\sigma : G \rightarrow GL(n,V)$ represent
 \sigma (g) = T^{-1} \rho (g) T
 \]
 \end{definicion}
+Dadas las representaciones $\rho$, $\sigma$ y $\tau$ de $G$ sobre $V$, se tiene que:
+\begin{enumerate}
+\item $\rho$ es equivalente a $\rho$. (Prop. Reflexiva).
+\item si $\rho$ es equivalente a $\sigma$, entonces $\sigma$ es equivalente a $\rho$. (Prop. Sim'etrica).
+\item si $\rho$ es equivalente a $\sigma$ y $\sigma$ es equivalente a $\tau$, entonces $\rho$ es equivalente a $\tau$. (Prop. Transitiva).
+\end{enumerate}
+Esto nos indica que ser equivalentes es una relaci'on de equivalencia.\\
+\\
+\begin{proof}
+Sean $\rho$, $\sigma$ y $\tau$ representaciones de $G$ sobre $V$, y sea $g \in G$. Tenemos:
+\begin{enumerate}
+\item Prop. Reflexiva:\\
+Sea $I$ la matriz identidad, que ademas es una matriz cuadrada e invertible, siempre podemos poner
+\[
+\rho (g) = I^{-1} \rho (g) I
+\]
+por lo que $\rho$ es equivalente a $\rho$.
+\item Prop. Sim'etrica:\\
+Por ser $\rho$ equivalente a $\sigma$, tenemos que existe una matriz cuadrada invertible $T$ que cumple:
+\[
+\sigma (g) = T^{-1}\rho (g) T
+\]
+\[
+T \sigma (g) = \rho (g) T
+\]
+\[
+T \sigma (g)T^{-1} = \rho (g) 
+\]
+lo que concluye que $\sigma$ es equivalente a $\rho$.
+\item Prop. Transitiva.\\
+Por ser $\rho$ equivalente a $\sigma$, tenemos que existe una matriz cuadrada invertible $T$ que cumple:
+\[
+\sigma (g) = T^{-1}\rho (g) T
+\]
+Del mismo modo, por ser $\sigma$ equivalente a $\tau$, tenemos que existe una matriz cuadrada invertible $P$ que cumple:
+\[
+\tau (g) = P^{-1}\sigma (g) P
+\]
+Sustituyendo tenemos que:
+\[
+\tau (g) = P^{-1}T^{-1} \rho (g)T P
+\]
+\[
+\tau (g) = (TP)^{-1} \rho (g)T P
+\]
+por lo que $\rho$ es equivalente a $\tau$.
+\end{enumerate}
+\end{proof}
 \section{N'ucleo de una representaci'on.}
 %%% Capitulo 3
 \chapter{Capitulo}
