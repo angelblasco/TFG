@@ -667,39 +667,27 @@ La \textbf{'orbita} de $x \in X$ bajo la acci'on de $G$ es la clase de equivalen
 \[
 G \cdot x = \{g\cdot x \in X\, :\,g\in G \}\subseteq X
 \]
-Una acci'on de un grupo $G$ en un conjunto $X$ se dice que es \textit{transitiva} si para todo par de elementos $x,y \in X$ existe un $g \in G$ tal que $g \cdot x = y$. \\
-\\
-Anteriormente (teorema 1.7.3) enunciamos el teorema de Cayley, y dimos una prueba de el, ahora estamos en condiciones de puntualizar a'un mas este teorema y ofrecer una nueva demostraci'on.
-\begin{teorema}[Teorema de Cayley.]
-Cualquier grupo $G$ es isomorfo a un grupo de permutaciones. Si $G$ es finito, con $o(G)=n$, entonces $G$ es isomorfo a $S_{n}$
-\end{teorema}
-\begin{proof}
-Consid'erese la acci'on de $G$ sobre si mismo por traslaciones por la izquierda, en cuyo caso se toma $X=G$ y se define $g \cdot h =gh$ para $g,h \in G$. Las propiedades de acci'on son consecuencias de la asociatividad del producto y el papel de $1_{G}$ como elemento neutro de $G$. (La existencia de inversos, que implica $g \cdot (g^{-1}\cdot x)=gg^{-1}\cdot x= 1 \cdot x =x$ para $g,x \in G$, indica que la acci'on es transitiva). Esta acci'on se llama \textbf{acci'on regular a la izquierda} del grupo $G$.\\
-La funci'on $\lambda_{g}:G \rightarrow G : h \mapsto gh$ es una biyecci'on de $G$ en si mismo, esto es, una permutaci'on del conjunto $G$. El homomorfismo asociado $\lambda : G \rightarrow S_{G}: g \mapsto \lambda_{g}$ es inyectivo, porque $\lambda_{g}=\lambda_{h}$ implica que $gk=hk$ para todo $k \in G$, asi que $g=h$ por cancelaci'on. Por lo tanto, $\lambda$ es un isomorfismo de $G$ en un subgrupo $\lambda(G)\leq S_{G}$.\\
-En particular, si $o(G)=n$, de modo que $G=\{g_{1},g_{2},\ldots g_{n}\}$, hay un isomorfismo de grupos $\psi : S_{G}\rightarrow S_{n}$ que lleva cualquier permutaci'on de elementos $g_{i}\mapsto g_{j}$ es la permutaci'on correspondiente $i \mapsto j$ del conjunto $\{1,2,\ldots n\}$. Luego $\psi \circ \lambda : G \rightarrow S_{n}$ es un homorfismo inyectivo cuya imagen es un subgrupo de $S_{n}$.
-\end{proof}
+Una acci'on de un grupo $G$ en un conjunto $X$ se dice que es \textit{transitiva} si para todo par de elementos $x,y \in X$ existe un $g \in G$ tal que $g \cdot x = y$. 
 \begin{definicion}
 Sea $\phi : G \times X \rightarrow X$ una acci'on de un grupo sobre un conjunto. El \textbf{subgrupo estabilizador} para un elemento $x \in X$ es el subgrupo
 \[
-G_{X}=\{g \in G\,:\,g \cdot x = x  \} \leq G
+G_{x}=\{g \in G\,:\,g \cdot x = x  \} \subseteq G
 \]
 \end{definicion}
 \begin{proposicion}
-Dada una acci'on de un grupo $G$ sobre un conjunto $X$, el n'umero de elementos de la 'orbita $G \cdot x$ coincide con el 'indice $[G:G_{X}]$.
+Dada una acci'on de un grupo $G$ sobre un conjunto $X$, el n'umero de elementos de la 'orbita $G \cdot x$ coincide con el 'indice $[G:G_{x}]$.
 \end{proposicion}
 \begin{proof}
 Si $h,g \in G$ y $x \in X$, entonces
 \[
-g \cdot x = h \cdot x \Longleftrightarrow g^{-1}h \cdot x = x \Longleftrightarrow g^{-1}h \in G_{X} \Longleftrightarrow gG_{X} = hG_{X} \in G/G_{X}
+g \cdot x = h \cdot x \Longleftrightarrow g^{-1}h \cdot x = x \Longleftrightarrow g^{-1}h \in G_{x} \Longleftrightarrow gG_{x} = hG_{x} \in G/G_{x}
 \]
-luego la aplicaci'on $g \cdot x \mapsto gG_{X}$ es una biyecci'on de la 'orbita $G \cdot x$ en el conjunto cociente $G/G_{X}$. Por lo tanto $o(G \cdot x)=o(G/G_ {X})=[G:G_{X}]$
+luego la aplicaci'on $g \cdot x \mapsto gG_{x}$ es una biyecci'on de la 'orbita $G \cdot x$ en el conjunto cociente $G/G_{x}$. Por lo tanto $o(G \cdot x)=o(G/G_ {x})=[G:G_{x}]$
 \end{proof}
 \begin{definicion}
-Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{eficaz} (o \textbf{fiel}) si el homomorfismo $\psi : G \rightarrow S_{X}$ es inyectivo. Una acci'on es eficaz si $g \cdot x=x$ para todo $x \in X$ implica $g=1_{G}$. Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{libre} para alg'un $x \in X$ implica $g=1_{G}$. Si la acci'on $\phi : G \times X \rightarrow X$ es eficaz, libre y transitiva, entonces $X$ es un espacio homog'eneo principal de $G$.
+Una acci'on $\phi : G \times X \rightarrow X$ es \textbf{eficaz} (o \textbf{fiel}) si el homomorfismo $\psi : G \rightarrow S_{X}$ es inyectivo. Una acci'on es eficaz si $g \cdot x=x$ para todo $x \in X$ implica $g=1_{G}$.
 \end{definicion}
-La acci'on de un grupo regular sobre si mismo, por traslaciones a la izquierda es un ejemplo de una acci'on eficaz, libre y transitiva. La utilidad del concepto de espacio homog'eneo principal consiste en ''olvidar" la posici'on del elemento neutro.\\
-\\
-Un grupo $G$ tambi'en act'ua por conjugaci'on sobre el conjunto de todos sus subgrupos, $X=\{H:H\leq G \}$. Esta acci'on est'a dada por la f'ormula $g \cdot H = gHg^{-1} $. La 'orbita de H bajo esta acci'on es la familia de subgrupos conjugados de $H$. \\
+Un grupo $G$ tambi'en act'ua por conjugaci'on sobre el conjunto de todos sus subgrupos, $X=\{H:H\subseteq G \}$. Esta acci'on est'a dada por la f'ormula $g \cdot H = gHg^{-1} $. La 'orbita de H bajo esta acci'on es la familia de subgrupos conjugados de $H$. \\
 El subgrupo estabilizador de $H$ en este caso es el \textbf{normalizador} de $H$, definido como:
 \[
 N_{G}(H)=\{g \in G : gHg^{-1}=H  \}
@@ -710,6 +698,21 @@ Antes de enunciar los teoremas de Sylow debemos introducir el concepto de \texti
 \begin{definicion}
 Sea $p$ un n'umero primo. Un grupo finito $G$ se denomina \textit{p-grupo} si $o(G)=p^{r}$, con $r \in \mathbb{Z}^{+}$.
 \end{definicion}
+Antes de continuar es importante destacar dos resultados que usaremos en la demostraci'on del Teorema de Syllow:
+\begin{enumerate}
+\item \textit{Congruencia de los puntos fijos.} Si $G$ es un \textit{p-grupo} y $G$ opera sobre un conjunto finito $X$, entonces:
+\[
+o(X) \equiv o(X_{0}) (mod \, p)
+\]
+Donde $X_{0}\subseteq X$ es el conjunto de puntos fijos, 
+\[
+X_{0}=\{ x \in X ; Gx = \{x \} \}
+\]
+\item \textit{Congruencia del normalizador.} Es un caso particular del resultado anterior. Sea $H$ un \textit{p-subgrupo} de un grupo finito $G$. Entonces:
+\[
+[N(H):H] \equiv [G:H] (mod \, p) 
+\]
+\end{enumerate}
 \begin{teorema}[Teorema de Cauchy]
 Sea $G$ un grupo finito de orden $n$ y $p$ un n'umero primo que divide a $n$. Entonces $G$ tiene un elemento (y por lo tanto un subgrupo) de orden $p$.
 \end{teorema}
@@ -773,4 +776,5 @@ X_{0}=\{ T \in X \, : \, sTs^{-1}=T, \, \forall s \in S \} = \{T \in X \, : \, S
 \]
 Veamos que $X_{0}=\{ S \}$. En efecto, si $T \in X_{0}$, entonces $S$ y $T$ son p-subgrupos de Sylow de $N(T)$ y $T \triangleleft N(T)$, de donde, por el segundo teorema de Sylow, $T=S$. Como $o(X)=n_{p}$ y $o(X_{0}=1$, obtenemos la congruencia enunciada usando la congruencia de puntos fijos.
 \end{proof}
+
 \end{document}
