@@ -967,12 +967,6 @@ Antes de avanzar en este punto, vamos a tratar, de manera muy breve, algunas noc
 Sea $V$ un espacio vectorial, $W$ y $W'$ subespacios de $V$. Se dice que $V$ es \textit{suma directa} de $W$ y $W'$ si todo $x \in V$ se puede escribir de manera 'unica en la forma $x=w+w'$, $w \in W$ y $w' \in W'$; equivale a decir que $W \cap W'=0$ y $dim(V)=dim(W)+dim(W')$; se escribe entonces $V=W \oplus W'$, y se dice que $W'$ es \textit{suplementario} de $W$ en $V$. La aplicaci'on $p$ que hace corresponder a cada $x \in V$ su componente $w \in W$ se llama \textit{proyector} de $V$ sobre $W$ (asociado a la descomposici'on $V=W \oplus W'$ ); la imagen de $p$ es $W$, y $p(x)=x$ si $x \in W$; rec'iprocamente, si $p$ es un endomorfismo de $V$ que verifica estas propiedades, inmediatamente se prueba que $V$ es suma directa de $W$ y del n'ucleo $W'$ de $p$. Se establece as'i una correspondencia biyectiva entre los proyectores de $V$ sobre $W$ y los suplementarios de $W$ en $V$.\\
 \\
 Sea $\rho : G \rightarrow GL(V)$ una representaci'on, y sea $W$ un subespacio de $V$. Si $W$ es estable por la acci'on de $G$, esto es, si $gW \subset W$, $\forall g \in G$, entonces $\rho$ define por restricci'on una representaci'on $\rho' : G \rightarrow GL(W)$.
-\begin{teorema}
-Sea $\rho : G \rightarrow GL(V)$ una representaci'on lineal de $G$ en $V$, y sea $W$ un subespacio vectorial de $V$ estable por $G$. Existe entonces un suplementario $W'$ de $W$ en $V$ que es estable por $G$.
-\end{teorema} 
-\begin{proof}
-
-\end{proof}
 \section{N'ucleo de una representaci'on.}
 Sea una representaci'on $\rho : G \rightarrow GL(V)$. El n'ucleo de una representaci'on consiste en un grupo de elementos $g \in G$ 
 para los cuales $\rho (g)$ es la matriz identidad.
@@ -989,6 +983,16 @@ Una representaci'on $\rho : G \rightarrow GL(1,V)$ definida como:
 \]
 para todo $g \in G$, se denomina \textit{representaci'on trivial} de $G$.
 \end{definicion} 
+\section{Representaciones irreducibles.}
+Una representaci'on lineal $\rho : G \rightarrow GL(V)$ se dice \textit{irreducible} si $V \neq 0$ y ning'un subespacio de $V$ es estable por $G$, excepto, claro est'a, 0 y $V$. Esto equivale a decir que $V$ no es suma directa de dos subrepresentaciones, salvo la descomposici'on trivial $V=0\oplus V$.\\
+\\
+Toda representacion de grado 1 es evidentemente irreducible. La suma directa de representaciones irreducibles da cualquier representaci'on.
+\begin{teorema}
+Toda representaci'on es suma directa de representaciones irreducibles.
+\end{teorema} 
+\begin{proof}
+Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V)$. Si $dim(V)=0$, el teorema es evidente, 0 es suma directa de la familia vacia de representaciones irreducibles. Si $dim(V)\geq 1$ y $V$ es irreducible, tambi'en es cierto el teorema. En el resto de casos podemos descomponer $V$ como suma directa de $V' \oplus V''$, con $dim(V')< dim(V)$ y $dim(V'')< dim(V)$. Por inducci'on, $V'$ y $V''$ son suma directa de representaciones irreducibles y por tanto lo mismo le ocurre a $V$.
+\end{proof}
 %%% Capitulo 3
 \chapter{Capitulo}
 \newpage
