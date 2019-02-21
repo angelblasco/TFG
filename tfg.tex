@@ -984,7 +984,10 @@ Una representaci'on $\rho : G \rightarrow GL(1,V)$ definida como:
 para todo $g \in G$, se denomina \textit{representaci'on trivial} de $G$.
 \end{definicion} 
 \section{Representaciones irreducibles.}
-Una representaci'on lineal $\rho : G \rightarrow GL(V)$ se dice \textit{irreducible} si $V \neq 0$ y ning'un subespacio de $V$ es estable por $G$, excepto, claro est'a, 0 y $V$. Esto equivale a decir que $V$ no es suma directa de dos subrepresentaciones, salvo la descomposici'on trivial $V=0\oplus V$.\\
+\begin{definicion}
+Una representaci'on lineal $\rho : G \rightarrow GL(V)$ se dice \textit{irreducible} si $V \neq 0$ y ning'un subespacio de $V$ es estable por $G$, excepto, claro est'a, 0 y $V$. 
+\end{definicion}
+Esto equivale a decir que $V$ no es suma directa de dos subrepresentaciones, salvo la descomposici'on trivial $V=0\oplus V$.\\
 \\
 Toda representacion de grado 1 es evidentemente irreducible. La suma directa de representaciones irreducibles da cualquier representaci'on.
 \begin{teorema}
@@ -992,7 +995,9 @@ Toda representaci'on es suma directa de representaciones irreducibles.
 \end{teorema} 
 \begin{proof}
 Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V)$. Si $dim(V)=0$, el teorema es evidente, 0 es suma directa de la familia vacia de representaciones irreducibles. Si $dim(V)\geq 1$ y $V$ es irreducible, tambi'en es cierto el teorema. En el resto de casos podemos descomponer $V$ como suma directa de $V' \oplus V''$, con $dim(V')< dim(V)$ y $dim(V'')< dim(V)$. Por inducci'on, $V'$ y $V''$ son suma directa de representaciones irreducibles y por tanto lo mismo le ocurre a $V$.
-\end{proof}
+\end{proof}\\
+\\
+Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles. El numero de las $W_{i}$ isomorfas a una representaci'on irreducible dada no depende de la descomposici'on elegida. 
 %%% Capitulo 3
 \chapter{Capitulo}
 \newpage

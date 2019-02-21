@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  20 FEB 2019 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  21 FEB 2019 11:16
 entering extended mode
 **./tfg.tex
 (tfg.tex
@@ -646,12 +646,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 975--980
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 987--991
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 990--994
 
  []
 
-[22] [23]
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--1002
+
+ []
+
+[23]
 Cap\'{\i }tulo 3.
 [24
 
@@ -688,7 +693,7 @@ ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Use
 rs/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiK
 TeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on tfg.pdf (31 pages, 255531 bytes).
+Output written on tfg.pdf (31 pages, 255989 bytes).
 PDF statistics:
  163 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
