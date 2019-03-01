@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  11 FEB 2019 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  1 MAR 2019 09:25
 entering extended mode
 **./borradorC2.tex
 (borradorC2.tex
@@ -485,18 +485,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--221
 
  []
 
-[3] (borradorC2.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--236
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--290
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 300--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--311
+
+ []
+
+[5] (borradorC2.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 4531 strings out of 492946
- 67085 string characters out of 3120495
+ 4532 strings out of 492946
+ 67090 string characters out of 3120495
  143136 words of memory out of 3000000
- 8332 multiletter control sequences out of 15000+200000
+ 8333 multiletter control sequences out of 15000+200000
  11081 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,32p,584b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,32p,931b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmbx12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angel.blasco.m
@@ -510,10 +540,11 @@ amsfonts/cm/cmsy10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angel.blasco.munoz/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/U
 sers/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb>
-Output written on borradorC2.pdf (3 pages, 109908 bytes).
+sfonts/symbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on borradorC2.pdf (5 pages, 131142 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
