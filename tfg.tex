@@ -5,6 +5,7 @@
 \usepackage{graphicx} % graficos
 \usepackage{multirow} % para las tablas
 \usepackage{amsfonts}
+\usepackage{mathrsfs}
 \usepackage{float}
 \usepackage{amsmath,amssymb,latexsym,stmaryrd}
 \numberwithin{equation}{section} % para numerar ecuaciones
@@ -998,6 +999,40 @@ Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V
 \end{proof}\\
 \\
 Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles. El numero de las $W_{i}$ isomorfas a una representaci'on irreducible dada no depende de la descomposici'on elegida. 
+\section{FG-m'odulos.}
+Sea $G$ un grupo, y sea $F=\mathbb{R}$ o $F=\mathbb{C}$. Escribiremos como $V=F^{n}$ el espacio vectorial formado por los vectores fila $(\lambda_{1}, \ldots \lambda_{n})$ con $\lambda_{i} \in F$. Para todo $v \in V$ y $g \in G$, el producto matricial 
+\[
+v\rho (g)
+\]
+de el vector fila $v$ con la matriz de dimensi'on $n \times n$ $\rho (g)$, es un vector fila en $V$.\\
+\\
+Basandonos en el producto matricial $v\rho (g)$ definimos el FG-m'odulo.
+\begin{definicion}
+Sea $V$ un espacio vectorial sobre $F$ y sea $G$ un grupo. Entonces $V$ es un FG-modulo si esta definida la multiplicaci'on $vg$, para $v \in V$ y $g \in G$, y ademas satisfacen las siguientes condiciones para todo $u, v \in V$, $\lambda \in F$ y $g ,h \in G$:
+\begin{enumerate}
+\item $vg \in V$
+\item $v(gh)=(vg)h$
+\item $v1=v$
+\item $(\lambda v)g=\lambda (vg)$
+\item $(u+v)g=ug+vg$
+\end{enumerate}
+\end{definicion}
+Las condiciones $(1)$, $(4)$ y $(5)$ de la definici'on aseguran que para todo $g \in G$, la funci'on
+\[
+v \rightarrow vg
+\]
+es un endomorfismo de $V$.\\
+\\
+Sea $V$ un FG-m'odulo, y sea $\mathscr{B}$ una base de $V$. Para cada $g \in G$, denotamos como 
+\[
+[g]_{\mathscr{B}}
+\]
+a la matriz del endomorfismo $v \rightarrow vg$ de $V$, relativo a la base $\mathscr{B}$.\\
+La relaci'on entre los FG-m'odulos y las representaciones de $G$ sobre $F$ se ver'a en el siguiente teorema:
+
+\subsection{FG-modulos y representaciones equivalentes.}
+\subsection{FG-submodulos.}
+\subsection{FG-modulos irreducibles.}
 %%% Capitulo 3
 \chapter{Capitulo}
 \newpage
@@ -1005,6 +1040,7 @@ $\ $
 \thispagestyle{empty}
 % bibliografia
 \begin{thebibliography}{9}
+\bibitem{alp} J. L. Alperin, R. B. Bell, \emph{Groups and representations}, Springer-Verlag, 1995.
 \bibitem{buj} E. Bujalance, J. J. Etayo, J. M. Gamboa, \emph{Teor'ia elemental de grupos}, Publicaciones UNED, Madrid, 2007.
 \bibitem{cos} E. Bujalance, J. A. Bujalance, A. F. Costa, E. Martinez, \emph{Elementos de matem'atica discreta}, Sanz y Torres, Madrid, 2005.
 \bibitem{led} W. Lederman, \emph{Grupos finitos}, Dossat, Manchester, 1952.
