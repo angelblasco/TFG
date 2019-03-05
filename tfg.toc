@@ -35,7 +35,7 @@
 \contentsline {section}{\numberline {2.4}N'ucleo de una representaci'on.}{22}
 \contentsline {section}{\numberline {2.5}Representaciones irreducibles.}{23}
 \contentsline {section}{\numberline {2.6}FG-m'odulos.}{23}
-\contentsline {subsection}{\numberline {2.6.1}FG-modulos y representaciones equivalentes.}{24}
-\contentsline {subsection}{\numberline {2.6.2}FG-submodulos.}{24}
-\contentsline {subsection}{\numberline {2.6.3}FG-modulos irreducibles.}{24}
+\contentsline {subsection}{\numberline {2.6.1}FG-m'odulos y representaciones equivalentes.}{24}
+\contentsline {subsection}{\numberline {2.6.2}FG-subm'odulos.}{24}
+\contentsline {subsection}{\numberline {2.6.3}FG-m'odulos irreducibles.}{24}
 \contentsline {chapter}{\numberline {3}Capitulo}{25}

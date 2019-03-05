@@ -1029,10 +1029,51 @@ Sea $V$ un FG-m'odulo, y sea $\mathscr{B}$ una base de $V$. Para cada $g \in G$,
 \]
 a la matriz del endomorfismo $v \rightarrow vg$ de $V$, relativo a la base $\mathscr{B}$.\\
 La relaci'on entre los FG-m'odulos y las representaciones de $G$ sobre $F$ se ver'a en el siguiente teorema:
-
-\subsection{FG-modulos y representaciones equivalentes.}
-\subsection{FG-submodulos.}
-\subsection{FG-modulos irreducibles.}
+\begin{teorema}
+(1) Si $\rho : G \rightarrow GL(F)$ es una representaci'on de $G$ sobre $F$, y $V=F^{n}$, entonces $V$ sera un FG-m'odulo si definimos la multiplicaci'on $vg$ como
+\[
+vg=v \rho (g)
+\]
+ademas, existe una base $\mathscr{B}$ de $V$ tal que
+\[
+\rho (g) = [g]_{\mathscr{B}}
+\]
+para todo $g \in G$.\\
+\\
+(2) Sea $V$ un FG-m'odulo y sea $\mathscr{B}$ una base de $V$. Entonces la funci'on 
+\[
+g \rightarrow [g]_{\mathscr{B}}
+\]
+es una representaci'on de $G$ sobre $F$. 
+\end{teorema}
+\begin{proof}
+(1) Sabemos que $v \rho (g) \in F^{n}$, ademas por ser $\rho$ un homomorfismo tenemos que $v (\rho (gh))=v(\rho (g) \rho (h))$ y $v (\rho (1))=v$. Del mismo modo, por las propiedades de la multiplicaci'on matricial tenemos que $(\lambda v)\rho(g)=\lambda (v \rho(g))$ y $(u +v)\rho (g)=u \rho(g) + v \rho (g)$ para todo $u, v \in F^{n}$, $\lambda \in F$ y $g, h \in G$.\\
+Por lo tanto, $F^{n}$ se convertir'a en un FG-m'odulo si definimos
+\[
+vg=v \rho (g)
+\]
+para todo $v \in F^{n}, g \in G$.\\
+Ademas, si consideramos la base $\mathscr{B}$ como
+\[
+(1, 0, 0, ..., 0), (0, 1, 0, ...,0), ..., (0, 0, 0, ... , 1)
+\]
+de $F^{n}$, entonces $\rho (g) = [g]_{\mathscr{B}}$ para todo $g \in G$.\\
+\\
+(2) Sea $V$ un FG-m'odulo con base $\mathscr{B}$. De $v(gh)=(vg)h$ para todo $g, h \in G$ y todo $v \in \mathscr{B}$, se sigue que 
+\[
+[gh]_{\mathscr{B}}=[g]_{\mathscr{B}}[h]_{\mathscr{B}}
+\]
+En particular, 
+\[
+[1]_{\mathscr{B}}=[g]_{\mathscr{B}}[g^{-1}]_{\mathscr{B}}
+\]
+para todo $g \in G$. Ahora $v1=v$ para todo $v \in V$, asi que $[1]_{\mathscr{B}}$ es la matriz identidad.\\
+Por lo tanto cada matriz $[g]_{\mathscr{B}}$ es invertible.\\
+Hemos probado que la funci'on $g \rightarrow [g]_{\mathscr{B}}$ es un homomorfismo de $G$ a $GL(F)$ y por lo tanto es una representaci'on de $G$ sobre $F$. 
+\end{proof}
+\subsection{FG-m'odulos y representaciones equivalentes.}
+\subsection{FG-subm'odulos.}
+\subsection{FG-m'odulos irreducibles.}
 %%% Capitulo 3
 \chapter{Capitulo}
 \newpage

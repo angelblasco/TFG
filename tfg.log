@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  4 MAR 2019 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  5 MAR 2019 23:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -545,7 +545,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 1023--1027
 
  []
 
-[23] [24]
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1044
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1063
+
+ []
+
+[24]
 Cap\'{\i }tulo 3.
 [25
 
@@ -556,10 +566,10 @@ LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 4550 strings out of 492995
- 64452 string characters out of 6132703
+ 4552 strings out of 492995
+ 64482 string characters out of 6132703
  137065 words of memory out of 5000000
- 7996 multiletter control sequences out of 15000+600000
+ 7998 multiletter control sequences out of 15000+600000
  12539 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,16n,32p,922b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -578,7 +588,7 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on tfg.pdf (32 pages, 244113 bytes).
+Output written on tfg.pdf (32 pages, 246105 bytes).
 PDF statistics:
  173 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
