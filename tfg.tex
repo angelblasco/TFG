@@ -1071,6 +1071,28 @@ para todo $g \in G$. Ahora $v1=v$ para todo $v \in V$, asi que $[1]_{\mathscr{B}
 Por lo tanto cada matriz $[g]_{\mathscr{B}}$ es invertible.\\
 Hemos probado que la funci'on $g \rightarrow [g]_{\mathscr{B}}$ es un homomorfismo de $G$ a $GL(F)$ y por lo tanto es una representaci'on de $G$ sobre $F$. 
 \end{proof}
+Podemos construir FG-m'odulos sin usar una representaci'on. Para hacer esto transformamos un espacio vectorial $V$ sobre $F$ en un FG-m'odulo especificando la acci'on de los elementos del grupo en una base $v_{1}, \ldots v_{n}$ de $V$ y haciendo que sea lineal la acci'on en el entorno de $V$, es decir, primero definimos $v_{i}g$ para cada $i$ y cada $g \in G$, y entonces definimos
+\[
+(\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n})g
+\]
+para $\lambda_{i} \in F$, como 
+\[
+\lambda_{1}(v_{1}g)+ \ldots +\lambda_{n}(v_{n}g)
+\]
+Como era de esperar existen restricciones a la hora de definir los vectores $v_{i}g$.
+\begin{teorema}
+Sea $v_{1}, \ldots v_{n}$ una base de un espacio vectorial $V$ sobre $F$. Supongamos que tenemos una multiplicaci'on $vg$ para todo $v \in V$ y $g \in G$, la cual satisface las siguientes condiciones para todo $i$ con $1 \leq i \leq n$, para todo $g, h \in G$ y para todo $\lambda_{1}, \ldots ,\lambda_{n} \in F$:
+\begin{enumerate}
+\item $v_{i}g \in V$
+\item $v_{i}(gh)=(v_{i}g)h$
+\item $v_{i}1=v$
+\item $(\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n})g=\lambda_{1}(v_{1}g)+ \ldots +\lambda_{n}(v_{n}g)$ 
+\end{enumerate}
+Entonces $V$ es un FG-m'odulo.
+\end{teorema}
+\begin{proof}
+Es trivial ver de (3) y (4) que $v1=v$ para todo $v \in V$. Las condiciones (1) y (4) nos aseguran que, para todo $g \in G$, la funci'on $v \rightarrow vg$ $(v \in V)$
+\end{proof}
 \subsection{FG-m'odulos y representaciones equivalentes.}
 \subsection{FG-subm'odulos.}
 \subsection{FG-m'odulos irreducibles.}
