@@ -85,7 +85,17 @@ A Angel y Juliana, mis padres, \\
 por todas las oportunidades que me han dado, incluso cuando no las he merecido.}
 \end{flushright}
 \chapter*{Agradecimientos.} 
-Aqu'i los agradecimientos.
+Quisiera aprovechar este espacio para agradecer a todas aquellas personas que con su profesionalidad, inter'es, apoyo y ayuda, han hecho posible, de manera directa o indirecta, la redacci'on de este trabajo. \\
+\\
+Asi pues, quiero agradecer al equipo docente de la UNED por todo lo que me han ense\~nado en estos a\~nos de estudio, y muy en especial al Dr. Javier Perez Alvarez por su dedicaci'on y sus consejos a la hora de dirigir este trabajo, sin el no hubiese sido posible la realizaci'on del mismo. Tambi'en me gustaria dedicar un agradecimiento al Dr. Jose Maria Leandro (Pepe), con qui'en he podido fraguar una grata amistad y el cual siempre me ha dado unos valiosos consejos a la hora de enfrentarme a mis estudios.\\
+\\
+No puedo dejar pasar la oportunidad de agradecer a mi mujer, Bego\~na, la paciencia que ha tenido conmigo mientras realizaba el presente trabajo que tantas horas me ha quitado de estar junto a ella en nuestras particulares condiciones familiares.\\
+\\
+Evidentemente es obligatorio agradecer a mis padres, Angel y Juliana, que siempre creyeron en mi, incluso en los momentos mas complicados, y nunca dejaron de apoyarme en esta aventura que es estudiar una carrera a distancia. Espero hacer que se sientan orgullosos.\\
+\\
+Por 'ultimo, pero no por ello menos importante, quisiera dar las gracias a una personita que lleva relativamente poco tiempo entre nosotros, pero que sin duda es quien mas tiempo me roba y quien mas feliz me hace, mi hijo, Mateo, el hace que todo esto tenga un sentido y su lucha diaria es fuente de mi inspiraci'on y motivaci'on.\\
+\\
+Gracias.
 \begin{abstract}
 Este trabajo versa sobre los grupos finitos y sus representaciones. Es importante destacar que en todo el trabajo al referirnos a \textit{grupo} nos referimos a un  \textbf{conjunto finito} en el cual se definir'a una operaci'on que debe cumplir unos condicionantes, al igual que en los grupos algebraicos propiamente dichos. En los grupos finitos se deben cumplir y respetar las mismas propiedades que en los grupos en general.\\
 \\
@@ -1091,13 +1101,57 @@ Sea $v_{1}, \ldots v_{n}$ una base de un espacio vectorial $V$ sobre $F$. Supong
 Entonces $V$ es un FG-m'odulo.
 \end{teorema}
 \begin{proof}
-Es trivial ver de (3) y (4) que $v1=v$ para todo $v \in V$. Las condiciones (1) y (4) nos aseguran que, para todo $g \in G$, la funci'on $v \rightarrow vg$ $(v \in V)$
+Es trivial ver de (3) y (4) que $v1=v$ para todo $v \in V$. Las condiciones (1) y (4) nos aseguran que, para todo $g \in G$, la funci'on $v \rightarrow vg$ $(v \in V)$ es un endomorfismo de $V$. Esto es:
+\[
+vg \in V,
+\]
+\[
+(\lambda v)g=\lambda (vg),
+\]
+\[
+(u+v)g=ug+vg,
+\]
+para todo $u, v \in V$, $\lambda \in F$ y $g \in G$. Por lo tanto
+\[
+ (\lambda_{1}u_{1}+ \ldots +\lambda_{n}u_{n})h=\lambda_{1}(u_{1}h)+ \ldots +\lambda_{n}(u_{n}h) 
+\]
+para todo $\lambda_{1}, \ldots ,\lambda_{n} \in F$, todo $u_{1}, \ldots ,u_{n} \in V$, y todo $h \in G$.\\
+Ahora sea $v \in V$ y $g, h \in G$. Entonces $v=\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n}$ para alg'un $\lambda_{1}, \ldots ,\lambda_{n} \in F$, y
+\[
+v(gh)=\lambda_{1}(v_{1}(gh))+ \ldots + \lambda_{n}(v_{n}(gh))
+\]
+\[
+=\lambda_{1}((v_{1}g)h)+ \ldots + \lambda_{n}((v_{n}g)h)
+\]
+\[
+=(\lambda_{1}(v_{1}g)+ \ldots + \lambda_{n}(v_{n}g))h
+\]
+\[
+=(vg)h
+\]
+Con esto hemos comprobado todos los axiomas requeridos para que $V$ sea un FG-m'odulo.
 \end{proof}
+\begin{definicion}
+El FG-m'odulo trivial es un espacio vectorial $V$ sobre $F$ 1-dimensional con
+\[
+vg=v
+\] 
+para todo $v \in V$, $g \in G$.
+\end{definicion}
+\begin{definicion}
+Un FG-m'odulo $V$ es fiel si el elemento unitario de $G$ es el 'unico elemento $g$ para el cual
+\[
+vg=v
+\]
+para todo $v \in V$.
+\end{definicion}
 \subsection{FG-m'odulos y representaciones equivalentes.}
 \subsection{FG-subm'odulos.}
 \subsection{FG-m'odulos irreducibles.}
 %%% Capitulo 3
-\chapter{Capitulo}
+\chapter{Caracteres.}
+%%% Capitulo 4
+\chapter{Capitulo 4.}
 \newpage
 $\ $
 \thispagestyle{empty}
