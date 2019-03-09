@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.1.8)  7 MAR 2019 22:06
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  8 MAR 2019 14:24
+>>>>>>> 417ffd81c923e7ab27d51e74884a34b2b01b12aa
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -223,6 +227,7 @@ l.11 \numberwithin
                   {equation}{section} % para numerar ecuaciones^^M
 *** (cannot \read from terminal in nonstop modes)
 
+<<<<<<< HEAD
  
 Here is how much of TeX's memory you used:
  2637 strings out of 494543
@@ -233,3 +238,204 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  27i,0n,32p,257b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
+=======
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--302
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--328
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 366--372
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 394--400
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 425--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
+
+ []
+
+[10]
+<./factorizacion.png, id=63, 356.33125pt x 177.66376pt>
+File: ./factorizacion.png Graphic file (type png)
+<use ./factorizacion.png>
+Package pdftex.def Info: ./factorizacion.png  used on input line 487.
+(pdftex.def)             Requested size: 142.26378pt x 70.9314pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--496
+
+ []
+
+[11 <./factorizacion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 502--511
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 560--567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--567
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 610--613
+
+ []
+
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 745--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--779
+
+ []
+
+[17] [18]
+Cap\'{\i }tulo 2.
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 886--890
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 917--922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 933--937
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 976--981
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--981
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 986--991
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1005
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1012
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1021
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1037
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1054
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1073
+
+ []
+
+[24] [25]
+Missing character: There is no 1 in font rsfs10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1203
+
+ []
+
+[26] [27]
+Cap\'{\i }tulo 3.
+[28
+
+]
+Cap\'{\i }tulo 4.
+[29
+
+] [30] [31
+
+] (tfg.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+) ) 
+Here is how much of TeX's memory you used:
+ 4650 strings out of 492946
+ 69115 string characters out of 3120495
+ 143812 words of memory out of 3000000
+ 8431 multiletter control sequences out of 15000+200000
+ 12539 words of font info for 50 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,16n,32p,924b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/angel.blasco
+.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angel.blasco.m
+unoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angel.blasco.munoz/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/U
+sers/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/angel.blasco.munoz/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/User
+s/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmti12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/angel.blasco.munoz/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/rsfs/rsfs10.pfb>
+Output written on tfg.pdf (36 pages, 281385 bytes).
+PDF statistics:
+ 186 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+>>>>>>> 417ffd81c923e7ab27d51e74884a34b2b01b12aa

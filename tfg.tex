@@ -1168,10 +1168,53 @@ de $V$ tal que
 \]
 \end{teorema}
 \begin{proof}
+<<<<<<< HEAD
 .
+=======
+(1) Sea $T$ la matriz del cambio de base de $\mathscr{B}$ a $\mathscr{B'}$. Para todo $g \in G$, tenemos
+\[
+[g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B'}}T
+\]
+Por lo tanto $\phi$ es equivalente a $\rho$.\\
+(2) Supongamos que $\rho$ y $\sigma$ son representaciones equivalentes de $G$. Entonces, para la matriz invertible $T$ tenemos
+\[
+g\rho = T^{-1}(g \sigma )T
+\]
+para todo $g \in G$. Sea $\mathscr{B''}$ la base de $V$ para la cual la matriz del cambio de base de $\mathscr{B}$ a $\mathscr{B''}$ es $T$. Entonces para todo $g \in G$
+\[
+[g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B''}}T
+\]
+por lo que $g \sigma = [g]_\mathscr{B''}$.
+>>>>>>> 417ffd81c923e7ab27d51e74884a34b2b01b12aa
 \end{proof}
 \subsection{FG-subm'odulos.}
+En lo sucesivo $G$ sera un grupo y $F$ sera $\mathbb{R}$ o $\mathbb{C}$.
+\begin{definicion}
+Sea $V$ un FG-m'odulo. Un subconjunto $W$ de $V$ se dice que es un FG-subm'odulo de $V$ si $W$ es un subespacio y $wg \in W$ para todo $w \in W$ y $g \in G$. 
+\end{definicion}
 \subsection{FG-m'odulos irreducibles.}
+\begin{definicion}
+Un FG-m'odulo $V$ se dice que es irreducible si es diferente a $\{0\}$ y no tiene FG-subm'odulos aparte de $\{0\}$ y $V$.\\
+Si $V$ tiene un FG-subm'odulo $W$ donde $W$ es distinto a $\{0\}$ o $V$, entonces $V$ es recucible.
+\end{definicion}
+Del mismo modo, una representaci'on $\rho : G \rightarrow GL(F)$ es irreducible si el correspondiente FG-m'odulo $F^{n}$ dado por
+\[
+vg=v(\rho (g))
+\]
+es irreducible; y $\rho$ es reducible si $F^{n}$ es reducible.\\
+\\
+Supongamos ahora que $V$ es un FG-m'odulo reducible, por lo tanto hay un FG-subm'odulo $W$ con 0 $<$ dim W $<$ dim V. Tomando una base $\mathscr{B_{1}}$ de $W$ y extendi'endola a una base $\mathscr{B}$ de $V$. Entonces para todo $g \in G$, la matriz $[g]_{\mathscr{B}}$ tiene la forma
+\[
+\left( \begin{array}{c|c}
+  X_{g} & 0 \\ 
+  \hline
+  Y_{g} & Z_{g}
+ \end{array} \right)
+\]
+para las matrices $X_{g}$, $Y_{g}$ y $Z_{g}$, donde $X_{g}$ es $k \times k$ para $k=dim(W)$.
+\subsection{FG-homomorfismos.}
+\subsection{Isomorfismos de FG-m'odulos.}
+\subsection{Suma directa de FG-m'odulos.}
 %%% Capitulo 3
 \chapter{Caracteres.}
 %%% Capitulo 4

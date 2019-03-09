@@ -38,5 +38,8 @@
 \contentsline {subsection}{\numberline {2.6.1}FG-m'odulos y representaciones equivalentes.}{26}% 
 \contentsline {subsection}{\numberline {2.6.2}FG-subm'odulos.}{26}% 
 \contentsline {subsection}{\numberline {2.6.3}FG-m'odulos irreducibles.}{26}% 
-\contentsline {chapter}{\numberline {3}Caracteres.}{27}% 
-\contentsline {chapter}{\numberline {4}Capitulo 4.}{28}% 
+\contentsline {subsection}{\numberline {2.6.4}FG-homomorfismos.}{27}% 
+\contentsline {subsection}{\numberline {2.6.5}Isomorfismos de FG-m'odulos.}{27}% 
+\contentsline {subsection}{\numberline {2.6.6}Suma directa de FG-m'odulos.}{27}% 
+\contentsline {chapter}{\numberline {3}Caracteres.}{28}% 
+\contentsline {chapter}{\numberline {4}Capitulo 4.}{29}% 
