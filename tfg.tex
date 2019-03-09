@@ -1204,16 +1204,53 @@ vg=v(\rho (g))
 es irreducible; y $\rho$ es reducible si $F^{n}$ es reducible.\\
 \\
 Supongamos ahora que $V$ es un FG-m'odulo reducible, por lo tanto hay un FG-subm'odulo $W$ con 0 $<$ dim W $<$ dim V. Tomando una base $\mathscr{B_{1}}$ de $W$ y extendi'endola a una base $\mathscr{B}$ de $V$. Entonces para todo $g \in G$, la matriz $[g]_{\mathscr{B}}$ tiene la forma
-\[
+\begin{equation}
 \left( \begin{array}{c|c}
   X_{g} & 0 \\ 
   \hline
   Y_{g} & Z_{g}
  \end{array} \right)
-\]
-para las matrices $X_{g}$, $Y_{g}$ y $Z_{g}$, donde $X_{g}$ es $k \times k$ para $k=dim(W)$.
+\end{equation}
+para las matrices $X_{g}$, $Y_{g}$ y $Z_{g}$, donde $X_{g}$ es $k \times k$ para $k=dim(W)$.\\
+\\
+Una representaci'on de grado $n$ es reducible si, y solo si, es equivalente a una representaci'on de la forma (2.6.1), donde $X_{g}$ es $k \times k$ y $0 < k < n$. Notemos que en (2.6.1), las funciones $g \rightarrow X_{g}$ y $g \rightarrow Z_{g}$ son representaciones de $G$.
 \subsection{FG-homomorfismos.}
+\begin{definicion}
+Sean $V$ y $W$ FG-m'odulos. Una funci'on $\vartheta : V \rightarrow W$ se dice que es un FG-homomorfismo si $\vartheta$ es una transformaci'on lineal y 
+\[
+\vartheta (vg) = \vartheta (v)g
+\]
+\end{definicion}
+En otras palabras, si $\vartheta$ envia $v$ a $w$ entonces envia $vg$ a $wg$.\\
+\\
+Como $G$ es un grupo finito y $\vartheta : V \rightarrow W$ es un FG-homomorfismo, entonces para todo $v \in V$ y $r=\sum_{g \in G} \lambda_{g}g \in FG$, tenemos
+\[
+\vartheta (vr) = \vartheta (v)r
+\]
+\begin{teorema}
+Sea $V$ y $W$ FG-m'odulos y sea $\vartheta : V \rightarrow W$ un FG-homomorfismo. Entonces $Ker \, \vartheta$ es un FG-subm'odulo de $V$ y $Im \, \vartheta$ es un FG-subm'odulo de $W$.
+\end{teorema}
+\begin{proof}
+$Ker \, \vartheta$ es un subespacio de $V$ y $Im \, \vartheta$ es un subespacio de $W$ ya que $\vartheta$ es una transformaci'on lineal.\\
+Sea $v \in Ker \, \vartheta$ y $g \in G$, entonces
+\[
+\vartheta (vg) = \vartheta (v)g = 0g = 0
+\]
+asi que $vg \in Ker \, \vartheta$. Ademas $Ker \, \vartheta$ es un FG-submodulo de $V$.\\
+Sea $w \in Im \, \vartheta$, tal que $w = \vartheta (v)$ para alg'un $v \in V$. Para todo $g \in G$,
+\[
+wg = \vartheta (v)g = \vartheta (vg) \in Im \, \vartheta
+\]
+por lo que $Im \, \vartheta$ es un FG-subm'odulo de $W$.
+\end{proof}
 \subsection{Isomorfismos de FG-m'odulos.}
+\begin{definicion}
+Sean $V$ y $W$ FG-m'odulos. Decimos que $\vartheta : V \rightarrow W$ es un FG-isomorfismo si $\vartheta$ es un FG-homomorfismo y ademas posee inversa. Si $\vartheta : V \rightarrow W$ es un FG-isomorfismo, entonces $V$ y $W$ son FG-m'odulos isomorfos y los representaremos como $V \cong W$.
+\end{definicion}
+En el siguiente teorema veremos que si $V \cong W$ entonces $W \cong V$.
+\begin{teorema}
+Si $\vartheta : V \rightarrow W$ es un FG-isomorfismo, entonces la inversa $\vartheta^{-1} : W \rightarrow V$ es tambien un FG-isomorfismo.
+\end{teorema}
 \subsection{Suma directa de FG-m'odulos.}
 %%% Capitulo 3
 \chapter{Caracteres.}
