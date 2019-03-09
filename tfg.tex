@@ -1080,7 +1080,8 @@ En particular,
 para todo $g \in G$. Ahora $v1=v$ para todo $v \in V$, asi que $[1]_{\mathscr{B}}$ es la matriz identidad.\\
 Por lo tanto cada matriz $[g]_{\mathscr{B}}$ es invertible.\\
 Hemos probado que la funci'on $g \rightarrow [g]_{\mathscr{B}}$ es un homomorfismo de $G$ a $GL(F)$ y por lo tanto es una representaci'on de $G$ sobre $F$. 
-\end{proof}
+\end{proof}\\
+\\
 Podemos construir FG-m'odulos sin usar una representaci'on. Para hacer esto transformamos un espacio vectorial $V$ sobre $F$ en un FG-m'odulo especificando la acci'on de los elementos del grupo en una base $v_{1}, \ldots v_{n}$ de $V$ y haciendo que sea lineal la acci'on en el entorno de $V$, es decir, primero definimos $v_{i}g$ para cada $i$ y cada $g \in G$, y entonces definimos
 \[
 (\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n})g
@@ -1168,9 +1169,6 @@ de $V$ tal que
 \]
 \end{teorema}
 \begin{proof}
-<<<<<<< HEAD
-.
-=======
 (1) Sea $T$ la matriz del cambio de base de $\mathscr{B}$ a $\mathscr{B'}$. Para todo $g \in G$, tenemos
 \[
 [g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B'}}T
@@ -1185,7 +1183,6 @@ para todo $g \in G$. Sea $\mathscr{B''}$ la base de $V$ para la cual la matriz d
 [g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B''}}T
 \]
 por lo que $g \sigma = [g]_\mathscr{B''}$.
->>>>>>> 417ffd81c923e7ab27d51e74884a34b2b01b12aa
 \end{proof}
 \subsection{FG-subm'odulos.}
 En lo sucesivo $G$ sera un grupo y $F$ sera $\mathbb{R}$ o $\mathbb{C}$.
@@ -1251,6 +1248,27 @@ En el siguiente teorema veremos que si $V \cong W$ entonces $W \cong V$.
 \begin{teorema}
 Si $\vartheta : V \rightarrow W$ es un FG-isomorfismo, entonces la inversa $\vartheta^{-1} : W \rightarrow V$ es tambien un FG-isomorfismo.
 \end{teorema}
+\begin{proof}
+Es evidente que $\vartheta^{-1}$ es una transformaci'on lineal invertible, por lo que, unicamente, debemos demostrar que $\vartheta^{-1}$ es un FG-homomorfismo. Sean $w \in W$ y $g \in G$,
+\[
+\vartheta(\vartheta^{-1}(w)g)=g(\vartheta(\vartheta^{-1}(w))
+\]
+como $\vartheta$ es un FG-homomorfismo,
+\[
+=wg
+\]
+\[
+\vartheta(\vartheta^{-1}(wg))
+\]
+As'i que $\vartheta^{-1}(w)g=\vartheta^{-1}(wg)$ como se buscaba.
+\end{proof}\\
+\\
+Sea $\vartheta : V \rightarrow W$ un FG-isomorfismo, entonces podemos usar $\vartheta$ y $\vartheta^{-1}$ para cambiar entre los FG-m'odulos isomorfos $V$ y $W$, y probar que $V$ y $W$ comparten la mismas propiedades estructurales; algunos ejemplos pueden ser:
+\begin{enumerate}
+\item dim $V$ = dim $W$ (cada $v_{1}, \ldots ,v_{n}$ es una base de $V$ si y solo si $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es base de $W$).
+\item $V$ es irreducible si y solo si $W$ es irreducible (cada $X$  es un FG-subm'odulo de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo de $W$).
+\item $V$ contiene un FG-subm'odulo trivial si y solo si $W$ contiene un FG-subm'odulo trivial (cada $X$ es un FG-subm'odulo trivial de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo trivial de $W$).
+\end{enumerate}
 \subsection{Suma directa de FG-m'odulos.}
 %%% Capitulo 3
 \chapter{Caracteres.}
