@@ -307,5 +307,343 @@ Toda representaci'on es suma directa de representaciones irreducibles.
 Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V)$. Si $dim(V)=0$, el teorema es evidente, 0 es suma directa de la familia vacia de representaciones irreducibles. Si $dim(V)\geq 1$ y $V$ es irreducible, tambi'en es cierto el teorema. En el resto de casos podemos descomponer $V$ como suma directa de $V' \oplus V''$, con $dim(V')< dim(V)$ y $dim(V'')< dim(V)$. Por inducci'on, $V'$ y $V''$ son suma directa de representaciones irreducibles y por tanto lo mismo le ocurre a $V$.
 \end{proof}\\
 \\
-Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles. El numero de las $W_{i}$ isomorfas a una representaci'on irreducible dada no depende de la descomposici'on elegida.
+Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles. El numero de las $W_{i}$ isomorfas a una representaci'on irreducible dada no depende de la descomposici'on elegida. 
+\section{FG-m'odulos.}
+Sea $G$ un grupo, y sea $F=\mathbb{R}$ o $F=\mathbb{C}$. Escribiremos como $V=F^{n}$ el espacio vectorial formado por los vectores fila $(\lambda_{1}, \ldots \lambda_{n})$ con $\lambda_{i} \in F$. Para todo $v \in V$ y $g \in G$, el producto matricial 
+\[
+v\rho (g)
+\]
+de el vector fila $v$ con la matriz de dimensi'on $n \times n$ $\rho (g)$, es un vector fila en $V$.\\
+\\
+Basandonos en el producto matricial $v\rho (g)$ definimos el FG-m'odulo.
+\begin{definicion}
+Sea $V$ un espacio vectorial sobre $F$ y sea $G$ un grupo. Entonces $V$ es un FG-modulo si esta definida la multiplicaci'on $vg$, para $v \in V$ y $g \in G$, y ademas satisfacen las siguientes condiciones para todo $u, v \in V$, $\lambda \in F$ y $g ,h \in G$:
+\begin{enumerate}
+\item $vg \in V$
+\item $v(gh)=(vg)h$
+\item $v1=v$
+\item $(\lambda v)g=\lambda (vg)$
+\item $(u+v)g=ug+vg$
+\end{enumerate}
+\end{definicion}
+Las condiciones $(1)$, $(4)$ y $(5)$ de la definici'on aseguran que para todo $g \in G$, la funci'on
+\[
+v \rightarrow vg
+\]
+es un endomorfismo de $V$.\\
+\\
+Sea $V$ un FG-m'odulo, y sea $\mathscr{B}$ una base de $V$. Para cada $g \in G$, denotamos como 
+\[
+[g]_{\mathscr{B}}
+\]
+a la matriz del endomorfismo $v \rightarrow vg$ de $V$, relativo a la base $\mathscr{B}$.\\
+La relaci'on entre los FG-m'odulos y las representaciones de $G$ sobre $F$ se ver'a en el siguiente teorema:
+\begin{teorema}
+(1) Si $\rho : G \rightarrow GL(F)$ es una representaci'on de $G$ sobre $F$, y $V=F^{n}$, entonces $V$ sera un FG-m'odulo si definimos la multiplicaci'on $vg$ como
+\[
+vg=v \rho (g)
+\]
+ademas, existe una base $\mathscr{B}$ de $V$ tal que
+\[
+\rho (g) = [g]_{\mathscr{B}}
+\]
+para todo $g \in G$.\\
+\\
+(2) Sea $V$ un FG-m'odulo y sea $\mathscr{B}$ una base de $V$. Entonces la funci'on 
+\[
+g \rightarrow [g]_{\mathscr{B}}
+\]
+es una representaci'on de $G$ sobre $F$. 
+\end{teorema}
+\begin{proof}
+(1) Sabemos que $v \rho (g) \in F^{n}$, ademas por ser $\rho$ un homomorfismo tenemos que $v (\rho (gh))=v(\rho (g) \rho (h))$ y $v (\rho (1))=v$. Del mismo modo, por las propiedades de la multiplicaci'on matricial tenemos que $(\lambda v)\rho(g)=\lambda (v \rho(g))$ y $(u +v)\rho (g)=u \rho(g) + v \rho (g)$ para todo $u, v \in F^{n}$, $\lambda \in F$ y $g, h \in G$.\\
+Por lo tanto, $F^{n}$ se convertir'a en un FG-m'odulo si definimos
+\[
+vg=v \rho (g)
+\]
+para todo $v \in F^{n}, g \in G$.\\
+Ademas, si consideramos la base $\mathscr{B}$ como
+\[
+(1, 0, 0, ..., 0), (0, 1, 0, ...,0), ..., (0, 0, 0, ... , 1)
+\]
+de $F^{n}$, entonces $\rho (g) = [g]_{\mathscr{B}}$ para todo $g \in G$.\\
+\\
+(2) Sea $V$ un FG-m'odulo con base $\mathscr{B}$. De $v(gh)=(vg)h$ para todo $g, h \in G$ y todo $v \in \mathscr{B}$, se sigue que 
+\[
+[gh]_{\mathscr{B}}=[g]_{\mathscr{B}}[h]_{\mathscr{B}}
+\]
+En particular, 
+\[
+[1]_{\mathscr{B}}=[g]_{\mathscr{B}}[g^{-1}]_{\mathscr{B}}
+\]
+para todo $g \in G$. Ahora $v1=v$ para todo $v \in V$, asi que $[1]_{\mathscr{B}}$ es la matriz identidad.\\
+Por lo tanto cada matriz $[g]_{\mathscr{B}}$ es invertible.\\
+Hemos probado que la funci'on $g \rightarrow [g]_{\mathscr{B}}$ es un homomorfismo de $G$ a $GL(F)$ y por lo tanto es una representaci'on de $G$ sobre $F$. 
+\end{proof}\\
+\\
+Podemos construir FG-m'odulos sin usar una representaci'on. Para hacer esto transformamos un espacio vectorial $V$ sobre $F$ en un FG-m'odulo especificando la acci'on de los elementos del grupo en una base $v_{1}, \ldots v_{n}$ de $V$ y haciendo que sea lineal la acci'on en el entorno de $V$, es decir, primero definimos $v_{i}g$ para cada $i$ y cada $g \in G$, y entonces definimos
+\[
+(\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n})g
+\]
+para $\lambda_{i} \in F$, como 
+\[
+\lambda_{1}(v_{1}g)+ \ldots +\lambda_{n}(v_{n}g)
+\]
+Como era de esperar existen restricciones a la hora de definir los vectores $v_{i}g$.
+\begin{teorema}
+Sea $v_{1}, \ldots v_{n}$ una base de un espacio vectorial $V$ sobre $F$. Supongamos que tenemos una multiplicaci'on $vg$ para todo $v \in V$ y $g \in G$, la cual satisface las siguientes condiciones para todo $i$ con $1 \leq i \leq n$, para todo $g, h \in G$ y para todo $\lambda_{1}, \ldots ,\lambda_{n} \in F$:
+\begin{enumerate}
+\item $v_{i}g \in V$
+\item $v_{i}(gh)=(v_{i}g)h$
+\item $v_{i}1=v$
+\item $(\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n})g=\lambda_{1}(v_{1}g)+ \ldots +\lambda_{n}(v_{n}g)$ 
+\end{enumerate}
+Entonces $V$ es un FG-m'odulo.
+\end{teorema}
+\begin{proof}
+Es trivial ver de (3) y (4) que $v1=v$ para todo $v \in V$. Las condiciones (1) y (4) nos aseguran que, para todo $g \in G$, la funci'on $v \rightarrow vg$ $(v \in V)$ es un endomorfismo de $V$. Esto es:
+\[
+vg \in V,
+\]
+\[
+(\lambda v)g=\lambda (vg),
+\]
+\[
+(u+v)g=ug+vg,
+\]
+para todo $u, v \in V$, $\lambda \in F$ y $g \in G$. Por lo tanto
+\[
+ (\lambda_{1}u_{1}+ \ldots +\lambda_{n}u_{n})h=\lambda_{1}(u_{1}h)+ \ldots +\lambda_{n}(u_{n}h) 
+\]
+para todo $\lambda_{1}, \ldots ,\lambda_{n} \in F$, todo $u_{1}, \ldots ,u_{n} \in V$, y todo $h \in G$.\\
+Ahora sea $v \in V$ y $g, h \in G$. Entonces $v=\lambda_{1}v_{1}+ \ldots +\lambda_{n}v_{n}$ para alg'un $\lambda_{1}, \ldots ,\lambda_{n} \in F$, y
+\[
+v(gh)=\lambda_{1}(v_{1}(gh))+ \ldots + \lambda_{n}(v_{n}(gh))
+\]
+\[
+=\lambda_{1}((v_{1}g)h)+ \ldots + \lambda_{n}((v_{n}g)h)
+\]
+\[
+=(\lambda_{1}(v_{1}g)+ \ldots + \lambda_{n}(v_{n}g))h
+\]
+\[
+=(vg)h
+\]
+Con esto hemos comprobado todos los axiomas requeridos para que $V$ sea un FG-m'odulo.
+\end{proof}
+\begin{definicion}
+El FG-m'odulo trivial es un espacio vectorial $V$ sobre $F$ 1-dimensional con
+\[
+vg=v
+\] 
+para todo $v \in V$, $g \in G$.
+\end{definicion}
+\begin{definicion}
+Un FG-m'odulo $V$ es fiel si el elemento unitario de $G$ es el 'unico elemento $g$ para el cual
+\[
+vg=v
+\]
+para todo $v \in V$.
+\end{definicion}
+\subsection{FG-m'odulos y representaciones equivalentes.}
+Veamos ahora las relaciones entre los FG-m'odulos y las representaciones equivalentes de $G$ sobre $F$. Un FG-m'odulo tiene varias representaciones, todas de la forma
+\[
+g \rightarrow [g]_\mathscr{B}
+\]
+para una base $\mathscr{B}$ de $V$. El siguiente resultado muestra que todas estas representaciones son equivalentes entre si.
+\begin{teorema}
+Sea $V$ un FG-m'odulo con una base $\mathscr{B}$, y sea $\rho$ la representaci'on de $G$ sobre $F$ definida por
+\[
+\rho: g \rightarrow [g]_\mathscr{B}
+\]
+(1) Si $\mathscr{B}'$ es una base de $V$, entonces la representaci'on
+\[
+\phi: g \rightarrow [g]_\mathscr{B'}
+\]
+de $G$ es equivalente a $\rho$.\\
+(2) Si $\sigma$ es una representaci'on de $G$ la cual es equivalente a $\rho$, entonces existe una base $\mathscr{B}''$
+de $V$ tal que
+\[
+\sigma: g \rightarrow [g]_\mathscr{B''}
+\]
+\end{teorema}
+\begin{proof}
+(1) Sea $T$ la matriz del cambio de base de $\mathscr{B}$ a $\mathscr{B'}$. Para todo $g \in G$, tenemos
+\[
+[g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B'}}T
+\]
+Por lo tanto $\phi$ es equivalente a $\rho$.\\
+(2) Supongamos que $\rho$ y $\sigma$ son representaciones equivalentes de $G$. Entonces, para la matriz invertible $T$ tenemos
+\[
+g\rho = T^{-1}(g \sigma )T
+\]
+para todo $g \in G$. Sea $\mathscr{B''}$ la base de $V$ para la cual la matriz del cambio de base de $\mathscr{B}$ a $\mathscr{B''}$ es $T$. Entonces para todo $g \in G$
+\[
+[g]_{\mathscr{B}}=T^{-1}[g]_{\mathscr{B''}}T
+\]
+por lo que $g \sigma = [g]_\mathscr{B''}$.
+\end{proof}
+\subsection{FG-subm'odulos.}
+En lo sucesivo $G$ sera un grupo y $F$ sera $\mathbb{R}$ o $\mathbb{C}$.
+\begin{definicion}
+Sea $V$ un FG-m'odulo. Un subconjunto $W$ de $V$ se dice que es un FG-subm'odulo de $V$ si $W$ es un subespacio y $wg \in W$ para todo $w \in W$ y $g \in G$. 
+\end{definicion}
+\subsection{FG-m'odulos irreducibles.}
+\begin{definicion}
+Un FG-m'odulo $V$ se dice que es irreducible si es diferente a $\{0\}$ y no tiene FG-subm'odulos aparte de $\{0\}$ y $V$.\\
+Si $V$ tiene un FG-subm'odulo $W$ donde $W$ es distinto a $\{0\}$ o $V$, entonces $V$ es recucible.
+\end{definicion}
+Del mismo modo, una representaci'on $\rho : G \rightarrow GL(F)$ es irreducible si el correspondiente FG-m'odulo $F^{n}$ dado por
+\[
+vg=v(\rho (g))
+\]
+es irreducible; y $\rho$ es reducible si $F^{n}$ es reducible.\\
+\\
+Supongamos ahora que $V$ es un FG-m'odulo reducible, por lo tanto hay un FG-subm'odulo $W$ con 0 $<$ dim W $<$ dim V. Tomando una base $\mathscr{B_{1}}$ de $W$ y extendi'endola a una base $\mathscr{B}$ de $V$. Entonces para todo $g \in G$, la matriz $[g]_{\mathscr{B}}$ tiene la forma
+\begin{equation}
+\left( \begin{array}{c|c}
+  X_{g} & 0 \\ 
+  \hline
+  Y_{g} & Z_{g}
+ \end{array} \right)
+\end{equation}
+para las matrices $X_{g}$, $Y_{g}$ y $Z_{g}$, donde $X_{g}$ es $k \times k$ para $k=dim(W)$.\\
+\\
+Una representaci'on de grado $n$ es reducible si, y solo si, es equivalente a una representaci'on de la forma (2.6.1), donde $X_{g}$ es $k \times k$ y $0 < k < n$. Notemos que en (2.6.1), las funciones $g \rightarrow X_{g}$ y $g \rightarrow Z_{g}$ son representaciones de $G$.
+\subsection{FG-homomorfismos.}
+\begin{definicion}
+Sean $V$ y $W$ FG-m'odulos. Una funci'on $\vartheta : V \rightarrow W$ se dice que es un FG-homomorfismo si $\vartheta$ es una transformaci'on lineal y 
+\[
+\vartheta (vg) = \vartheta (v)g
+\]
+\end{definicion}
+En otras palabras, si $\vartheta$ envia $v$ a $w$ entonces envia $vg$ a $wg$.\\
+\\
+Como $G$ es un grupo finito y $\vartheta : V \rightarrow W$ es un FG-homomorfismo, entonces para todo $v \in V$ y $r=\sum_{g \in G} \lambda_{g}g \in FG$, tenemos
+\[
+\vartheta (vr) = \vartheta (v)r
+\]
+\begin{teorema}
+Sea $V$ y $W$ FG-m'odulos y sea $\vartheta : V \rightarrow W$ un FG-homomorfismo. Entonces $Ker \, \vartheta$ es un FG-subm'odulo de $V$ y $Im \, \vartheta$ es un FG-subm'odulo de $W$.
+\end{teorema}
+\begin{proof}
+$Ker \, \vartheta$ es un subespacio de $V$ y $Im \, \vartheta$ es un subespacio de $W$ ya que $\vartheta$ es una transformaci'on lineal.\\
+Sea $v \in Ker \, \vartheta$ y $g \in G$, entonces
+\[
+\vartheta (vg) = \vartheta (v)g = 0g = 0
+\]
+asi que $vg \in Ker \, \vartheta$. Ademas $Ker \, \vartheta$ es un FG-submodulo de $V$.\\
+Sea $w \in Im \, \vartheta$, tal que $w = \vartheta (v)$ para alg'un $v \in V$. Para todo $g \in G$,
+\[
+wg = \vartheta (v)g = \vartheta (vg) \in Im \, \vartheta
+\]
+por lo que $Im \, \vartheta$ es un FG-subm'odulo de $W$.
+\end{proof}
+\subsection{Isomorfismos de FG-m'odulos.}
+\begin{definicion}
+Sean $V$ y $W$ FG-m'odulos. Decimos que $\vartheta : V \rightarrow W$ es un FG-isomorfismo si $\vartheta$ es un FG-homomorfismo y ademas posee inversa. Si $\vartheta : V \rightarrow W$ es un FG-isomorfismo, entonces $V$ y $W$ son FG-m'odulos isomorfos y los representaremos como $V \cong W$.
+\end{definicion}
+En el siguiente teorema veremos que si $V \cong W$ entonces $W \cong V$.
+\begin{teorema}
+Si $\vartheta : V \rightarrow W$ es un FG-isomorfismo, entonces la inversa $\vartheta^{-1} : W \rightarrow V$ es tambien un FG-isomorfismo.
+\end{teorema}
+\begin{proof}
+Es evidente que $\vartheta^{-1}$ es una transformaci'on lineal invertible, por lo que, unicamente, debemos demostrar que $\vartheta^{-1}$ es un FG-homomorfismo. Sean $w \in W$ y $g \in G$,
+\[
+\vartheta(\vartheta^{-1}(w)g)=g(\vartheta(\vartheta^{-1}(w))
+\]
+como $\vartheta$ es un FG-homomorfismo,
+\[
+=wg
+\]
+\[
+\vartheta(\vartheta^{-1}(wg))
+\]
+As'i que $\vartheta^{-1}(w)g=\vartheta^{-1}(wg)$ como se buscaba.
+\end{proof}\\
+\\
+Sea $\vartheta : V \rightarrow W$ un FG-isomorfismo, entonces podemos usar $\vartheta$ y $\vartheta^{-1}$ para cambiar entre los FG-m'odulos isomorfos $V$ y $W$, y probar que $V$ y $W$ comparten la mismas propiedades estructurales; algunos ejemplos pueden ser:
+\begin{enumerate}
+\item dim $V$ = dim $W$ (cada $v_{1}, \ldots ,v_{n} $ es una base de $V$ si y solo si $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es base de $W$).
+\item $V$ es irreducible si y solo si $W$ es irreducible (cada $X$  es un FG-subm'odulo de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo de $W$).
+\item $V$ contiene un FG-subm'odulo trivial si y solo si $W$ contiene un FG-subm'odulo trivial (cada $X$ es un FG-subm'odulo trivial de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo trivial de $W$).
+\end{enumerate}
+\begin{teorema}
+Sea $V$ un FG-m'odulo con una base $\mathscr{B}$, y sea $W$ un FG-m'odulo con una base $\mathscr{B'}$. Entonces $V$ y $W$ son isomorfas si y solo si las representaciones
+\[
+\rho : g \rightarrow [g]_{\mathscr{B}}
+\]
+\[
+\sigma : g \rightarrow [g]_{\mathscr{B'}}
+\]
+son equivalentes.
+\end{teorema}
+\begin{proof}
+Para la demostraci'on del anterior teorema primero estableceremos lo siguiente:
+\begin{enumerate}
+\item Los FG-m'odulos $V$ y $W$ son isomorfos si y solo si existe una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que
+\[
+[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}
+\]
+para todo $g \in G$.
+\end{enumerate}
+Para ver esto supongamos, primero, que $\vartheta$ es un FG-isomorfismo de $V$ a $W$, y sea $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$; entonces $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es una base de $\mathscr{B}_{2}$ de $W$. Sea $g \in G$. Ya que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ para cada $i$, se sigue que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$.\\
+De modo inverso, supongamos que $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$ y $w_{1}, \ldots ,w_{n}$ una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$. Sea $\vartheta$ la transformaci'on lineal invertible de $V$ a $W$ para la cu'al $\vartheta (v_{i})=w_{i}$. Y que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$, se deduce que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ y por lo tanto cada $\vartheta$ es un FG-isomorfismo. Esto completa la demostraci'on de (1).\\
+Ahora asumimos que $V$ y $W$ son FG-m'odulos isomorfos. Por (1) hay una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$. Definimos ahora una representaci'on $\phi$ de $G$ como $\phi : g \rightarrow [g]_{\mathscr{B}_{1}}$. Seg'un el teorema 2.6.3(1), $\phi$ es equivalente a $\rho$ y a $\sigma$, por lo que $\rho$ y $\sigma$ son equivalentes.\\
+A la inversa, supongamos que $\rho$ y a $\sigma$ son equivalentes, entonces, por el teorema 2.6.3(2) hay una base $\mathscr{B''}$ de $V$ tal que $\sigma (g) = [g]_{\mathscr{B''}}$ para todo $g \in G$; esto es, $[g]_{\mathscr{B'}}=[g]_{\mathscr{B''}}$  para todo $g \in G$. Por lo tanto $V$ y $W$ son FG-m'odulos isomorfos, por (1).
+\end{proof}
+\subsection{Suma directa de FG-m'odulos.}
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U \oplus W
+\]
+donde $U$ y $W$ son FG-subm'odulos de $V$. Sea $u_{1}, \ldots ,u_{m}$ una base $\mathscr{B}_{1}$ de $U$, y $w_{1}, \ldots ,w_{n}$ una base $\mathscr{B}_{2}$ de $W$. Entonces sabemos, por los primeros cursos de 'algebra lineal, que $u_{1}, \ldots ,u_{m},w_{1}, \ldots ,w_{n}$ es una base $\mathscr{B}$ de $V$, y para $g \in G$
+\[
+\left( \begin{array}{c|c}
+  [g]_{\mathscr{B}_{1}} & 0 \\ 
+  \hline
+  0 & [g]_{\mathscr{B}_{2}}
+ \end{array} \right)
+\]
+Generalizando aun mas, si $V=U_{1} \oplus \ldots \oplus U_{r}$, es suma directa de los FG-subm'odulos $U_{i}$ y $\mathscr{B}_{i}$ es una base de $U_{i}$, entonces podemos unir $\mathscr{B}_{1}, \ldots ,\mathscr{B}_{r}$, para obtener una base $mathscr{B}$ de $V$, y para $g \in G$,
+\[
+[g]_{\mathscr{B}} =
+\left( \begin{array}{ccc}
+ [g]_{\mathscr{B}_{1}} & & 0 \\ 
+  
+   & \ddots &  \\
+  0 & & [g]_{\mathscr{B}_{r}}
+\end{array} \right) 
+\]
+\begin{proposicion}
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U_{1} \oplus \ldots \oplus U_{r}
+\]
+donde cada $U_{i}$ es un FG-subm'odulo de $V$. Para $v \in V$, tenemos que $v=u_{1}+ \ldots + u_{r}$ para $u_{i} \in U_{i}$, y definimos $\pi_{i}:V \rightarrow V$ como 
+\[
+\pi_{i}(v)=u_{i}
+\]
+Entonces cada $\pi_{i}$ es un FG-homomorfismo, y es, ademas, una proyecci'on de $V$.
+\end{proposicion}
+\begin{proof}
+Evidentemente $\pi_{i}$ es una transformaci'on lineal; y es tambi'en un FG-homomorfismo, ya que para $v \in V$ con $v=u_{i}+ \ldots +u_{r}$ siendo $u_{j} \in U_{j}$ para todo $j$, y $g \in G$, tenemos que
+\[
+\pi_{i}(vg)=\pi_{i}(u_{1}g+ \ldots +u_{r}g)=u_{i}g=\pi_{i}(v)g
+\]
+por lo tanto 
+\[
+\pi_{i}^{2}(v)=\pi_{i}(u_{i})=u_{i}=\pi_{i}(v)
+\]
+asi que $\pi_{i}^{2}=\pi_{i}$. Lo que implica que $\pi_{i}$ es una proyecci'on.
+\end{proof}\\
+\\
+Veamos, por 'ultimo, un resultado concerniente a la suma de FG-m'odulos irreducibles del cual no daremos una demostraci'on.
+\begin{proposicion}
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U_{1}+\ldots +U_{r}
+\]
+donde cada $U_{i}$ es un FG-subm'odulo irreducible de $V$. Entonces $V$ es una suma directa de algunos FG-subm'odulos $U_{i}$.
+\end{proposicion}
 \end{document}
