@@ -1265,10 +1265,33 @@ As'i que $\vartheta^{-1}(w)g=\vartheta^{-1}(wg)$ como se buscaba.
 \\
 Sea $\vartheta : V \rightarrow W$ un FG-isomorfismo, entonces podemos usar $\vartheta$ y $\vartheta^{-1}$ para cambiar entre los FG-m'odulos isomorfos $V$ y $W$, y probar que $V$ y $W$ comparten la mismas propiedades estructurales; algunos ejemplos pueden ser:
 \begin{enumerate}
-\item dim $V$ = dim $W$ (cada $v_{1}, \ldots ,v_{n}$ es una base de $V$ si y solo si $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es base de $W$).
+\item dim $V$ = dim $W$ (cada $v_{1}, \ldots ,v_{n} $ es una base de $V$ si y solo si $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es base de $W$).
 \item $V$ es irreducible si y solo si $W$ es irreducible (cada $X$  es un FG-subm'odulo de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo de $W$).
 \item $V$ contiene un FG-subm'odulo trivial si y solo si $W$ contiene un FG-subm'odulo trivial (cada $X$ es un FG-subm'odulo trivial de $V$ si y solo si $\vartheta (X)$ es un FG-subm'odulo trivial de $W$).
 \end{enumerate}
+\begin{teorema}
+Sea $V$ un FG-m'odulo con una base $\mathscr{B}$, y sea $W$ un FG-m'odulo con una base $\mathscr{B'}$. Entonces $V$ y $W$ son isomorfas si y solo si las representaciones
+\[
+\rho : g \rightarrow [g]_{\mathscr{B}}
+\]
+\[
+\sigma : g \rightarrow [g]_{\mathscr{B'}}
+\]
+son equivalentes.
+\end{teorema}
+\begin{proof}
+Para la demostraci'on del anterior teorema primero estableceremos lo siguiente:
+\begin{enumerate}
+\item Los FG-m'odulos $V$ y $W$ son isomorfos si y solo si existe una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que
+\[
+[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}
+\]
+para todo $g \in G$.
+\end{enumerate}
+Para ver esto supongamos, primero, que $\vartheta$ es un FG-isomorfismo de $V$ a $W$, y sea $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$; entonces $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es una base de $\mathscr{B}_{2}$ de $W$. Sea $g \in G$. Ya que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ para cada $i$, se sigue que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$.\\
+De modo inverso, supongamos que $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$ y $w_{1}, \ldots ,w_{n}$ una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$. Sea $\vartheta$ la transformaci'on lineal invertible de $V$ a $W$ para la cu'al $\vartheta (v_{i})=w_{i}$. Y que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$, se deduce que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ y por lo tanto cada $\vartheta$ es un FG-isomorfismo. Esto completa la demostraci'on de (1).\\
+Ahora asumimos que $V$ y $W$ son FG-m'odulos isomorfos. Por (1) hay una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$.
+\end{proof}
 \subsection{Suma directa de FG-m'odulos.}
 %%% Capitulo 3
 \chapter{Caracteres.}
