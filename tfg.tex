@@ -1290,10 +1290,34 @@ para todo $g \in G$.
 \end{enumerate}
 Para ver esto supongamos, primero, que $\vartheta$ es un FG-isomorfismo de $V$ a $W$, y sea $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$; entonces $\vartheta (v_{1}), \ldots ,\vartheta (v_{n})$ es una base de $\mathscr{B}_{2}$ de $W$. Sea $g \in G$. Ya que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ para cada $i$, se sigue que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$.\\
 De modo inverso, supongamos que $v_{1}, \ldots ,v_{n}$ una base $\mathscr{B}_{1}$ de $V$ y $w_{1}, \ldots ,w_{n}$ una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$. Sea $\vartheta$ la transformaci'on lineal invertible de $V$ a $W$ para la cu'al $\vartheta (v_{i})=w_{i}$. Y que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$, se deduce que $\vartheta (v_{i}g)=\vartheta (v_{i})g$ y por lo tanto cada $\vartheta$ es un FG-isomorfismo. Esto completa la demostraci'on de (1).\\
-Ahora asumimos que $V$ y $W$ son FG-m'odulos isomorfos. Por (1) hay una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$.
+Ahora asumimos que $V$ y $W$ son FG-m'odulos isomorfos. Por (1) hay una base $\mathscr{B}_{1}$ de $V$ y una base $\mathscr{B}_{2}$ de $W$ tal que $[g]_{\mathscr{B}_{1}}=[g]_{\mathscr{B}_{2}}$ para todo $g \in G$. Definimos ahora una representaci'on $\phi$ de $G$ como $\phi : g \rightarrow [g]_{\mathscr{B}_{1}}$. Seg'un el teorema 2.6.3(1), $\phi$ es equivalente a $\rho$ y a $\sigma$, por lo que $\rho$ y $\sigma$ son equivalentes.\\
+A la inversa, supongamos que $\rho$ y a $\sigma$ son equivalentes, entonces, por el teorema 2.6.3(2) hay una base $\mathscr{B''}$ de $V$ tal que $\sigma (g) = [g]_{\mathscr{B''}}$ para todo $g \in G$; esto es, $[g]_{\mathscr{B'}}=[g]_{\mathscr{B''}}$  para todo $g \in G$. Por lo tanto $V$ y $W$ son FG-m'odulos isomorfos, por (1).
 \end{proof}
 \subsection{Suma directa de FG-m'odulos.}
-%%% Capitulo 3
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U \oplus W
+\]
+donde $U$ y $W$ son FG-subm'odulos de $V$. Sea $u_{1}, \ldots ,u_{m}$ una base $\mathscr{B}_{1}$ de $U$, y $w_{1}, \ldots ,w_{n}$ una base $\mathscr{B}_{2}$ de $W$. Entonces sabemos, por los primeros cursos de 'algebra lineal, que $u_{1}, \ldots ,u_{m},w_{1}, \ldots ,w_{n}$ es una base $\mathscr{B}$ de $V$, y para $g \in G$
+\[
+\left( \begin{array}{c|c}
+  [g]_{\mathscr{B}_{1}} & 0 \\ 
+  \hline
+  0 & [g]_{\mathscr{B}_{2}}
+ \end{array} \right)
+\]
+Generalizando aun mas, si $V=U_{1} \oplus \ldots \oplus U_{r}$, es suma directa de los FG-subm'odulos $U_{i}$ y $\mathscr{B}_{i}$ es una base de $U_{i}$, entonces podemos unir $\mathscr{B}_{1}, \ldots ,\mathscr{B}_{r}$, para obtener una base $mathscr{B}$ de $V$, y para $g \in G$,
+\[
+[g]_{\mathscr{B}} =
+\left( \begin{array}{ccc}
+ [g]_{\mathscr{B}_{1}} & & 0 \\ 
+  
+   & \ddots &  \\
+  0 & & [g]_{\mathscr{B}_{r}}
+\end{array} \right) 
+\]
+
+%%% Capìtulo 3
 \chapter{Caracteres.}
 %%% Capitulo 4
 \chapter{Capitulo 4.}

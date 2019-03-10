@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
@@ -40,6 +40,6 @@
 \contentsline {subsection}{\numberline {2.6.3}FG-m'odulos irreducibles.}{26}
 \contentsline {subsection}{\numberline {2.6.4}FG-homomorfismos.}{27}
 \contentsline {subsection}{\numberline {2.6.5}Isomorfismos de FG-m'odulos.}{27}
-\contentsline {subsection}{\numberline {2.6.6}Suma directa de FG-m'odulos.}{28}
-\contentsline {chapter}{\numberline {3}Caracteres.}{29}
-\contentsline {chapter}{\numberline {4}Capitulo 4.}{30}
+\contentsline {subsection}{\numberline {2.6.6}Suma directa de FG-m'odulos.}{29}
+\contentsline {chapter}{\numberline {3}Caracteres.}{30}
+\contentsline {chapter}{\numberline {4}Capitulo 4.}{31}
