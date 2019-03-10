@@ -1316,7 +1316,37 @@ Generalizando aun mas, si $V=U_{1} \oplus \ldots \oplus U_{r}$, es suma directa 
   0 & & [g]_{\mathscr{B}_{r}}
 \end{array} \right) 
 \]
-
+\begin{proposicion}
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U_{1} \oplus \ldots \oplus U_{r}
+\]
+donde cada $U_{i}$ es un FG-subm'odulo de $V$. Para $v \in V$, tenemos que $v=u_{1}+ \ldots + u_{r}$ para $u_{i} \in U_{i}$, y definimos $\pi_{i}:V \rightarrow V$ como 
+\[
+\pi_{i}(v)=u_{i}
+\]
+Entonces cada $\pi_{i}$ es un FG-homomorfismo, y es, ademas, una proyecci'on de $V$.
+\end{proposicion}
+\begin{proof}
+Evidentemente $\pi_{i}$ es una transformaci'on lineal; y es tambi'en un FG-homomorfismo, ya que para $v \in V$ con $v=u_{i}+ \ldots +u_{r}$ siendo $u_{j} \in U_{j}$ para todo $j$, y $g \in G$, tenemos que
+\[
+\pi_{i}(vg)=\pi_{i}(u_{1}g+ \ldots +u_{r}g)=u_{i}g=\pi_{i}(v)g
+\]
+por lo tanto 
+\[
+\pi_{i}^{2}(v)=\pi_{i}(u_{i})=u_{i}=\pi_{i}(v)
+\]
+asi que $\pi_{i}^{2}=\pi_{i}$. Lo que implica que $\pi_{i}$ es una proyecci'on.
+\end{proof}\\
+\\
+Veamos, por 'ultimo, un resultado concerniente a la suma de FG-m'odulos irreducibles del cual no daremos una demostraci'on.
+\begin{proposicion}
+Sea $V$ un FG-m'odulo, y supongamos que
+\[
+V=U_{1}+\ldots +U_{r}
+\]
+donde cada $U_{i}$ es un FG-subm'odulo irreducible de $V$. Entonces $V$ es una suma directa de algunos FG-subm'odulos $U_{i}$.
+\end{proposicion}
 %%% Capìtulo 3
 \chapter{Caracteres.}
 %%% Capitulo 4
