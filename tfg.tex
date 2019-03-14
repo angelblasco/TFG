@@ -1224,9 +1224,9 @@ Como $G$ es un grupo finito y $\vartheta : V \rightarrow W$ es un FG-homomorfism
 \[
 \vartheta (vr) = \vartheta (v)r
 \]
-\begin{teorema}
+\begin{proposicion}
 Sea $V$ y $W$ FG-m'odulos y sea $\vartheta : V \rightarrow W$ un FG-homomorfismo. Entonces $Ker \, \vartheta$ es un FG-subm'odulo de $V$ y $Im \, \vartheta$ es un FG-subm'odulo de $W$.
-\end{teorema}
+\end{proposicion}
 \begin{proof}
 $Ker \, \vartheta$ es un subespacio de $V$ y $Im \, \vartheta$ es un subespacio de $W$ ya que $\vartheta$ es una transformaci'on lineal.\\
 Sea $v \in Ker \, \vartheta$ y $g \in G$, entonces
@@ -1351,14 +1351,16 @@ donde cada $U_{i}$ es un FG-subm'odulo irreducible de $V$. Entonces $V$ es una s
 \chapter{Caracteres.}
 \section{El lema de Schur.}
 \begin{teorema}[Lema de Schur.]
-Sean $V$ y $W$ dos $\mathbb{C}$G-m'odulos irreducibles.
-\begin{enumerate}
-\item Si $\vartheta : V \rightarrow W$ es un $\mathbb{C}$G-homomorfismo, entonces, o bien $\vartheta$ es un $\mathbb{C}$G-isomorfismo, o $\vartheta (v)=0$ para todo $v \in V$.
-\item Si $\vartheta : V \rightarrow W$ es un $\mathbb{C}$G-isomorfismo, entonces $\vartheta$ es un escalar del endomorfismo identidad $1_{V}$. 
-\end{enumerate}
+Sea $f : V \rightarrow V'$ una aplicaci'on lineal entre G-m'odulos irreducibles. Entonces, o bien $f = 0$, o bien $f$ es un isomorfismo; ademas, en este caso, $f$ es una homotecia.
 \end{teorema}
 \begin{proof}
-Supongamos que $\vartheta(v)=0$ para alg'un $v \in V$. Entonces Im($\vartheta$)$\neq 0$.
+Como Ker(f) es un $G$-subm'odulo estable de $V$, o bien Ker(f)=$V$, lo que significa que $f=0$, o bien Ker(f)=0. En este caso la condici'on $f(gv)=gf(v)$, para $v \in V$, implica que Im(f) es tambi'en un $G$-subm'odulo invariante de $V'$, con lo que Im(f)=$V'$. Sobre los numeros complejos $f$ ha de tener alg'un valor propio $\lambda$, ello supone que $f - \lambda Id$ tiene n'ucleo no nulo, con lo que por lo anterior  $f - \lambda Id$ es el morfismo nulo y por lo tanto $f = \lambda Id$.
+\end{proof}
+\begin{corolario}
+Toda representaci'on irreducible $V$ de un grupo abeliano es de grado 1.
+\end{corolario}
+\begin{proof}
+Sea $g$ un elemento de $G$ y consideremos la aplicaci'on lineal que induce $g : V \rightarrow V$. Puesto que para todo $h \in G$ se cumple que $gh=hg$, se tiene que $g$ es un morfismo de $G$-m'odulos, con ello $g$ es una homotecia. Asi la representaci'on de $G$ en $V$ convierte a $G$ en un grupo de homotecias. Puesto que una homotecia deja invariante cualquier espacio, si $V$ es irreducible ha de ser de dimensi'on 1.
 \end{proof}
 %%% Capitulo 4
 \chapter{Capitulo 4.}
