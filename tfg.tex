@@ -1362,15 +1362,41 @@ Toda representaci'on irreducible $V$ de un grupo abeliano es de grado 1.
 \begin{proof}
 Sea $g$ un elemento de $G$ y consideremos la aplicaci'on lineal que induce $g : V \rightarrow V$. Puesto que para todo $h \in G$ se cumple que $gh=hg$, se tiene que $g$ es un morfismo de $G$-m'odulos, con ello $g$ es una homotecia. Asi la representaci'on de $G$ en $V$ convierte a $G$ en un grupo de homotecias. Puesto que una homotecia deja invariante cualquier espacio, si $V$ es irreducible ha de ser de dimensi'on 1.
 \end{proof}
-\section{Caracter de una representaci'on.}
-Para comprender lo que es el caracter de una representaci'on necesitamos conocer primero el concepto de traza. Este concepto se estudi'o en los primeros cursos de Algebra Lineal, pero debido a su importancia en esta secci'on procedemos, de nuevo, a dar su definici'on:
+\section{Car'acter de una representaci'on.}
+Para comprender lo que es el car'acter de una representaci'on necesitamos conocer primero el concepto de traza. Este concepto se estudi'o en los primeros cursos de Algebra Lineal, pero debido a su importancia en esta secci'on procedemos, de nuevo, a dar su definici'on:
 \begin{definicion}
 Sea $V$ un espacio vectorial de dimension $n$ y $a$ un endomorfismo, cuya matriz, en una base $(e_{i})$ de $V$, es $(a_{ij})$. La traza de $a$ es el escalar 
 \[
 Tr(a)=\sum_{i} a_{ii}
 \]
 la traza de $a$ no depende de la base $(e_{i})$ elegida.
-\end{definicion} 
+\end{definicion}
+Sea $\rho : G \rightarrow GL(V)$ una representaci'on lineal de un grupo finito $G$ en el espacio vectorial $V$. Dado $s \in G$, pongamos 
+\[
+\chi_{\rho}(s)=Tr(\rho(s))
+\]
+Se obtiene as'i una aplicaci'on $\chi_{\rho}$ definida en $G$, a valores complejos
+\[
+\chi_{\rho} : G \rightarrow \mathscr{C} 
+\]    
+llamada \emph{car'acter} de la representaci'on $\rho$, la importancia de esta aplicaci'on proviene de que caracteriza la representaci'on considerada.
+\begin{proposicion}
+Si $\chi$ es el car'acter de una representaci'on $\rho$ de grado $n$, entonces,
+\begin{enumerate}
+\item $\chi (1)=n$
+\item $\chi (s^{-1})=\chi (s)^{*}$ para todo $s \in G$
+\item $\chi (tst^{-1})=\chi(s)$ cualquiera que sean $s \, ,t \in G $
+\end{enumerate} 
+(Si $x$ es un n'umero complejo, denotamos a su conjugado por $x^{*}$.)
+\end{proposicion} 
+\begin{proof}
+Como $\rho (1) = 1$ y $Tr(1)=n$ por ser $V$ de dimensi'on $n$, tendremos $\chi (1)=n$.\\
+\\
+$\rho (s)$ es de orden finito; sus valores propios $\lambda_{1}, \ldots .\lambda_{n}$ tambien ser'an de orden finito y por lo tanto de m'odulo 1. Entonces:
+\[
+\chi (s^{*})=Tr(\rho (s^{*}))=\sum \lambda_{i}^{*}= \sum \lambda_{i}^{-1}=Tr(\rho (s^{-1}))=\chi (s^{-1})
+\]
+\end{proof}
 %%% Capitulo 4
 \chapter{Capitulo 4.}
 \newpage

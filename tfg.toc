@@ -43,5 +43,5 @@
 \contentsline {subsection}{\numberline {2.6.6}Suma directa de FG-m'odulos.}{29}
 \contentsline {chapter}{\numberline {3}Caracteres.}{30}
 \contentsline {section}{\numberline {3.1}El lema de Schur.}{30}
-\contentsline {section}{\numberline {3.2}Caracter de una representaci'on.}{30}
-\contentsline {chapter}{\numberline {4}Capitulo 4.}{31}
+\contentsline {section}{\numberline {3.2}Car'acter de una representaci'on.}{30}
+\contentsline {chapter}{\numberline {4}Capitulo 4.}{32}
