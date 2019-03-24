@@ -1377,7 +1377,7 @@ Sea $\rho : G \rightarrow GL(V)$ una representaci'on lineal de un grupo finito $
 \]
 Se obtiene as'i una aplicaci'on $\chi_{\rho}$ definida en $G$, a valores complejos
 \[
-\chi_{\rho} : G \rightarrow \mathscr{C} 
+\chi_{\rho} : G \rightarrow \mathbb{C} 
 \]    
 llamada \emph{car'acter} de la representaci'on $\rho$, la importancia de esta aplicaci'on proviene de que caracteriza la representaci'on considerada.
 \begin{proposicion}
@@ -1396,7 +1396,38 @@ $\rho (s)$ es de orden finito; sus valores propios $\lambda_{1}, \ldots .\lambda
 \[
 \chi (s^{*})=Tr(\rho (s^{*}))=\sum \lambda_{i}^{*}= \sum \lambda_{i}^{-1}=Tr(\rho (s^{-1}))=\chi (s^{-1})
 \]
+\end{proof}\\
+\\
+Una aplicaci'on $f$ definida en $G$ que verifica la identidad 3), o, equivalentemente, la identidad $f(uv)=f(vu)$, se llama una \emph{funci'on central}. 
+\begin{proposicion}
+Sean $\rho_{1}:G \rightarrow GL(V_{1})$ y  $\rho_{2}:G \rightarrow GL(V_{2})$, dos representaciones lineales de $G$, y sean $\chi_{1}$ y $\chi_{2}$ sus caracteres. Entonces
+\begin{enumerate}
+\item El car'acter $\chi$ de la representaci'on suma directa $V_{1} \oplus V_{2}$ es igual a $\chi_{1} + \chi_{2}$.
+\item El car'acter $\psi$ de la representaci'on producto tensorial $V_{1} \otimes V_{2}$ es igual a $\chi_{1} \cdot \chi_{2}$.
+\end{enumerate}
+\end{proposicion}
+\begin{proof}
+Expresamos $\rho_{1}$ y $\rho_{2}$ en forma matricial: $R_{s}^{1}$ y $R_{s}^{2}$. La forma matricial de la representaci'on $V_{1} \oplus V_{2}$ es 
+\[
+R_{s}= \left(
+\begin{array}{cc}
+R_{s}^{1} & 0 \\
+0 & R_{s}^{2}
+\end{array}
+\right)
+\]
+de donde $Tr(R_{s})=Tr(R_{s}^{1})+Tr(R_{s}^{2})$, es decir, $\chi(s)=\chi_{1}(s)+\chi_{2}(s)$. Sabemos que:
+\[
+\chi_{1}(s)=\sum_{i_{1}}r_{i1i1}(s)
+\]
+\[
+\chi_{2}(s)=\sum_{i_{2}}r_{i2i2}(s)
+\]
+\[
+\psi(s)=\sum_{i1,i2}r_{i1i1}(s)\cdot r_{i2i2}(s)=\chi_{1}(s) \cdot \chi_{2}(s)
+\]
 \end{proof}
+\subsection{Ejemplo.}
 %%% Capitulo 4
 \chapter{Capitulo 4.}
 \newpage

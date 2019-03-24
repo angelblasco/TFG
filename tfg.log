@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  23 MAR 2019 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  24 MAR 2019 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -634,6 +634,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 1392--1396
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1403
+
+ []
+
 [31]
 Cap\'{\i }tulo 4.
 [32
@@ -668,7 +673,7 @@ ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on tfg.pdf (39 pages, 278374 bytes).
+Output written on tfg.pdf (39 pages, 279651 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
