@@ -7,6 +7,10 @@
 \usepackage{amsfonts}
 \usepackage{mathrsfs} % para letras de rubrica
 \usepackage{float}
+\usepackage{longtable} % Permite uso del entrono longtable
+\usepackage{booktabs} % Permite el uso de \toprule, \midrule y \bottonrule para realzar el acabado de las tablas
+\usepackage[spanish]{babel} % Captions y sections en español
+\usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,latexsym,stmaryrd}
 \numberwithin{equation}{section} % para numerar ecuaciones
 \usepackage{fix-cm}
@@ -1426,8 +1430,55 @@ de donde $Tr(R_{s})=Tr(R_{s}^{1})+Tr(R_{s}^{2})$, es decir, $\chi(s)=\chi_{1}(s)
 \[
 \psi(s)=\sum_{i1,i2}r_{i1i1}(s)\cdot r_{i2i2}(s)=\chi_{1}(s) \cdot \chi_{2}(s)
 \]
-\end{proof}
+\end{proof}\\
+\\
+Veamos esto con un ejemplo.
 \subsection{Ejemplo.}
+Sea $G=D_{8} = \langle a, b; a^{4}=b^{2}=1, b^{-1}ab=a^{-1}\rangle$, y sea $\rho : G \rightarrow GL(2, \mathbb{C})$ la representaci'on definida como
+\[
+\rho (a)= \left(
+\begin{array}{cc}
+0 & 1 \\
+-1 & 0
+\end{array}
+\right)
+\]
+\[
+\rho (b)= \left(
+\begin{array}{cc}
+1 & 0 \\
+0 & -1
+\end{array}
+\right)
+\]
+Sea $\chi$ el car'acter de esta representaci'on. En la siguiente tabla podemos ver los valores que toma $\rho (g)$ y $\chi (g)$ en funci'on de $g$.
+\begin{longtable}[c]{c c c }
+\caption{Valores de los caracteres.} \\ \toprule
+\textbf{$g$} & \textbf{$\rho (g)$} &\textbf{$\chi (g)$} \\ \toprule % Es la fila que se repetirá en cada página                  
+\endfirsthead
+ 
+\multicolumn{3}{c}{\textit{\textsl{(Viene de la página anterior)}}} \\
+\caption{Mi primera tabla larga} \\ \toprule
+\textbf{columna 1} & \textbf{columna 2} &\textbf{ columna 3} \\ \toprule % Repetirá la fila en todas las páginas                      
+\endhead
+ 
+\multicolumn{3}{c}{\textsl{\textit{(Contin'ua en la p'agina siguiente)}}}\\ %\midrule                                                   
+\endfoot
+ 
+%\multicolumn{3}{c}{\textit{\textsl{(Fin de mi primera tabla larga)}}} \\% \midrule                                                    
+%\endlastfoot
+       
+1 & 2 & 2 \\ \midrule 
+a & 2 & 0 \\ \midrule
+$a^{2}$ & 2 & -2 \\ \midrule 
+$a^{3}$ & 2 & 0 \\ \midrule
+b & 2 & 0 \\ \midrule 
+ab & 2 & 0 \\ \midrule
+$a^{2}b$ & 2 & 0 \\ \midrule 
+$a^{3}b$ & 2 & 0 \\ \bottomrule
+\end{longtable}
+
+
 %%% Capitulo 4
 \chapter{Capitulo 4.}
 \newpage
