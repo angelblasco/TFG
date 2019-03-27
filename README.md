@@ -3,9 +3,9 @@
 ## Contenido
 
 Trabajo final de Grado en Ciencias Matematicas por la UNED
-realizado por [Angel Blasco Muñoz] (https://www.researchgate.net/profile/Angel_Blasco_Munoz2) y
-dirigido por el [Dr. Javier Perez Alvarez] (http://portal.uned.es/portal/page?_pageid=93,708575&_dad=portal&_schema=PORTAL) del Dpto. de Matematicas 
-Fundamentales de la [UNED] (https://www.uned.es/universidad/).
+realizado por [Angel Blasco Muñoz](https://www.researchgate.net/profile/Angel_Blasco_Munoz2) y
+dirigido por el [Dr. Javier Perez Alvarez](http://portal.uned.es/portal/page?_pageid=93,708575&_dad=portal&_schema=PORTAL) del Dpto. de Matematicas 
+Fundamentales de la [UNED](https://www.uned.es/universidad/).
 
 ## Resumen
 
