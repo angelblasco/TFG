@@ -1522,6 +1522,28 @@ siendo $|G|$ el orden de $G$. Esta expresi'on es un producto escalar.
 \begin{teorema}
 Si $\chi$ es el car'acter de una representaci'on irreducible, $\langle \chi , \chi \rangle =1$. Si $\chi$ y $\chi'$ son los caracrteres de dos representaciones irreducibles no isomorfas, entonces $\langle \chi , \chi' \rangle=0$, es decir, son ortogonales.
 \end{teorema}
+\begin{proof}
+Sea $\rho: G \rightarrow GL(V)$ la representaci'on irreducible cuyo car'acter es $\chi$, y sea $n$ su grado. Entonces:
+\[
+\langle \chi , \chi \rangle = \frac{1}{|G|}\sum_{t \in G} \chi (t)^{*} \chi (t)  = \frac{1}{|G|}\sum_{t \in G} \chi (t^{-1}) \chi (t) 
+\]
+Ahora bien, si ponemos $\rho$ en forma matricial $\rho(t)=[r_{ij}(t)$, $\chi (t) = \sum_{i} r_{ii}(t)$, y por lo tanto
+\[
+\langle \chi , \chi \rangle = \frac{1}{|G|}\sum_{t, i, j} r_{ii} (t^{-1}) r_{jj} (t) 
+\]
+lo que implica que
+\[
+\frac{1}{|G|}\sum_{t \in G} r_{ii} (t^{-1}) r_{jj} (t)
+\]
+es igual a 0 si $i \neq j$ y a $\frac{1}{n}$ si $i=j$.
+\end{proof}
+\begin{teorema}
+Sea $V$ una representaci'on lineal de $G$, de car'acter $\varphi$, descomponemos $V$ en suma directa de representaciones irreducibles
+\[
+V = W_{1} \oplus \ldots \oplus W_{k}
+\]
+Entonces, si $W$ es una representaci'on irreducible de car'acter $\chi$, el numero de las $W_{i}$ isomorfas a $W$ es igual al prducto escalar $\langle \varphi , \chi \rangle$. 
+\end{teorema}
 %%% Capitulo 4
 \chapter{Capitulo 4.}
 \newpage
