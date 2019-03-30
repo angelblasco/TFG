@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  28 MAR 2019 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  30 MAR 2019 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,15 +685,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1402--1407
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1432--1436
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1437
 
  []
 
-[32] [33] [34]
-Cap\'{\i }tulo 4.
-[35
+[32] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1551--1556
 
-] [36] [37
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1576
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1568--1576
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1604
+
+ []
+
+[34] [35]
+Cap\'{\i }tulo 4.
+[36
+
+] [37] [38
 
 ] (./tfg.aux
 LaTeX Info: Redefining \. on input line 7.
@@ -702,7 +722,7 @@ LaTeX Info: Redefining \% on input line 7.
 Here is how much of TeX's memory you used:
  4901 strings out of 492995
  67875 string characters out of 6132703
- 142654 words of memory out of 5000000
+ 145654 words of memory out of 5000000
  8332 multiletter control sequences out of 15000+600000
  18081 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -725,10 +745,10 @@ e/2017/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on tfg.pdf (42 pages, 341346 bytes).
+Output written on tfg.pdf (43 pages, 346220 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 219 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

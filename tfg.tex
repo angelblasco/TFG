@@ -12,7 +12,7 @@
 \usepackage[spanish]{babel} % Captions y sections en español
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,latexsym,stmaryrd}
-\numberwithin{equation}{section} % para numerar ecuaciones
+\numberwithin{equation}{section} % para numerar ecuaciones, utilizar \begin{equation} ... \end{equation}
 \usepackage{fix-cm}
 \usepackage{anyfontsize}
 \newtheorem{teorema}{Teorema}[section] % para añadir teoremas
@@ -1433,7 +1433,7 @@ de donde $Tr(R_{s})=Tr(R_{s}^{1})+Tr(R_{s}^{2})$, es decir, $\chi(s)=\chi_{1}(s)
 \end{proof}\\
 \\
 Veamos esto con un ejemplo.
-\subsection{Ejemplo.}
+\begin{ejemplo}
 Sea $G=D_{8} = \langle a, b; a^{4}=b^{2}=1, b^{-1}ab=a^{-1}\rangle$, y sea $\rho : G \rightarrow GL(2, \mathbb{C})$ la representaci'on definida como
 \[
 \rho (a)= \left(
@@ -1513,7 +1513,8 @@ $a^{3}b$ & $\left(
 \end{array}
 \right)$ & 0 \\ \bottomrule
 \end{longtable}
-\section{Relaciones de ortogonalidad de los caracteres.}
+\end{ejemplo}
+\section{Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}
 Introduzcamos la siguiente notaci'on: si $\varphi$ y $\psi$ son funciones del tipo $\varphi , \psi : G \rightarrow \mathbb{C}$, pondremos
 \[
 \langle \varphi , \psi \rangle = \frac{1}{|G|}\sum_{t \in G} \varphi (t)^{*} \psi (t)
@@ -1544,8 +1545,63 @@ V = W_{1} \oplus \ldots \oplus W_{k}
 \]
 Entonces, si $W$ es una representaci'on irreducible de car'acter $\chi$, el numero de las $W_{i}$ isomorfas a $W$ es igual al prducto escalar $\langle \varphi , \chi \rangle$. 
 \end{teorema}
+Sea $\chi_{i}$ el caracter de $W_{i}$, sabemos que 
+\[
+\varphi = \chi_{1}+ \ldots + \chi_{k}
+\]
+y por lo tanto $\langle \varphi , \chi \rangle= \langle \chi_{1}, \chi \rangle +\ldots +   \langle \chi_{k}, \chi \rangle $. Por el teorema anterior $\langle \chi_{i}, \chi \rangle$ es igual a 1 (o a 0) segun que $W_{i}$ sea (o no) isomorfa a $W$.\\
+\\
+Del anterior teorema podemos afirmar que el n'umero de las $W_{i}$ isomorfas a $W$ no depende de la descomposici'on elegida; ademas, dos representaciones del mismo car'acter son isomorfas, ya que ambas contienen el mismo n'umero de veces toda representaci'on irreducible dada.\\
+Estos resultados permiten reducir el estudio de las representaciones al de los caracteres. Si $\chi_{1}, \ldots ,\chi_{h}$ son los caracteres de las representaciones irreducibles de $G$ y $W_{1}, \ldots W_{h}$ son sus correspondientes representaciones, toda representaci'on $V$ es isomorfa a una suma directa
+\[
+V=m_{1}W_{1} \oplus \ldots \oplus m_{h}W_{h}
+\]
+para $m_{i}$ entero mayor o igual a 0.\\
+El car'acter $\varphi$ de $V$ es igual a $m_{1}\chi_{1}+\ldots + m_{h}\chi_{h}$, y $m_{i}=\langle \varphi , \chi_{i} \rangle$. Las relaciones de ortogonalidad entre los $\chi_{i}$ implican que
+\[
+\langle \varphi , \varphi \rangle = \sum_{i=1}^{h}m_{i}^{2}
+\]
+de donde obtenemos el siguiente teorema.
+\begin{teorema}
+Si $\varphi$ es el car'acter de una representaci'on $V$, $\langle \varphi, \varphi \rangle$ es un entero y $\langle \varphi, \varphi \rangle =1$ si y s'olo si $V$ es irreducible.
+\end{teorema}
+\begin{proof}
+En efecto, $\sum m_{i}^{2}$ vale 1 si y solo si uno de los $m_{i}$ es igual a 1 y los demas iguales a 0, es decir, si y solo si $V$ es isomorfo a una de las $W_{i}$.
+\end{proof}\\
+\\
+Se ha obtenido as'i un \emph{criterio de irreducibilidad} muy c'omodo.\\
+\\
+Con los siguientes resultados describiremos la descomposici'on de una representaci'on regular:
+\begin{proposicion}
+El car'acter $\varphi$ de la representaci'on regular viene dado por las siguientes f'ormulas:
+\[
+\varphi (1) = |G|
+\]
+donde $|G|$ es el ord'en de $G$. Y
+\[
+\varphi (s)=0
+\]
+si $s \neq 1$.
+\end{proposicion}
+\begin{corolario}
+Cada representaci'on irreducible $W_{i}$ est'a contenida en la representaci'on regular un n'umero de veces igual a su grado $n_{i}$.
+\end{corolario}
+\begin{proof}
+Por el teorema 3.3.2, este n'umero es igual a $\langle \varphi , \chi_{i} \rangle$. Ahora bien
+\[
+\langle \varphi , \chi_{i} \rangle = \frac{1}{|G|}\sum_{s \in G} \varphi (s)^{*} \chi_{i} (s) = \frac{1}{|G|}|G|\chi_{i}(1)=\chi_{i}(1)=n_{i} 
+\]
+\end{proof}
+\begin{corolario}
+Los grados $n_{i}$ verifican la relaci'on $\sum_{i=1}^{h}n_{i}^{2}=|G|$.
+\end{corolario}
+\begin{proof}
+En efecto, el corolario 3.3.1 asegura que $\varphi = \sum n_{i} \chi_{i}$ y aplicando ambos miembros a dicho corolario resulta $|G|=\sum_{i=1}^{h} n_{i}^{2}$. 
+\end{proof}\\
+\\
+Este resultado se puede usar cuando se buscan las representaciones irreducibles de $G$; supongamos construidas representaciones irreducibles no isomorfas dos a dos, de grados $n_{1}, \ldots ,n_{k}$; a fin de que sean todas las representaciones irreducibles de $G$ (salvo isomorfismos) es necesario y suficiente que $n_{1}^{2}+ \ldots + n_{k}^{2}=|G|$.
 %%% Capitulo 4
-\chapter{Capitulo 4.}
+\chapter{Matriz de caracteres.}
 \newpage
 $\ $
 \thispagestyle{empty}
