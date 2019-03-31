@@ -45,4 +45,5 @@
 \contentsline {section}{\numberline {3.1}El lema de Schur.}{31}
 \contentsline {section}{\numberline {3.2}Car'acter de una representaci'on.}{31}
 \contentsline {section}{\numberline {3.3}Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}{33}
-\contentsline {chapter}{\numberline {4}Matriz de caracteres.}{36}
+\contentsline {section}{\numberline {3.4}N'umero de representaciones irreducibles.}{35}
+\contentsline {chapter}{\numberline {4}Matriz de caracteres.}{38}
