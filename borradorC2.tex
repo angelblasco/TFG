@@ -272,12 +272,6 @@ Sustituyendo tenemos que:
 por lo que $\rho$ es equivalente a $\tau$.
 \end{enumerate}
 \end{proof}
-\section{Subrepresentaciones.}
-Antes de avanzar en este punto, vamos a tratar, de manera muy breve, algunas nociones relativas a los espacios vectoriales.\\
-\\
-Sea $V$ un espacio vectorial, $W$ y $W'$ subespacios de $V$. Se dice que $V$ es \textit{suma directa} de $W$ y $W'$ si todo $x \in V$ se puede escribir de manera 'unica en la forma $x=w+w'$, $w \in W$ y $w' \in W'$; equivale a decir que $W \cap W'=0$ y $dim(V)=dim(W)+dim(W')$; se escribe entonces $V=W \oplus W'$, y se dice que $W'$ es \textit{suplementario} de $W$ en $V$. La aplicaci'on $p$ que hace corresponder a cada $x \in V$ su componente $w \in W$ se llama \textit{proyector} de $V$ sobre $W$ (asociado a la descomposici'on $V=W \oplus W'$ ); la imagen de $p$ es $W$, y $p(x)=x$ si $x \in W$; rec'iprocamente, si $p$ es un endomorfismo de $V$ que verifica estas propiedades, inmediatamente se prueba que $V$ es suma directa de $W$ y del n'ucleo $W'$ de $p$. Se establece as'i una correspondencia biyectiva entre los proyectores de $V$ sobre $W$ y los suplementarios de $W$ en $V$.\\
-\\
-Sea $\rho : G \rightarrow GL(V)$ una representaci'on, y sea $W$ un subespacio de $V$. Si $W$ es estable por la acci'on de $G$, esto es, si $gW \subset W$, $\forall g \in G$, entonces $\rho$ define por restricci'on una representaci'on $\rho' : G \rightarrow GL(W)$.
 \section{N'ucleo de una representaci'on.}
 Sea una representaci'on $\rho : G \rightarrow GL(V)$. El n'ucleo de una representaci'on consiste en un grupo de elementos $g \in G$ 
 para los cuales $\rho (g)$ es la matriz identidad.
@@ -295,20 +289,64 @@ Una representaci'on $\rho : G \rightarrow GL(1,V)$ definida como:
 para todo $g \in G$, se denomina \textit{representaci'on trivial} de $G$.
 \end{definicion} 
 \section{Representaciones irreducibles.}
+Antes de dar una definici'on de representaci'on irreducible veamos un resultado que nos va a ser util en breve:
+\begin{teorema}
+Sea $\rho: G \rightarrow GL(V)$ una representaci'on lineal de $G$ en $V$ y sea $W$ un subespacio vectorial de $V$ estable por la acci'on de $G$. Existe un subespacio complementario $W^{0}$ de $W$ en $V$ el cual es estable por la acci'on de $G$.
+\end{teorema}
+\begin{proof}
+Sea $W'$ un subespacio complementario del subespacio $W$ de $V$ y sea $p$ la proyecci'on de $V$ sobre $W$. Definimos $p^{0}$ como \emph{el promedio} de los conjugados de $p$ por los elementos de $G$:
+\[
+p^{0}=\frac{1}{|G|}\sum_{t \in G} \rho (t)\cdot p \cdot \rho(t)^{-1} 
+\]
+ya que $p$ envia $V$ dentro de $W$ y que $\rho (t)$ conserva $W$, vemos que $p^{0}$ envia $V$ en $W$; por lo tanto $\rho (t)^{-1}x \in W$ para $x \in W$, de donde
+\[
+p \cdot \rho(t)^{-1}x=\rho(t)^{-1}x
+\]
+\[
+\rho (t)\cdot p \cdot\rho(t)^{-1}x =x
+\]
+y
+\[
+p^{0}x=x
+\]
+Asi que $p^{0}$ es una proyecci'on de $V$ en $W$ correspondiente a alg'un complementario $W^{0}$ de $W$. Tenemos ademas
+\[
+\rho (s)\cdot p^{0}=p^{0}\cdot\rho (s)
+\]
+para todo $s \in G$. De hecho, calculando $\rho (s)\cdot p^{0} \cdot\rho (s)^{-1}$ tenemos
+\[
+\rho (s)\cdot p^{0}\cdot \rho (s)^{-1} = \frac{1}{|G|}\sum_{t \in G}\rho (s)\rho (t) \cdot p \cdot \rho (t)^{-1} \rho (s)^{-1} = \frac{1}{|G|}\sum_{t \in G}\rho (st)\cdot p \cdot \rho (st)^{-1} = p^{0}
+\]
+Si ahora $x \in W^{0}$ y $s \in G$ tenemos $p^{0}x=0$, asi que $p^{0}\cdot \rho (s)x=\rho (s)\cdot p^{0}x=0$, por lo que $\rho (s)x \in W^{0}$, lo cual muestra que $W^{0}$ es estable por $G$. Esto completa la demostraci'on.
+\end{proof}\\
+\\
+Supongamos que $V$ esta dotado de un producto escalar $\langle x,y \rangle$ satisfaciendo las condiciones de linealidad en $x$, bilinealidad en $y$, y $\langle x,x \rangle > 0$ si $x \neq 0$. Supongamos que este producto escalar permanece invariante por la acci'on de $G$, $\langle \rho(s)x,\rho (s)y \rangle =\langle x,y \rangle$; podemos reemplazar $\langle x,y \rangle$ por $\sum_{t \in G} \langle \rho(t)x,\rho (t)y \rangle$. Bajo esta hip'otesis el complementario ortogonal $W^{0}$ de $W$ en $V$ es un subespacio complementario de $W$ estable por $G$; y asi, obtenemos una demostraci'on alternativa al anterior teorema (2.4.1). Observemos el hecho de que como el producto escalar $\langle x,y \rangle$ es invariante, implica que, si $(e_{i})$ es una base ortonormal de $V$, la matriz $\rho (s)$ con respecto a esa base es la matriz unitaria.\\
+\\
+Manteniendo las hip'otesis y notaci'on del teorema 2.4.1, sea $x \in V$, y sean $w$ y $w^{0}$ proyecciones en $W$ y $W^{0}$ respectivamente. Tenemos $x=w+w^{0}$, de donde $\rho (s)x=\rho (s)w+\rho (s)w^{0}$, por lo que $w$ y $w^{0}$ son estables por $G$, tenemos que $\rho (s)w \in W$ y $\rho (s)w^{0} \in W^{0}$; asi que $\rho (s)w$ y $\rho (s)w^{0}$ son proyecciones de $\rho (s)x$.\\
+\\
+Se sigue, entonces, que las representaciones de $W$ y $W^{0}$ determinan la representaci'on de $V$. Decimos que $V$ es suma directa de $W$ y $W^{0}$, y lo escribimos como $V=W \oplus W^{0}$. Podemos definir los elementos de $V$ como un par $(w,w^{0})$ con $w \in W$ y $w^{0} \in W^{0}$. Si $W$ y $W^{0}$ son dados en forma matricial por $R_{s}$ y $R_{s}^{0}$, $W \oplus W^{0}$ estar'a dado en forma matricial como:
+\[
+\left(
+\begin{array}{cc}
+R_{s} & 0 \\
+0 & R_{s}^{0}
+\end{array}
+\right)
+\]
 \begin{definicion}
 Una representaci'on lineal $\rho : G \rightarrow GL(V)$ se dice \textit{irreducible} si $V \neq 0$ y ning'un subespacio de $V$ es estable por $G$, excepto, claro est'a, 0 y $V$. 
 \end{definicion}
-Esto equivale a decir que $V$ no es suma directa de dos subrepresentaciones, salvo la descomposici'on trivial $V=0\oplus V$.\\
+Debido al teorema 2.4.1 la segunda condici'on equivale a decir que $V$ no es suma directa de dos representaciones, salvo la descomposici'on trivial $V=0\oplus V$.\\
 \\
-Toda representacion de grado 1 es evidentemente irreducible. La suma directa de representaciones irreducibles da cualquier representaci'on.
+Toda representacion de grado 1 es evidentemente irreducible.
 \begin{teorema}
 Toda representaci'on es suma directa de representaciones irreducibles.
 \end{teorema} 
 \begin{proof}
-Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V)$. Si $dim(V)=0$, el teorema es evidente, 0 es suma directa de la familia vacia de representaciones irreducibles. Si $dim(V)\geq 1$ y $V$ es irreducible, tambi'en es cierto el teorema. En el resto de casos podemos descomponer $V$ como suma directa de $V' \oplus V''$, con $dim(V')< dim(V)$ y $dim(V'')< dim(V)$. Por inducci'on, $V'$ y $V''$ son suma directa de representaciones irreducibles y por tanto lo mismo le ocurre a $V$.
+Sea $V$ una representaci'on lineal de $G$. Se razona por inducci'on sobre $dim(V)$. Si $dim(V)=0$, el teorema es evidente, 0 es suma directa de la familia vacia de representaciones irreducibles. Si $dim(V)\geq 1$ y $V$ es irreducible no hay nada que demostrar. De lo contrario, debido al teorema 2.4.1, $V$ puede ser descompuesto como suma directa $V' \oplus V''$ con $dim(V')< dim(V)$ y $dim(V'')< dim(V)$. Por hip'otesis de inducci'on $V'$ y $V''$ son suma directa de representaciones irreducibles, y lo mismo es cierto para $V$. 
 \end{proof}\\
 \\
-Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles. El numero de las $W_{i}$ isomorfas a una representaci'on irreducible dada no depende de la descomposici'on elegida. 
+Sea $V$ una representaci'on y sea $V=W_{1}\oplus \ldots \oplus W_{k}$ una descomposici'on de $V$ en suma directa de representaciones irreducibles, podemos preguntarnos si la descomposici'on es unica. En el caso donde todas las representaciones $\rho (s)$ son iguales a 1 muestra que esto no es cierto en general. Sin embargo, mas adelante, veremos que el n'umero de $W_{i}$ isomorfas a una representaci'on irreducible dada, no depende de la descomposici'on elegida. 
 \section{FG-m'odulos.}
 Sea $G$ un grupo, y sea $F=\mathbb{R}$ o $F=\mathbb{C}$. Escribiremos como $V=F^{n}$ el espacio vectorial formado por los vectores fila $(\lambda_{1}, \ldots \lambda_{n})$ con $\lambda_{i} \in F$. Para todo $v \in V$ y $g \in G$, el producto matricial 
 \[
@@ -524,9 +562,9 @@ Como $G$ es un grupo finito y $\vartheta : V \rightarrow W$ es un FG-homomorfism
 \[
 \vartheta (vr) = \vartheta (v)r
 \]
-\begin{teorema}
+\begin{proposicion}
 Sea $V$ y $W$ FG-m'odulos y sea $\vartheta : V \rightarrow W$ un FG-homomorfismo. Entonces $Ker \, \vartheta$ es un FG-subm'odulo de $V$ y $Im \, \vartheta$ es un FG-subm'odulo de $W$.
-\end{teorema}
+\end{proposicion}
 \begin{proof}
 $Ker \, \vartheta$ es un subespacio de $V$ y $Im \, \vartheta$ es un subespacio de $W$ ya que $\vartheta$ es una transformaci'on lineal.\\
 Sea $v \in Ker \, \vartheta$ y $g \in G$, entonces
