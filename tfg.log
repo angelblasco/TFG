@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  3 APR 2019 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  9 APR 2019 13:37
 entering extended mode
 **./tfg.tex
 (tfg.tex
@@ -397,22 +397,22 @@ LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `tfg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -520,64 +520,64 @@ G,.JBIG2,.JB2,.eps]
 <./logo_uned.png, id=1, 206.7725pt x 98.3675pt>
 File: ./logo_uned.png Graphic file (type png)
 <use ./logo_uned.png>
-Package pdftex.def Info: ./logo_uned.png  used on input line 32.
+Package pdftex.def Info: ./logo_uned.png  used on input line 33.
 (pdftex.def)             Requested size: 227.62204pt x 108.2886pt.
  [1
 
 {C:/Users/angel.blasco.munoz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
  <./logo_uned.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 74.
 
 ("C:\Users\angel.blasco.munoz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfo
 nts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 74.
 
 ("C:\Users\angel.blasco.munoz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfo
 nts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 73.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 74.
 
 ("C:\Users\angel.blasco.munoz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknap
 pen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 73.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 74.
 
 ("C:\Users\angel.blasco.munoz\AppData\Local\Programs\MiKTeX 2.9\tex/latex/stmar
 yrd\ustmry.fd") [1] [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 92--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--103
+Underfull \hbox (badness 10000) in paragraph at lines 93--104
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+Underfull \hbox (badness 10000) in paragraph at lines 105--108
 
  []
 
@@ -591,12 +591,12 @@ LaTeX Info: Redefining \% on input line 1.
 \openout3 = `tfg.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--118
+Underfull \hbox (badness 10000) in paragraph at lines 113--119
 
  []
 
@@ -605,49 +605,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--118
 ]
 Cap\'{\i }tulo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--136
+Underfull \hbox (badness 10000) in paragraph at lines 133--137
 
  []
 
 [4
 
 ] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 275--279
+Underfull \hbox (badness 10000) in paragraph at lines 276--280
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 299--306
+Underfull \hbox (badness 10000) in paragraph at lines 300--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--306
+Underfull \hbox (badness 10000) in paragraph at lines 300--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--332
+Underfull \hbox (badness 10000) in paragraph at lines 326--333
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 370--376
+Underfull \hbox (badness 10000) in paragraph at lines 371--377
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 398--404
+Underfull \hbox (badness 10000) in paragraph at lines 399--405
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 429--434
+Underfull \hbox (badness 10000) in paragraph at lines 430--435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--464
+Underfull \hbox (badness 10000) in paragraph at lines 462--465
 
  []
 
@@ -655,45 +655,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--464
 <./factorizacion.png, id=71, 356.33125pt x 177.66376pt>
 File: ./factorizacion.png Graphic file (type png)
 <use ./factorizacion.png>
-Package pdftex.def Info: ./factorizacion.png  used on input line 491.
+Package pdftex.def Info: ./factorizacion.png  used on input line 492.
 (pdftex.def)             Requested size: 142.26378pt x 70.9314pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--500
+Underfull \hbox (badness 10000) in paragraph at lines 494--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--515
+Underfull \hbox (badness 10000) in paragraph at lines 507--516
 
  []
 
 [12 <./factorizacion.png>] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 564--571
+Underfull \hbox (badness 10000) in paragraph at lines 565--572
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--571
+Underfull \hbox (badness 10000) in paragraph at lines 565--572
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 614--617
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
 
  []
 
 [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 749--755
+Underfull \hbox (badness 10000) in paragraph at lines 750--756
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--763
+Underfull \hbox (badness 10000) in paragraph at lines 759--764
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 778--783
+Underfull \hbox (badness 10000) in paragraph at lines 779--784
 
  []
 
@@ -702,113 +702,123 @@ Cap\'{\i }tulo 2.
 [20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 891--895
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 921--926
+Underfull \hbox (badness 10000) in paragraph at lines 922--927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 937--941
+Underfull \hbox (badness 10000) in paragraph at lines 938--942
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 984--989
+Underfull \hbox (badness 10000) in paragraph at lines 985--990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1007
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1000--1007
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1023
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1047
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1045
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1049--1054
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1079
+Underfull \hbox (badness 10000) in paragraph at lines 1066--1070
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1092--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1083--1087
 
  []
 
 [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1111--1115
+Underfull \hbox (badness 10000) in paragraph at lines 1102--1106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1128
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1119
 
  []
 
 [26] [27]
 Missing character: There is no 1 in font rsfs10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1242--1246
+Underfull \hbox (badness 10000) in paragraph at lines 1233--1237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1256
+Underfull \hbox (badness 10000) in paragraph at lines 1243--1247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1263--1266
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1257
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1304--1309
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1300
 
  []
 
 [29]
-Overfull \hbox (1.78397pt too wide) in paragraph at lines 1342--1344
+Overfull \hbox (1.78397pt too wide) in paragraph at lines 1333--1335
 \U/rsfs/m/n/12 B[]$ \T1/cmr/m/n/12 de $\OML/cmm/m/it/12 W$\T1/cmr/m/n/12 . En-t
 on-ces sa-be-mos, por los pri-me-ros cur-sos de ál-ge-bra li-neal, que $\OML/cm
 m/m/it/12 u[]; [] ; u[]; w[]; [] ; w[]$
  []
 
 [30]
-Overfull \hbox (10.96997pt too wide) in paragraph at lines 1372--1374
+Overfull \hbox (10.96997pt too wide) in paragraph at lines 1363--1365
 \T1/cmr/m/it/12 Demostracion: \T1/cmr/m/n/12 Evi-den-te-men-te $\OML/cmm/m/it/1
 2 []$ \T1/cmr/m/n/12 es una trans-for-ma-ción li-neal; y es tam-bién un FG-hom
 omorfismo,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1386
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1377
 
  []
 
@@ -817,52 +827,52 @@ Cap\'{\i }tulo 3.
 [32
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1434--1438
+Underfull \hbox (badness 10000) in paragraph at lines 1425--1429
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1440--1445
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1475
+Underfull \hbox (badness 10000) in paragraph at lines 1461--1466
 
  []
 
 [33] [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1589--1594
+Underfull \hbox (badness 10000) in paragraph at lines 1580--1585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1614
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1605
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1614
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1605
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1636--1641
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1632
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1669--1675
+Underfull \hbox (badness 10000) in paragraph at lines 1660--1666
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1691
+Underfull \hbox (badness 10000) in paragraph at lines 1676--1682
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1693--1698
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1689
 
  []
 
@@ -877,44 +887,45 @@ LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 5000 strings out of 492946
- 72801 string characters out of 3120495
+ 5002 strings out of 492946
+ 72823 string characters out of 3120495
  152371 words of memory out of 3000000
- 8766 multiletter control sequences out of 15000+200000
- 18081 words of font info for 52 fonts, out of 3000000 for 9000
+ 8767 multiletter control sequences out of 15000+200000
+ 18394 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,16n,32p,881b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,16n,32p,973b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbi1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.
-9\fonts/pk/ljfour/jknappen/ec/dpi720\ecbx1200.pk> <C:\Users\angel.blasco.munoz\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Us
+pen/ec/dpi600\ectt1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.
+9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\angel.blasco.munoz\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecbx1200.pk> <C:\Us
 ers\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi
-1244\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/p
-k/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\angel.blasco.munoz\AppData\L
-ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi864\ecbx1200.pk> <C:\Users\angel
-.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
+600\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk
+/ljfour/jknappen/ec/dpi1244\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\angel
+.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi864\ecbx1
 200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/j
-knappen/ec/dpi720\ecrm1200.pk><C:/Users/angel.blasco.munoz/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angel.blasco.
-munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angel.blasco.mun
-oz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angel.blasco.munoz/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
-ers/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angel.blasco.munoz/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/
-Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on tfg.pdf (46 pages, 408727 bytes).
+knappen/ec/dpi600\ecrm1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecrm1200.pk><C:/Users/angel.blasco.mun
+oz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+<C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angel.blasco.munoz
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angel.blasco.munoz/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
+/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/angel.blasco.munoz/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/an
+gel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/angel.blasco.munoz/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on tfg.pdf (46 pages, 413566 bytes).
 PDF statistics:
- 625 PDF objects out of 1000 (max. 8388607)
+ 639 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
