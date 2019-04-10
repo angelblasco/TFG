@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  9 APR 2019 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  10 APR 2019 08:32
 entering extended mode
 **./tfg.tex
 (tfg.tex
@@ -391,10 +391,7 @@ Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 \c@corolario=\count120
 \c@definicion=\count121
 \c@ejemplo=\count122
- (tfg.aux
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-)
+ (tfg.aux)
 \openout1 = `tfg.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -841,7 +838,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1461--1466
 
  []
 
-[33] [34]
+[33]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.1 on input line 1544.
+
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 1580--1585
 
  []
@@ -880,50 +882,58 @@ Underfull \hbox (badness 10000) in paragraph at lines 1684--1689
 Cap\'{\i }tulo 4.
 [39
 
-] [40] [41
+] [40]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+[41
 
 ] (tfg.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
-) ) 
+)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  5002 strings out of 492946
  72823 string characters out of 3120495
- 152371 words of memory out of 3000000
+ 152253 words of memory out of 3000000
  8767 multiletter control sequences out of 15000+200000
  18394 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,16n,32p,973b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ectt1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.
-9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\angel.blasco.munoz\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecbx1200.pk> <C:\Us
-ers\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk
-/ljfour/jknappen/ec/dpi1244\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\L
-ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\angel
-.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi864\ecbx1
-200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecrm1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecrm1200.pk><C:/Users/angel.blasco.mun
-oz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angel.blasco.munoz
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
-/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angel.blasco.munoz/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users
-/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/angel.blasco.munoz/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/an
-gel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-symbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/angel.blasco.munoz/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on tfg.pdf (46 pages, 413566 bytes).
+ <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ectt1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1200.pk> <C:\Users\angel.blasco.munoz\A
+ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecbx1200.pk> <C:\Use
+rs\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi6
+00\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/jknappen/ec/dpi1244\ecbx1200.pk> <C:\Users\angel.blasco.munoz\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\angel.
+blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi864\ecbx12
+00.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecrm1200.pk> <C:\Users\angel.blasco.munoz\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi720\ecrm1200.pk><C:/Users/angel.blasco.muno
+z/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angel.blasco.munoz/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angel.blasco.munoz/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/
+angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/angel.blasco.munoz/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/ang
+el.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/angel.blasco.munoz/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on tfg.pdf (46 pages, 413571 bytes).
 PDF statistics:
  639 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
