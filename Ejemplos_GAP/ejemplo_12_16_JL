@@ -1,0 +1,22 @@
+# Creamos el grupo:
+gap> s3:=SymmetricGroup(3);
+Sym( [ 1 .. 3 ] )
+
+# Tiene 3 clases de conjugaciones de elementos:
+gap> cc:=ConjugacyClasses(s3);
+[ ()^G, (1,2)^G, (1,2,3)^G ]
+gap> Length(cc);
+3
+
+# Tomemos por ejemplo el segundo de ellos:
+gap> c:=cc[2];
+(1,2)^G
+
+# Vemos que contiene 3 elementos
+gap> Size(c);
+3
+
+# Generamos una lista con todos los elementos de la clase escogida
+gap> AsList(c);
+[ (1,2), (2,3), (1,3) ]
+
