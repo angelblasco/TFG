@@ -26,4 +26,4 @@ Para la realizacion del presente trabajo se han utilizado las notas personales d
 + J. P. Serre, *Representaciones lineales de los grupos finitos*, Omega, Barcelona, 1970.
 + J. C. Varilly, *Grupos y anillos*, Escuela de Matematica, Universidad de Costa Rica, 2014. 
 + M. Suzuki, *Group theory I*, Springer-Verlag, 1982. 
-+ S. Xamb'o, F. Delgado, C. Fuertes, *Introduccion al algebra*, Editorial Complutense, Madrid, 1993.
++ S. Xambo, F. Delgado, C. Fuertes, *Introduccion al algebra*, Editorial Complutense, Madrid, 1993.
