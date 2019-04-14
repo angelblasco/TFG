@@ -1775,8 +1775,81 @@ Todo grupo es una uni'on de sus clases de conjugaci'on. Las clases de conjugaci'
 Si $G=x_{1}^{G} \cup \ldots \cup x_{l}^{G}$, donde las clases de conjugaci'on $x_{1}^{G}, \ldots , x_{l}^{G}$ son distintas, llamamos a $x_{1}, \ldots , x_{l}$ representantes de las clases de conjugaci'on de $G$.
 \end{definicion}
 \begin{ejemplo}
-
+Sea $G=D_{6}=\langle a, b: a^{3}=b^{2}=1, b^{-1}ab=a^{-1} \rangle$. Los elementos de $G$ son $1, a, a^{2}, b, ab, a^{2}b$. Cada $g^{-1}ag$ es $a$ o $a^{2}$ para todo $g \in G$, y $b^{-1}ab=a^{2}$, tenemos
+\[
+a^{G}=\{ a, a^{2} \}
+\]
+Ademas, $a^{-i}ba^{i}=a^{-2i}b$ para todo entero $i$, asi que
+\[
+b^{G}= \{ b, ab, a^{2}b \}
+\]
+Por lo tanto las clases de conjugaci'on de $G$ son
+\[
+\{ 1 \}, \{ a, a^{2} \}, \{ b, ab, a^{2}b \}
+\]
 \end{ejemplo}
+La siguiente proposici'on puede ser 'util a la hora de calcular las clases de conjugaci'on.
+\begin{proposicion}
+Sean $x, y \in G$. Si $x$ es conjugado de $y$ en $G$, entonces $x^{n}$ es conjugado de $y^{n}$ en $G$ para todo entero $n$. $x$ e $y$ tienen el mismo orden.
+\end{proposicion}
+\begin{proof}
+Observemos que para $a, b \in G$, tenemos
+\[
+g^{-1}abg=(g^{-1}ag)(g^{-1}bg)
+\]
+As'i que $g^{-1}x^{n}g=(g^{-1}xg)^{n}$. Supongamos que $x$ es conjugado de $y$ en $G$, as'i que $y=g^{-1}xg$ para alg'un $g \in G$. Entonces $y^{n}=g^{-1}x^{n}g$ y por lo tanto $x^{n}$ es conjugado de $y^{n}$ en $G$. Sea $x$ de orden $m$, entonces $y^{m}=g^{-1}x^{m}g=1$, y para $0<r<m$, $y^{r}=g^{-1}x^{r}g \neq 1$, as'i que $y$ tiene orden $m$.
+\end{proof}
+\subsection{Tama\~no de las clases de conjugaci'on.}
+El pr'oximo teorema determina el tama\~no de las clases de conjugaci'on en $G$, pero antes daremos la siguiente definici'on:
+\begin{definicion}
+Sea $x \in G$. El centralizador de $x$ en $G$, escrito $C_{G}(x)$, es el conjunto de elementos de $G$ los cuales conmutan con $x$; es decir
+\[
+C_{G}(x)=\{ g \in G: xg=gx \}
+\]
+\end{definicion}
+$C_{G}(x)$ es un subgrupo de $G$.
+\begin{teorema}
+Sea $x \in G$. El tama\~no de la clase de conjugaci'on $x^{G}$ esta dado por
+\[
+|x^{G}|=|G:C_{G}(x)|=|G|/|C_{G}(x)|
+\]
+En particular, $|x^{G}|$ divide a $|G|$.
+\end{teorema}
+\begin{proof}
+Observemos primero que para $g,h \in G$, tenemos
+\[
+g^{-1}xg=h^{-1}xh \Leftrightarrow hg^{-1}x=xhg^{-1}
+\]
+\[
+\Leftrightarrow hg^{-1} \in C_{G}(x)
+\]
+\[
+\Leftrightarrow C_{G}(x)g=C_{G}(x)h
+\]
+teniendo esto en cuenta, podemos definir una funci'on inyectiva $f$ definida por:
+\[
+f:g^{-1}xg \rightarrow C_{G}(x)
+\]
+Es evidente que $f$ es sobreyectiva. Asi que $f$ es una biyecci'on, lo que prueba que $|x^{G}|=|G:C_{G}(x)|$.
+\end{proof}\\
+\\
+Antes de avanzar hagamos la siguiente observaci'on
+\[
+|x^{G}|=1 \Leftrightarrow g^{-1}xg=x
+\]
+para todo $g \in G$
+\[
+\Leftrightarrow x \in Z(G)
+\]
+donde $Z(G)$ es el centro de $G$.
+\begin{definicion}[Equaci'on de clases.]
+Sean $x_{1}, \ldots ,x_{l}$ representantes de las clases de conjugaci'on de $G$. Entonces
+\[
+|G|=|Z(G)|+\sum_{x_{i} \nsubseteq Z(G)}|x_{i}^{G}|
+\]
+donde $|x_{i}^{G}|=|G:C_{G}(x_{i})|$ y ambos, $|Z(G)|$ y $|x_{i}^{G}|$ divide a $|G|$.
+\end{definicion}
+Existen determinados paquetes inform'aticos que tienen como objeto trabajar con los distintos grupos algebraicos, uno de ellos es GAP, el cual puede ser descargado de forma gratuita desde \emph{www.gap-system.org}. GAP permite calcular las clases de conjugaci'on de un grupo determinado, en el siguiente ejemplo veremos como calcular las clases de conjugaci'on del grupo sim'etrico $S_{3}$. 
 \begin{verbatim}
 # Creamos el grupo:
 gap> s3:=SymmetricGroup(3);
