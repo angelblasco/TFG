@@ -1873,6 +1873,65 @@ gap> Size(c);
 gap> AsList(c);
 [ (1,2), (2,3), (1,3) ]
 \end{verbatim}
+\section{N'umero de caracteres irreducibles.}
+En este punto desarrollaremos un resultado que afirma que el n'umero de caracteres irreducibles de un grupo finito es igual al n'umero de clases de conjugaci'on de el grupo.
+\subsection{Funciones de clase.}
+\begin{definicion}
+Una funci'on de clase en $G$ es una funci'on $\psi : G \rightarrow \mathbb{C}$ tal que $\psi (x) = \psi (y)$ donde $x$ e $y$ son elementos conjugados de $G$.
+\end{definicion}
+Sabemos que los caracteres de $G$ son funciones de clase $G$. El conjunto $C$ de todas las funciones de clase en $G$ es un subespacio de el espacio vectorial de todas las funciones de $G$ a $\mathbb{C}$. Una base de $C$ estaria dada por aquellas funciones que toman el valor 1 en una clase de conjugaci'on y 0 en el resto. Asi que, si $l$ es el n'umero de clases de conjugaci'on de $G$, entonces
+\[
+dim(C)=l
+\]
+\begin{teorema}
+El n'umero de caracteres irreducibles de $G$ es igual al numero de clases de conjugaci'on de $G$.
+\end{teorema}
+\begin{proof}
+Sea $\chi_{1}, \ldots \chi_{k}$ los caracteres irreducibles de $G$ y sea $l$ el numero de clases de conjugaciones de $G$. $\chi_{1}, \ldots \chi_{k}$ son elementos linealmente independientes de $C$, lo que implica que $k \leq l$.\\
+Para demostrar $l \leq k$ consideraremos los $\mathbb{C}$G-m'odulos regulares. Si $V_{1}, \ldots V_{k}$ es un conjunto completo de $\mathbb{C}$G-m'odulos irreducibles no isomorfos, entonces:
+\[
+\mathbb{C}G = W_{1} \oplus \ldots \oplus W_{k}
+\]
+donde para cada $i$, $W_{i}$ es isomorfo a la suma directa de $V_{i}$.\\
+Cada $\mathbb{C}G$ contiene el elemento identidad, por lo que podemos poner
+\[
+1=f_{1}+ \ldots + f_{k}
+\]
+con $f_{i} \in W_{i}$ para $1 \leq i \leq k$.\\
+Sea $z \in Z(\mathbb{C}G)$, el centro de $\mathbb{C}G$, para cada $i$ existe $\lambda_{i} \in \mathbb{C}$ tal que para todo $v \in V_{i}$
+\[
+vz=\lambda_{i}v
+\]
+por lo tanto $wz=\lambda_{i}w$ para todo $w \in W_{i}$, en particular, de 
+\[
+f_{i}z=\lambda_{i}f_{i}
+\] 
+se sigue que
+\[
+z=1z=(f_{1}+\ldots +f_{k})z=f_{1}z+ \ldots +f_{k}z
+\]
+\[
+=\lambda_{1}f_{1} + \ldots + \lambda_{k}f_{k}
+\]
+Esto prueba que $Z(\mathbb{C}G)$ est'a contenido en el subespacio de $\mathbb{C}$G generado por $f_{i}, \ldots ,f_{k}$. Como cada $Z(\mathbb{C}G)$ tiene dimensi'on $l$ deducimos que $l \leq k$. Esto completa la prueba de que $k=l$. 
+\end{proof}
+\begin{corolario}
+Los caracteres irreducibles $\chi_{1}, \ldots ,\chi_{k}$ de $G$ forman una base de el espacio vectorial de todas las funciones de clase en $G$. En efecto, si $\psi$ es una funci'on de clase, entonces
+\[
+\psi=\sum_{i=1}^{k}\lambda_{i}\chi_{i}
+\]
+donde $\lambda_{i} = \langle \psi , \chi_{i} \rangle$ para $1 \leq i \leq k$
+\end{corolario}
+\begin{proposicion}
+Sean $g, h \in G$. Entonces $g$ es conjugado de $h$ si, y solo si, $\chi(g)=\chi(h)$ para todos los caracteres $\chi$ de $G$. 
+\end{proposicion}
+\begin{proof}
+Es sabido que si $g$ es conjugado de $h$ entonces $\chi(g)=\chi(h)$.\\
+A la inversa, supongamos que $\chi(g)=\chi(h)$ para todos los caracteres $\chi$ de $G$. Por el anterior corolario $\psi (g) = \psi (h)$ para todas las funciones de clase $\psi$ de $G$. En particular, esto es cierto para las funciones de clase $\psi$ la cuales toman el valor 1 en la clase de conjugaci'on de $g$ y toma el valor 0 en el resto. Entonces $\psi(g)=\psi(h)=1$, y, por lo tanto, $g$ es conjugado de $h$.
+\end{proof}
+\begin{corolario}
+Sea $g \in G$. Entonces $g$ es conjugado de $g^{-1}$ si, y solo si, $\chi (g)$ es real para todos los caracteres $\chi$ de $G$.
+\end{corolario}
 \newpage
 $\ $
 \thispagestyle{empty}
