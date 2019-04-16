@@ -31,4 +31,4 @@ Para la realizacion del presente trabajo se han utilizado las notas personales d
 ## Software
 
 Este trabajo ha sido realizado en [LaTeX](https://www.latex-project.org) utilizando el editor [Vim](https://www.vim.org). 
-Para la resolucion de algunos ejemplos el autor se ha apoyado en el software [GAP](https://www.gap-system.org)
+Para la resolucion de algunos ejemplos el autor se ha apoyado en el software [GAP](https://www.gap-system.org).
