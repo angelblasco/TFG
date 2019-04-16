@@ -1959,6 +1959,19 @@ gap> Size(cc);
 \section{Tablas de caracteres.}
 Los caracteres irreducibles de un grupo finito $G$ son funciones de clase, y el numero de ellos es igual al numero de las clases de conjugaci'on de $G$. En ocasiones es conveniente anotar los valores de los caracteres irreducibles de $G$ en una matriz cuadrada. Esta matriz se llama \emph{tabla de caracteres de G}. 
 \subsection{Tablas de caracteres.}
+\begin{definicion}
+Sean $\chi_{1},\ldots .\chi_{k}$ los caracteres irreducibles de $G$, y sean $g_{1},\ldots .g_{k}$ representantes de las clases de conjugaci'on de $G$. La matriz cuadrada $k \times k$ cuya \emph{ij-esima} entrada es $\chi_{i}(g_{j})$, para todo $i$, $j$ con $1 \leq i \leq k$, $1 \leq j \leq k$, se llama tabla de caracteres de $G$. 
+\end{definicion}
+Es normal nombrar los caracteres irreducibles y las clases de conjugaci'on de $G$ de tal modo que $\chi_{1}=1_{G}$ sea el car'acter trivial, y $g_{1}=1$ el elemento identidad de $G$. Mas alla de esto, se nombran de modo arbitrario. Se\~nalar que en las tablas de caracteres las filas estan indexadas por los caracteres irreducibles de $G$, mientras que las columnas estan indexadas por las clases de conjugaci'on.
+\begin{proposicion}
+La tabla de caracteres de $G$ es una matriz invertible.
+\end{proposicion}
+\begin{proof}
+La demostraci'on de esta proposici'on se sigue inmediatamente del hecho de que los caracteres irreducibles de $G$, y por lo tanto las filas de la tabla de caracteres, son linealmente independientes.
+\end{proof}
+\begin{ejemplo}
+Sea $G=D_{6}=$
+\end{ejemplo}
 \newpage
 $\ $
 \thispagestyle{empty}
