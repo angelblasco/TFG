@@ -50,3 +50,5 @@
 \contentsline {subsection}{\numberline {4.1.1}Tama\~no de las clases de conjugaci'on.}{44}% 
 \contentsline {section}{\numberline {4.2}N'umero de caracteres irreducibles.}{45}% 
 \contentsline {subsection}{\numberline {4.2.1}Funciones de clase.}{46}% 
+\contentsline {section}{\numberline {4.3}Tablas de caracteres.}{47}% 
+\contentsline {subsection}{\numberline {4.3.1}Tablas de caracteres.}{47}% 
