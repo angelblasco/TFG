@@ -1978,6 +1978,66 @@ de las cuales ya se habl'o en el cap'itulo anterior, pueden ser expresadas en t'
 \[
 \sum_{i=1}^{k}\frac{\chi_{r}(g_{i})\chi_{s}^{*}(g_{i})}{|C_{G}(g_{i})|}=\delta_{rs}
 \]
+Las mismas relaciones existen para las columnas de la tabla de caracteres como veremos en el siguiente resultado:
+\begin{teorema}
+Sean $\chi_{1}, \ldots,\chi_{k}$ caracteres irreducibles de $G$, y sean $g_{1},\ldots ,g_{k}$ representantes de las clases de conjugaci'on de $G$. Las siguientes relaciones se mantienen para cualquier $r, s \in \{1, \ldots ,k\}$
+\begin{enumerate}
+\item Relaci'on de ortogonalidad asociada a las filas de la tabla de caracteres:
+\[
+\sum_{i=1}^{k}\frac{\chi_{r}(g_{i})\chi_{s}^{*}(g_{i})}{|C_{G}(g_{i})|}=\delta_{rs}
+\]
+\item Relaci'on de ortogonalidad asociada a las columnas de la tabla de caracteres:
+\[
+\sum_{i=1}^{k}\chi_{i}(g_{r})\chi_{i}^{*}(g_{s})=\delta_{rs}|C_{G}(g_{r})|
+\]
+\end{enumerate}
+\end{teorema}
+\begin{proof}
+Para las relaciones de ortogonalidad asociadas a las filas de la tabla de caracteres denotamos por $g_{i}^{G}$ la clase de conjugaci'on de $G$ que contiene a $g_{i}$. Ya que los caracteres son constantes en cada clase de conjugaci'on
+\[
+\sum_{g \in g_{i}^{G}}\chi(g)\psi^{*}(g)=|g_{i}^{G}|\chi(g_{i})\psi^{*}(g_{i})
+\]
+Como
+\[
+G=\cup_{i=1}^{l} g_{i}^{G}
+\]
+y
+\[
+|g_{i}^{G}|=|G|/|C_{G}(g_{i})|
+\]
+Tenemos que
+\[
+\langle \chi, \psi \rangle = \frac{1}{|G|} \sum_{g \in G}\chi(g)\psi^{*}(g)=\frac{1}{|G|} \sum_{i=1}^{l} \sum_{g \in g_{i}^{G}} \chi(g)\psi^{*}(g)
+\]
+\[
+=\sum_{i=1}^{l}\frac{|g_{i}^{G}|}{|G|}\chi (g_{i})\psi^{*}(g_{i})
+\]
+\[
+=\sum_{i=1}^{l}\frac{1}{|C_{G}(g_{i})|}\chi(g_{i})\psi^{*}(g_{i})
+\]
+Pasamos ahora a dar una demostraci'on para para las relaciones de ortogonalidad asociadas a las columnas de la tabla de caracteres:\\
+Para $1 \leq s \leq k$, sea $\psi_{s}$ una funci'on de clase que satisface 
+\[
+\psi_{s}(g_{r})=\delta_{rs}
+\]
+Por el corolario 4.2.1, $\psi_{s}$ es una combinaci'on lineal de $\chi_{1}, \ldots ,\chi_{k}$, ya que
+\[
+\psi_{s}=\sum_{i=1}^{k}\lambda_{i}\chi_{i}
+\]
+como $\langle \chi_{i} ,\chi_{j} \rangle = \delta_{ij}$, tenemos
+\[
+\lambda_{i}=\langle \psi_{s}, \chi_{i} \rangle = \frac{1}{|G|}\sum_{g \in G}\psi_{s}(g)\chi_{i}^{*}(g)
+\]
+$\phi_{s}(g)=1$ si $g$ es conjugado de $g_{s}$, y $\phi_{s}(g)=0$ en cualquier otro caso; asi que hay $|G|/|C_{G}(g_{s})|$ elementos de $G$ conjugados de $g_{s}$ por el teorema 4.1.1.\\
+Asi que
+\[
+\lambda_{i}=\frac{1}{|G|}\sum_{g \in G}\psi_{s}(g)\chi_{i}^{*}(g)=\frac{\chi_{i}^{*}(g_{s})}{|C_{G}(g_{s})|}
+\]
+Por lo tanto
+\[
+\delta_{rs}=\psi_{s}(g_{r})=\sum_{i=1}^{k}\lambda_{i}\chi_{i}(g_{r})=\sum_{i=1}^{k}\frac{\chi_{i}(g_{r})\chi_{i}^{*}(g_{s})}{|C_{G}(g_{s})|}
+\]
+\end{proof}
 \newpage
 $\ $
 \thispagestyle{empty}
