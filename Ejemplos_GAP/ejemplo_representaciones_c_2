@@ -1,0 +1,51 @@
+gap> # Creamos el grupo simetrico s3;
+gap> s3:=SymmetricGroup(IspermGroup, 3);
+Error, Variable: 'IspermGroup' must have a value
+not in any function at *stdin*:10
+gap> s3:=SymmetricGroup(IsPermGroup, 3);
+Sym( [ 1 .. 3 ] )
+gap> # Calculamos sus clases de conjugacion
+gap> cc:=ConjugacyClasses(s3);
+[ ()^G, (1,2)^G, (1,2,3)^G ]
+gap> # Vemos que tiene 3 clases de conjugacion, procedemos a analizarlas
+gap> Display(cc[1]);
+ConjugacyClass( SymmetricGroup( [ 1 .. 3 ] ), () )
+gap> Display(cc[2]);
+ConjugacyClass( SymmetricGroup( [ 1 .. 3 ] ), (1,2) )
+gap> Display(cc[23]);
+Error, List Element: <list>[23] must have an assigned value
+not in any function at *stdin*:17
+you can 'return;' after assigning a value
+brk> quit;
+gap> Display(cc[3]);
+ConjugacyClass( SymmetricGroup( [ 1 .. 3 ] ), (1,2,3) )
+gap> Elements(cc[1]);
+[ () ]
+gap> Elements(cc[2]);
+[ (2,3), (1,2), (1,3) ]
+gap> Elements(cc[3]);
+[ (1,2,3), (1,3,2) ]
+gap> # Como tiene 3 clases de conjugacion tendra 3 caracteres irreducibles, lo comprobamos
+gap> cir:=Irr(s3);
+[ Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 1, -1, 1 ] ), 
+  Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 2, 0, -1 ] ), 
+  Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 1, 1, 1 ] ) ]
+gap> Length(cir);
+3
+gap> # La tabla de caracteres del grupo s3 sera:
+gap> ct:=CharacterTable(s3);
+CharacterTable( Sym( [ 1 .. 3 ] ) )
+gap> Display(ct);
+CT1
+
+     2  1  1  .
+     3  1  .  1
+
+       1a 2a 3a
+    2P 1a 1a 3a
+    3P 1a 2a 1a
+
+X.1     1 -1  1
+X.2     2  . -1
+X.3     1  1  1
+gap> LogTo();
