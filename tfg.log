@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  21 APR 2019 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.29)  21 APR 2019 23:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -916,11 +916,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 2085--2089
 LaTeX Info: Redefining \. on input line 2118.
 LaTeX Info: Redefining \% on input line 2118.
 [50]
-LaTeX Info: Redefining \. on input line 2138.
-LaTeX Info: Redefining \% on input line 2138.
- [51] [52] [53
+Underfull \hbox (badness 10000) in paragraph at lines 2168--2176
 
-] (./tfg.aux
+ []
+
+LaTeX Info: Redefining \. on input line 2176.
+LaTeX Info: Redefining \% on input line 2176.
+[51]
+LaTeX Info: Redefining \. on input line 2178.
+LaTeX Info: Redefining \% on input line 2178.
+ [52] [53]
+LaTeX Info: Redefining \. on input line 2182.
+LaTeX Info: Redefining \% on input line 2182.
+ [54
+
+] [55] (./tfg.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
@@ -952,10 +962,10 @@ e/2017/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2017/tex
 mf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on tfg.pdf (59 pages, 437518 bytes).
+Output written on tfg.pdf (61 pages, 440951 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
+ 284 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

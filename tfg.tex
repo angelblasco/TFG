@@ -101,7 +101,7 @@ Evidentemente es obligatorio agradecer a mis padres, Angel y Juliana, que siempr
 Por 'ultimo, pero no por ello menos importante, quisiera dar las gracias a una personita que lleva relativamente poco tiempo entre nosotros, pero que sin duda es quien mas tiempo me roba y quien mas feliz me hace, mi hijo, Mateo, el hace que todo esto tenga un sentido y su lucha diaria es fuente de mi inspiraci'on y motivaci'on.\\
 \\
 Gracias.
-\chapter*{abstract}
+\chapter*{Resumen.}
 Este trabajo versa sobre los grupos finitos y sus representaciones. Es importante destacar que en todo el trabajo al referirnos a \textit{grupo} nos referimos a un  \textbf{conjunto finito} en el cual se definir'a una operaci'on que debe cumplir unos condicionantes, al igual que en los grupos algebraicos propiamente dichos. En los grupos finitos se deben cumplir y respetar las mismas propiedades que en los grupos en general.\\
 \\
 Se introducir'a el concepto de representaci'on de un grupo finito, haciendo especial 'enfasis en el concepto de irreducibilidad, asi como en la teor'ia de caracteres para la determinaci'on de todas las representaciones irreducibles de un grupo dado. Se definir'a a su vez la matriz de caracteres y se calcular'an las representaciones irreducibles de algunos grupos finitos. 
@@ -2125,7 +2125,7 @@ Sea $N \triangleleft G$, y sea $\tilde \chi$ un car'acter de $G/N$. Definimos $\
 Entonces $\chi$ es un car'acter de $G$, y $\chi$ y $\tilde \chi$ tienen el mismo grado.
 \end{proposicion}
 \begin{proof}
-Sea $\tilde \rho : G/N \rightarrow GL(n \mathbb{C})$ una representaci'on de $G/N$ con car'acter $\tilde \chi$. La funci'on $\rho : G \rightarrow GL(n \mathbb{C})$ dada por la composici'on
+Sea $\tilde \rho : G/N \rightarrow GL(n, \mathbb{C})$ una representaci'on de $G/N$ con car'acter $\tilde \chi$. La funci'on $\rho : G \rightarrow GL(n, \mathbb{C})$ dada por la composici'on
 \[
 g \rightarrow Ng \rightarrow \tilde \rho(Ng)
 \]
@@ -2135,6 +2135,46 @@ es un homomorfismo de $G$ en $GL(n, \mathbb{C})$. Entonces $\rho$ es una represe
 \]
 para todo $g \in G$. Por lo tanto, $\chi (1) = \tilde \chi (N)$, asi que $\chi$ y $\tilde \chi$ tienen el mismo grado.
 \end{proof}
+\begin{definicion}
+Si $N \triangleleft G$ y $\tilde \chi$ es un car'acter de $G/N$, el car'acter $\chi$ de $G$ definido como:
+\[
+\chi (g) = \tilde \chi (Ng) 
+\]
+se denomina \emph{elevaci'on} de $\tilde \chi$ a $G$.
+\end{definicion}
+\begin{teorema}
+Sea $N \triangleleft G$. Si asociamos cada car'acter de $G/N$ con su elevaci'on a $G$, obtenemos una correspondencia biyectiva entre el conjunto de caracteres de $G/N$ y el conjunto de caracteres $\chi$ de $G$ que satifacen $N \leq Ker(\chi)$. Los caracteres irreducibles de $G/N$ se corresponden con los caracteres irreducibles de $G$ los cuales tienen a $N$ en su n'ucleo.
+\end{teorema}
+\begin{proof}
+Si $\tilde \chi$ es un car'acter de $G/N$, y $\chi$ es la elevaci'on de $\tilde \chi$ a $G$, entonces $\tilde \chi (N) = \chi (1)$. Si $k \in N$ entonces 
+\[
+\chi (k)=\tilde \chi (Nk) = \tilde \chi (N) = \chi (1)
+\]
+as'i que $N \leq Ker (\chi)$.\\
+Sea $\chi$ un car'acter de $G$ con $N \leq Ker (\chi)$. Supongamos que $\rho : G \rightarrow GL(n, \mathbb{C})$ es una representaci'on de $G$ con car'acter $\chi$. Si $g_{1},g_{2} \in G$ y $Ng_{1}=Ng_{2}$ entonces $g_{1}g_{2}^{-1} \in N$, as'i $\rho (g_{1}g_{2}^{-1})=I$, y $\rho (g_{1}) = \rho (g_{2})$. Por lo tanto, podemos definir una funci'on $\tilde \rho : G/N \rightarrow GL(n, \mathbb{C})$ como
+\[
+\tilde \rho (Ng) = \rho (g)
+\]
+Para todo $g, h \in G$ tenemos
+\[
+\tilde \rho ((Ng)(Nh)) = \tilde \rho (Ngh) = \rho (gh) = \rho (g) \rho (h)
+\]
+\[
+=(\tilde \rho (Ng))(\tilde \rho (Nh))
+\]
+as'i que $\tilde \rho$ es una representaci'on de $G/N$. Si $\tilde \chi$ es el car'acter de $\tilde \rho$ entonces
+\[
+\tilde \chi (Ng)= \chi (g)
+\]
+As'i que $\chi$ es la elevaci'on de $\tilde \chi$.\\
+Hemos establecido que la funci'on que envia cada car'acter de $G/N$ a su elevaci'on a $G$ es una biyecci'on entre el conjunto de caracteres de $G/N$ y el conjunto de caracteres de $G$ el cual tiene a $N$ en su n'ucleo. Queda por mostrar que los caracteres irreducibles se corresponden con caracteres irreducibles. Sea $U$ un subespacio de $\mathbb{C}^{n}$ y denotemos $u \rho(g) \in U$ para todo $u \in U$, si, y solo si $u \tilde \rho (Ng) \in U$ para todo $u \in U$. 
+As'i, $U$ es un $\mathbb{C}$G-subm'odulo de $\mathbb{C}^{n}$ si, y solo si $U$ es un $\mathbb{C}$$(G/N)$-subm'odulo de $\mathbb{C}^{n}$. La representaci'on $\rho$ es, por lo tanto, irreducible si, y solo si, la representaci'on $\tilde \rho$ es irreducible. As'i que $\chi$ es irreducible si, y solo si, $\tilde \chi$ es irreducible. 
+\end{proof}\\
+\\
+Si conocemos la tabla de caracteres de $G/N$ para alg'un subgrupo normal $N$ de $G$ el anterior teorema nos habilita para encontrar tantos caracteres irreducibles de $G$ como caracteres irreducibles hay en $G/N$.
+\begin{ejemplo}
+
+\end{ejemplo}
 \newpage
 $\ $
 \thispagestyle{empty}
