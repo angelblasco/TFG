@@ -2037,7 +2037,84 @@ Por lo tanto
 \[
 \delta_{rs}=\psi_{s}(g_{r})=\sum_{i=1}^{k}\lambda_{i}\chi_{i}(g_{r})=\sum_{i=1}^{k}\frac{\chi_{i}(g_{r})\chi_{i}^{*}(g_{s})}{|C_{G}(g_{s})|}
 \]
-\end{proof}
+\end{proof}\\
+\\
+Veamos todo lo tratado hasta ahora con un ejemplo:
+\begin{ejemplo}
+Consideremos el grupo sim'etrico $S_{3}$. Las clases de conjugaci'on son $\{1\}$, $\{(12),(13),(23)\}$, y $\{(123),(132)\}$, con lo que existen 3 caracteres irreducibles $\chi_{1}, \chi_{2}, \chi_{3}$. Con GAP lo hariamos como sigue:
+\begin{verbatim}
+# Creamos el grupo simetrico s3
+gap> s3:=SymmetricGroup(IsPermGroup, 3);
+Sym( [ 1 .. 3 ] )
+# Calculamos sus clases de conjugacion
+gap> cc:=ConjugacyClasses(s3);
+[ ()^G, (1,2)^G, (1,2,3)^G ]
+# Vemos que tiene 3 clases de conjugacion, procedemos a analizarlas
+gap> Elements(cc[1]);
+[ () ]
+gap> Elements(cc[2]);
+[ (2,3), (1,2), (1,3) ]
+gap> Elements(cc[3]);
+[ (1,2,3), (1,3,2) ]
+# Como tiene 3 clases de conjugacion tendra 3 caracteres irreducibles, lo comprobamos
+gap> cir:=Irr(s3);
+[ Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 1, -1, 1 ] ), 
+  Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 2, 0, -1 ] ), 
+  Character( CharacterTable( Sym( [ 1 .. 3 ] ) ), [ 1, 1, 1 ] ) ]
+gap> Length(cir);
+3
+\end{verbatim}
+Si consideramos la representaci'on 
+\[
+\rho_{2} : S_{3} \rightarrow S^{1}
+\]
+asignando a cada permutaci'on en $S_{3}$ su signo, obtenemos:
+\[
+\left( \begin{array}{ccc}
+\chi_{1}(1)=1 & \chi_{1}(12)=1 & \chi_{1}(123)=1 \\
+\chi_{2}(1)=1 & \chi_{2}(12)=-1 & \chi_{2}(123)=1 \\
+\chi_{3}(1)=n_{3}& \chi_{3}(12) & \chi_{3}(123) \end{array} \right)
+\]
+Como $6=|S_{3}|=1+1+n_{3}^{2}$, se tiene $n_{3}=2$. La ortogonalidad de las dos primeras columnas implica 
+\[
+1 \cdot 1 +1 \cdot (-1)+2 \cdot \chi_{3}(12)=0
+\]
+de lo que $\chi_{3}(12)=0$. Mientras, la ortogonalidad de las columnas primera y tercera proporciona
+\[
+1 \cdot 1 +1 \cdot 1 +2 \cdot \chi_{3}(123)=0
+\]
+por lo que $\chi_{3}(123)=-1$.\\
+\\
+En conclusion tenemos:
+\[
+\left( \begin{array}{ccc}
+\chi_{1}(1)=1 & \chi_{1}(12)=1 & \chi_{1}(123)=1 \\
+\chi_{2}(1)=1 & \chi_{2}(12)=-1 & \chi_{2}(123)=1 \\
+\chi_{3}(1)=2& \chi_{3}(12)=0 & \chi_{3}(123)=-1 \end{array} \right)
+\]
+en GAP seria como sigue:
+\begin{verbatim}
+# La tabla de caracteres del grupo s3 sera:
+gap> ct:=CharacterTable(s3);
+CharacterTable( Sym( [ 1 .. 3 ] ) )
+gap> Display(ct);
+CT1
+
+     2  1  1  .
+     3  1  .  1
+
+       1a 2a 3a
+    2P 1a 1a 3a
+    3P 1a 2a 1a
+
+X.1     1 -1  1
+X.2     2  . -1
+X.3     1  1  1
+\end{verbatim}
+\end{ejemplo}
+\section{Subgrupos normales y elevaci'on de caracteres.}
+Si $N$ es un subgrupo normal de el grupo finito $G$, y $N \neq \{ 1 \}$ el  grupo cociente $G/N$ es menor que $G$. Los caracteres de $G/N$ deberian ser mas sencillos de calcular que los caracteres de $G$. De hecho, podemos usar los caracteres de $G/N$ para conseguir algunos caracteres de $G$ por un procedimiento conocido como \emph{elevavci'on}. Los subgrupos normales nos ayudan a encontrar caracteres de $G$. En la direcci'on opuesta, la tabla de caracteres de $G$ nos permite encontrar los subgrupos normales de $G$.\\
+Los caracteres lineales de $G$ se obtienen por elevaci'on de los caracteres irreducibles de $G/N$ en el caso en el que $N$ es un subgrupo derivado de $G$.
 \newpage
 $\ $
 \thispagestyle{empty}
