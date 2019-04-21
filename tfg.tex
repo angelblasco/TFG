@@ -2114,7 +2114,27 @@ X.3     1  1  1
 \end{ejemplo}
 \section{Subgrupos normales y elevaci'on de caracteres.}
 Si $N$ es un subgrupo normal de el grupo finito $G$, y $N \neq \{ 1 \}$ el  grupo cociente $G/N$ es menor que $G$. Los caracteres de $G/N$ deberian ser mas sencillos de calcular que los caracteres de $G$. De hecho, podemos usar los caracteres de $G/N$ para conseguir algunos caracteres de $G$ por un procedimiento conocido como \emph{elevavci'on}. Los subgrupos normales nos ayudan a encontrar caracteres de $G$. En la direcci'on opuesta, la tabla de caracteres de $G$ nos permite encontrar los subgrupos normales de $G$.\\
-Los caracteres lineales de $G$ se obtienen por elevaci'on de los caracteres irreducibles de $G/N$ en el caso en el que $N$ es un subgrupo derivado de $G$.
+Los caracteres lineales de $G$ se obtienen por elevaci'on de los caracteres irreducibles de $G/N$ en el caso en el que $N$ es un subgrupo derivado de $G$. Los caracteres lineales pueden ser usados para obtener nuevos caracteres irreducibles a partir de un caracter irreducible dado.
+\subsection{Elevaci'on de caracteres.}
+Comenzaremos por obtener un car'acter de $G$ a partir de un car'acter de $G/N$.
+\begin{proposicion}
+Sea $N \triangleleft G$, y sea $\tilde \chi$ un car'acter de $G/N$. Definimos $\chi : G \rightarrow \mathbb{C}$ por:
+\[
+\chi(g)=\tilde \chi (Ng)
+\]
+Entonces $\chi$ es un car'acter de $G$, y $\chi$ y $\tilde \chi$ tienen el mismo grado.
+\end{proposicion}
+\begin{proof}
+Sea $\tilde \rho : G/N \rightarrow GL(n \mathbb{C})$ una representaci'on de $G/N$ con car'acter $\tilde \chi$. La funci'on $\rho : G \rightarrow GL(n \mathbb{C})$ dada por la composici'on
+\[
+g \rightarrow Ng \rightarrow \tilde \rho(Ng)
+\]
+es un homomorfismo de $G$ en $GL(n, \mathbb{C})$. Entonces $\rho$ es una representaci'on de $G$. El car'acter $\chi$ de $\rho$ satisface
+\[
+\chi (g)=tr(\rho(g))=tr(\tilde \rho(Ng))=\tilde \chi (Ng)
+\]
+para todo $g \in G$. Por lo tanto, $\chi (1) = \tilde \chi (N)$, asi que $\chi$ y $\tilde \chi$ tienen el mismo grado.
+\end{proof}
 \newpage
 $\ $
 \thispagestyle{empty}

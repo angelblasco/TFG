@@ -54,3 +54,4 @@
 \contentsline {subsection}{\numberline {4.3.1}Tablas de caracteres.}{47}
 \contentsline {subsection}{\numberline {4.3.2}Relaciones de ortogonalidad.}{48}
 \contentsline {section}{\numberline {4.4}Subgrupos normales y elevaci'on de caracteres.}{50}
+\contentsline {subsection}{\numberline {4.4.1}Elevaci'on de caracteres.}{51}
