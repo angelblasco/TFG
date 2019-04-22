@@ -1,57 +1,58 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \hspace {-7.5mm} \textbf {Capitulos}
 \hfill \textbf {Pagina} \par 
 \vspace {-2mm} \hspace {-7.5mm} \hrule \par 
-\contentsline {chapter}{\numberline {1}Conceptos b'asicos.}{7}
-\contentsline {section}{\numberline {1.1}Grupos.}{7}
-\contentsline {section}{\numberline {1.2}Subgrupos.}{8}
-\contentsline {subsubsection}{Intersecci'on de subgrupos.}{8}
-\contentsline {subsubsection}{Producto de dos subgrupos.}{9}
-\contentsline {subsubsection}{Subgrupo generado.}{9}
-\contentsline {subsubsection}{Conjunto conjugado.}{10}
-\contentsline {subsubsection}{Normalizador.}{10}
-\contentsline {section}{\numberline {1.3}Orden de un elemento.}{10}
-\contentsline {section}{\numberline {1.4}Grupos c'iclicos.}{11}
-\contentsline {section}{\numberline {1.5}Coclases, 'indice de un grupo y Teorema de Lagrange.}{11}
-\contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{12}
-\contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{12}
-\contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{13}
-\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{13}
-\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{14}
-\contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{15}
-\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{15}
-\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{15}
-\contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{16}
-\contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{16}
-\contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{17}
-\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{18}
-\contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{18}
-\contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{19}
-\contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{20}
-\contentsline {chapter}{\numberline {2}Representaciones de grupos.}{23}
-\contentsline {section}{\numberline {2.1}Representaciones de grupos.}{23}
-\contentsline {section}{\numberline {2.2}Representaciones equivalentes.}{24}
-\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{26}
-\contentsline {section}{\numberline {2.4}Representaciones irreducibles.}{26}
-\contentsline {section}{\numberline {2.5}FG-m'odulos.}{28}
-\contentsline {subsection}{\numberline {2.5.1}FG-m'odulos y representaciones equivalentes.}{30}
-\contentsline {subsection}{\numberline {2.5.2}FG-subm'odulos.}{31}
-\contentsline {subsection}{\numberline {2.5.3}FG-m'odulos irreducibles.}{31}
-\contentsline {subsection}{\numberline {2.5.4}FG-homomorfismos.}{31}
-\contentsline {subsection}{\numberline {2.5.5}Isomorfismos de FG-m'odulos.}{32}
-\contentsline {subsection}{\numberline {2.5.6}Suma directa de FG-m'odulos.}{33}
-\contentsline {chapter}{\numberline {3}Caracteres.}{35}
-\contentsline {section}{\numberline {3.1}El lema de Schur.}{35}
-\contentsline {section}{\numberline {3.2}Car'acter de una representaci'on.}{35}
-\contentsline {section}{\numberline {3.3}Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}{37}
-\contentsline {section}{\numberline {3.4}N'umero de representaciones irreducibles.}{39}
-\contentsline {chapter}{\numberline {4}Tabla de caracteres.}{43}
-\contentsline {section}{\numberline {4.1}Clases de conjugaci'on.}{43}
-\contentsline {subsection}{\numberline {4.1.1}Tama\~no de las clases de conjugaci'on.}{44}
-\contentsline {section}{\numberline {4.2}N'umero de caracteres irreducibles.}{45}
-\contentsline {subsection}{\numberline {4.2.1}Funciones de clase.}{46}
-\contentsline {section}{\numberline {4.3}Tablas de caracteres.}{47}
-\contentsline {subsection}{\numberline {4.3.1}Tablas de caracteres.}{47}
-\contentsline {subsection}{\numberline {4.3.2}Relaciones de ortogonalidad.}{48}
-\contentsline {section}{\numberline {4.4}Subgrupos normales y elevaci'on de caracteres.}{50}
-\contentsline {subsection}{\numberline {4.4.1}Elevaci'on de caracteres.}{51}
+\contentsline {chapter}{\numberline {1}Conceptos b'asicos.}{7}% 
+\contentsline {section}{\numberline {1.1}Grupos.}{7}% 
+\contentsline {section}{\numberline {1.2}Subgrupos.}{8}% 
+\contentsline {subsubsection}{Intersecci'on de subgrupos.}{8}% 
+\contentsline {subsubsection}{Producto de dos subgrupos.}{9}% 
+\contentsline {subsubsection}{Subgrupo generado.}{9}% 
+\contentsline {subsubsection}{Conjunto conjugado.}{10}% 
+\contentsline {subsubsection}{Normalizador.}{10}% 
+\contentsline {section}{\numberline {1.3}Orden de un elemento.}{10}% 
+\contentsline {section}{\numberline {1.4}Grupos c'iclicos.}{11}% 
+\contentsline {section}{\numberline {1.5}Coclases, 'indice de un grupo y Teorema de Lagrange.}{11}% 
+\contentsline {section}{\numberline {1.6}Subgrupos normales. Grupo cociente.}{12}% 
+\contentsline {subsection}{\numberline {1.6.1}Subgrupos normales.}{12}% 
+\contentsline {subsection}{\numberline {1.6.2}Grupo cociente.}{13}% 
+\contentsline {section}{\numberline {1.7}Homomorfismos de grupos.}{13}% 
+\contentsline {subsection}{\numberline {1.7.1}Teorema de Cayley.}{14}% 
+\contentsline {subsection}{\numberline {1.7.2}Factorizaci'on de homomorfismos.}{15}% 
+\contentsline {subsection}{\numberline {1.7.3}Teoremas de isomorf'ia.}{15}% 
+\contentsline {subsubsection}{Primer teorema de isomorf'ia.}{15}% 
+\contentsline {subsubsection}{Segundo teorema de isomorf'ia.}{16}% 
+\contentsline {subsubsection}{Tercer teorema de isomorf'ia.}{16}% 
+\contentsline {section}{\numberline {1.8}Teorema de estructura de los grupos abelianos finitos.}{17}% 
+\contentsline {section}{\numberline {1.9}Automorfismos de grupos.}{18}% 
+\contentsline {subsection}{\numberline {1.9.1}Automorfismos interiores.}{18}% 
+\contentsline {subsection}{\numberline {1.9.2}Acci'on de un grupo sobre un conjunto.}{19}% 
+\contentsline {subsection}{\numberline {1.9.3}Teorema de Sylow.}{20}% 
+\contentsline {chapter}{\numberline {2}Representaciones de grupos.}{23}% 
+\contentsline {section}{\numberline {2.1}Representaciones de grupos.}{23}% 
+\contentsline {section}{\numberline {2.2}Representaciones equivalentes.}{24}% 
+\contentsline {section}{\numberline {2.3}N'ucleo de una representaci'on.}{26}% 
+\contentsline {section}{\numberline {2.4}Representaciones irreducibles.}{26}% 
+\contentsline {section}{\numberline {2.5}FG-m'odulos.}{28}% 
+\contentsline {subsection}{\numberline {2.5.1}FG-m'odulos y representaciones equivalentes.}{30}% 
+\contentsline {subsection}{\numberline {2.5.2}FG-subm'odulos.}{31}% 
+\contentsline {subsection}{\numberline {2.5.3}FG-m'odulos irreducibles.}{31}% 
+\contentsline {subsection}{\numberline {2.5.4}FG-homomorfismos.}{31}% 
+\contentsline {subsection}{\numberline {2.5.5}Isomorfismos de FG-m'odulos.}{32}% 
+\contentsline {subsection}{\numberline {2.5.6}Suma directa de FG-m'odulos.}{33}% 
+\contentsline {chapter}{\numberline {3}Caracteres.}{35}% 
+\contentsline {section}{\numberline {3.1}El lema de Schur.}{35}% 
+\contentsline {section}{\numberline {3.2}Car'acter de una representaci'on.}{35}% 
+\contentsline {section}{\numberline {3.3}Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}{37}% 
+\contentsline {section}{\numberline {3.4}N'umero de representaciones irreducibles.}{39}% 
+\contentsline {chapter}{\numberline {4}Tabla de caracteres.}{43}% 
+\contentsline {section}{\numberline {4.1}Clases de conjugaci'on.}{43}% 
+\contentsline {subsection}{\numberline {4.1.1}Tama\~no de las clases de conjugaci'on.}{44}% 
+\contentsline {section}{\numberline {4.2}N'umero de caracteres irreducibles.}{45}% 
+\contentsline {subsection}{\numberline {4.2.1}Funciones de clase.}{46}% 
+\contentsline {section}{\numberline {4.3}Tablas de caracteres.}{47}% 
+\contentsline {subsection}{\numberline {4.3.1}Tablas de caracteres.}{47}% 
+\contentsline {subsection}{\numberline {4.3.2}Relaciones de ortogonalidad.}{48}% 
+\contentsline {section}{\numberline {4.4}Subgrupos normales y elevaci'on de caracteres.}{51}% 
+\contentsline {subsection}{\numberline {4.4.1}Elevaci'on de caracteres.}{51}% 
+\contentsline {subsection}{\numberline {4.4.2}Subgrupos normales y caracteres.}{53}% 

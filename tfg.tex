@@ -3,7 +3,7 @@
 \usepackage[a4paper,margin=2cm]{geometry} % margenes
 \usepackage[latin1]{inputenc} % acentos sin codigo
 \usepackage{graphicx} % graficos
-\usepackage{multirow} % para las tablas
+\usepackage{multirow, array} % para las tablas
 \usepackage{amsfonts}
 \usepackage{mathrsfs} % para letras de rubrica
 %\usepackage{listings} % para letras de codigo \begin{lstlisting} ... \end{lstlisting}
@@ -1999,7 +1999,7 @@ Para las relaciones de ortogonalidad asociadas a las filas de la tabla de caract
 \]
 Como
 \[
-G=\cup_{i=1}^{l} g_{i}^{G}
+G=\bigcup_{i=1}^{l} g_{i}^{G}
 \]
 y
 \[
@@ -2168,13 +2168,93 @@ as'i que $\tilde \rho$ es una representaci'on de $G/N$. Si $\tilde \chi$ es el c
 \]
 As'i que $\chi$ es la elevaci'on de $\tilde \chi$.\\
 Hemos establecido que la funci'on que envia cada car'acter de $G/N$ a su elevaci'on a $G$ es una biyecci'on entre el conjunto de caracteres de $G/N$ y el conjunto de caracteres de $G$ el cual tiene a $N$ en su n'ucleo. Queda por mostrar que los caracteres irreducibles se corresponden con caracteres irreducibles. Sea $U$ un subespacio de $\mathbb{C}^{n}$ y denotemos $u \rho(g) \in U$ para todo $u \in U$, si, y solo si $u \tilde \rho (Ng) \in U$ para todo $u \in U$. 
-As'i, $U$ es un $\mathbb{C}$G-subm'odulo de $\mathbb{C}^{n}$ si, y solo si $U$ es un $\mathbb{C}$$(G/N)$-subm'odulo de $\mathbb{C}^{n}$. La representaci'on $\rho$ es, por lo tanto, irreducible si, y solo si, la representaci'on $\tilde \rho$ es irreducible. As'i que $\chi$ es irreducible si, y solo si, $\tilde \chi$ es irreducible. 
+As'i, $U$ es un $\mathbb{C}$G-subm'odulo de $\mathbb{C}^{n}$ si, y solo si $U$ es un $\mathbb{C}$(G/N)-subm'odulo de $\mathbb{C}^{n}$. La representaci'on $\rho$ es, por lo tanto, irreducible si, y solo si, la representaci'on $\tilde \rho$ es irreducible. As'i que $\chi$ es irreducible si, y solo si, $\tilde \chi$ es irreducible. 
 \end{proof}\\
 \\
 Si conocemos la tabla de caracteres de $G/N$ para alg'un subgrupo normal $N$ de $G$ el anterior teorema nos habilita para encontrar tantos caracteres irreducibles de $G$ como caracteres irreducibles hay en $G/N$.
 \begin{ejemplo}
-
+Sea $G=S_{4}$ y $N=\{ 1,(1,2)(3,4), (1,3)(2,4), (1,4)(2,3) \} $ lo que hace que $N \triangleleft G$. Si ponemos $a=N(1, 2,3)$ y $b=N(1,2)$, entonces tenemos que $G/N=\langle a, b \rangle$ y $a^{3}=b^{2}=N, b^{-1}ab=a^{-1}$, as'i que $G/N  \cong D_{6}$.\\
+La tabla de caracteres de $G/N$ es:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+& N & N(1,2) & N(1,2,3) \\
+\hline \hline
+$\tilde \chi_{1}$ & 1 & 1 & 1 \\ 
+$\tilde \chi_{2}$ & 1 & -1 & 1 \\ 
+$\tilde \chi_{3}$ & 2 & 0 & -1 \\ 
+\hline
+\end{tabular}
+\caption{Tabla de caracteres de G/N.}
+\label{tabla:caracteresG/N}
+\end{center}
+\end{table}
+Para calcular la elevaci'on $\chi$ de un car'acter $\tilde \chi$ de $G/N$ tomamos en consideraci'on que:
+\[
+\chi ((1,2)(3,4))= \tilde \chi (N)
+\]
+para cada $(1,2)(3,4) \in N$, y
+\[
+\chi ((1,2,3,4)) = \tilde \chi (N(1,3))
+\]
+para cada $N(1,2,3,4)=N(1,3)$. As'i que las elevaciones de $\tilde \chi_{1}, \tilde \chi_{2}, \tilde \chi_{3}$ son $\chi_{1}, \chi_{2}, \chi_{3}$,
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+& 1 & (1,2) & (1,2,3) & (1,2)(3,4) & (1,2,3,4)\\
+\hline \hline
+$\chi_{1}$ & 1 & 1 & 1 & 1 & 1 \\ 
+$\chi_{2}$ & 1 & -1 & 1 & 1 & -1 \\ 
+$\chi_{3}$ & 2 & 0 & -1 & 2 & 0\\ 
+\hline
+\end{tabular}
+\caption{Tabla de elevaci'on de caracteres de G/N.}
+\label{tabla:elevacioncaracteresG/N}
+\end{center}
+\end{table}
+$\chi_{1}, \chi_{2}, \chi_{3}$ son caracteres irreducibles de $G$, cada $\tilde \chi_{1}, \tilde \chi_{2}, \tilde \chi_{3}$ son caracteres irreducibles de $G/N$.
 \end{ejemplo}
+\subsection{Subgrupos normales y caracteres.}
+La tabla de caracteres contiene informaci'on sobre la estructura de un grupo, veremos como encontrar todos los subgrupos normales de $G$ conocida la tabla de caracteres de $G$. Es muy sencillo localizar el n'ucleo de un car'acter irreducible $\chi$ partiendo de la tabla de caracteres ya que
+\[
+Ker (\chi) = \{ g \in G : \chi (g) = \chi (1) \}
+\] 
+Ademas $Ker (\chi) \triangleleft G$. Recordar, tambi'en, que la intersecci'on de los nucleos de los caracteres irreducibles es, tambi'en, un subgrupo normal.
+\begin{proposicion}
+Si $N \triangleleft G$ entonces existen caracteres irreducibles $\chi_{1}, \ldots ,\chi_{s}$ de $G$ tales que
+\[
+N=\bigcap_{i=1}^{s}Ker(\chi_{i})
+\]
+\end{proposicion} 
+\begin{proof}
+Si $g$ pertenece a el n'ucleo de cada car'acter irreducible de $G$, entonces $\chi (g) = \chi (1)$ para todo los carcateres $\chi$, asi $g=1$ por la proposici'on 4.2.1. Por lo tanto, la intersecci'on de los nucleos de todos los caracteres irreducibles de $G$ es $\{1\}$.\\
+Sean $\tilde \chi_{1}, \ldots \tilde \chi_{s}$ caracteres irreducibles de $G/N$, por la observaci'on anterior 
+\[
+\bigcap_{i=1}^{s}Ker(\tilde \chi_{i})= \{N\}
+\]
+Para $1 \leq i \leq s$, sea $\chi_{i}$ la elevaci'on a $G$ de $\tilde \chi_{i}$, si $g \in Ker (\chi_{i})$ entonces
+\[
+\tilde \chi_{i}(N)=\chi_{i}(1)=\chi_{i}(g)= \tilde \chi_{i}(Ng)
+\] 
+as'i que $Ng \in Ker (\tilde \chi_{i})$. Por lo tanto, si $g \in \cap Ker (\chi_{i})$ entonces $Ng \in \cap Ker (\tilde \chi_{i})=\{ N \}$, as'i que $g \in N$ y tenemos 
+\[
+N=\bigcap_{i=1}^{s}Ker(\chi_{i})
+\]
+\end{proof}\\
+\\
+Es particularmente f'acil distinguir de la tabla de caracteres de $G$ si $G$ es simple o no.
+\begin{proposicion}
+El grupo $G$ no es simple si, y solo si, 
+\[
+\chi (g) = \chi (1)
+\]
+para algunos carcateres irreducibles no triviales $\chi$ de $G$ y algunos elementos $g$ de $G$ diferentes del elemento identidad.
+\end{proposicion}
+\begin{proof}
+Supongamos que existe un car'acter irreducible no trivial $\chi$ tal que $\chi (g)=\chi (1)$ para alg'un elemento $g$ diferente del elemento identidad. 
+\end{proof}
 \newpage
 $\ $
 \thispagestyle{empty}
