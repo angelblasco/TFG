@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  22 APR 2019 14:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  23 APR 2019 14:25
 entering extended mode
 **./tfg.tex
 (tfg.tex
@@ -1077,11 +1077,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 2244--2249
 
  []
 
-LaTeX Info: Redefining \. on input line 2258.
-LaTeX Info: Redefining \% on input line 2258.
-[53] [54] [55
+LaTeX Info: Redefining \. on input line 2263.
+LaTeX Info: Redefining \% on input line 2263.
+[53]
+LaTeX Info: Redefining \. on input line 2273.
+LaTeX Info: Redefining \% on input line 2273.
+ [54] [55]
+LaTeX Info: Redefining \. on input line 2277.
+LaTeX Info: Redefining \% on input line 2277.
+ [56
 
-] (tfg.aux
+] [57] (tfg.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 ) ) 
@@ -1124,9 +1130,9 @@ l.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Us
 ers/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsf
 s/rsfs10.pfb>
-Output written on tfg.pdf (61 pages, 484832 bytes).
+Output written on tfg.pdf (63 pages, 487587 bytes).
 PDF statistics:
- 772 PDF objects out of 1000 (max. 8388607)
+ 778 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2253,8 +2253,23 @@ El grupo $G$ no es simple si, y solo si,
 para algunos carcateres irreducibles no triviales $\chi$ de $G$ y algunos elementos $g$ de $G$ diferentes del elemento identidad.
 \end{proposicion}
 \begin{proof}
-Supongamos que existe un car'acter irreducible no trivial $\chi$ tal que $\chi (g)=\chi (1)$ para alg'un elemento $g$ diferente del elemento identidad. 
+Supongamos que existe un car'acter irreducible no trivial $\chi$ tal que $\chi (g)=\chi (1)$ para alg'un elemento $g$ diferente del elemento identidad. Entonces $g \in Ker (\chi)$, as'i que $Ker (\chi) \neq \{ 1 \}$. Si $\rho$ es una representaci'on de $G$ con car'acter $\chi$, entonces $Ker (\chi) = Ker (\rho)$. Ya que $\chi$ no es trivial y es irreducible, $Ker (\rho) \neq G$; por lo tanto $Ker (\chi) \neq G$. As'i $Ker (\chi)$ es un subgrupo normal de $G$ distinto de $\{ 1 \}$ y, por lo tanto, $G$ no es simple.\\
+En el sentido contrario, supongamos que $G$ no es simple, por lo que existe un subgrupo normal $N$ de $G$ tal que $N \neq \{ 1 \}$ y $N \neq G$. Por la proposici'on 4.4.2 hay un car'acter irreducibe $\chi$ de $G$ tal que $Ker (\chi) \neq \{ 1 \}$ o $Ker (\chi) \neq G$. Como $Ker (\chi) \neq G$, $\chi$ no es trivial; y tomando $1 \neq g \in Ker (\chi)$, tenemos que $\chi (g) = \chi (1)$. 
 \end{proof}
+\subsection{Caracteres lineales.}
+Un car'acter lineal de un grupo es un car'acter de grado 1. Vamos a ver como encontrar todos los caracteres lineales de un grupo $G$, ya que el primer paso en la contrucci'on de la tabla de caracteres suele ser anotar los caracteres lineales.\\
+Como paso preliminar, es necesario definir el concepto de \emph{subgrupo derivado} de $G$.	
+\begin{definicion}
+Sea $G'$ un subgrupo de $G$ generado por todos los elementos de la forma 
+\[
+g^{-1}h^{-1}gh
+\]
+para $g, h \in G$. Entonces $G'$ es el subgrupo derivado de $G$.
+\end{definicion}
+Por sencillez abreviaremos $g^{-1}h^{-1}gh$ como $[g,h]$. As'i 
+\[
+G'=\langle [g,h] : g, h \in G \rangle
+\]
 \newpage
 $\ $
 \thispagestyle{empty}

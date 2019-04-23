@@ -56,3 +56,4 @@
 \contentsline {section}{\numberline {4.4}Subgrupos normales y elevaci'on de caracteres.}{51}% 
 \contentsline {subsection}{\numberline {4.4.1}Elevaci'on de caracteres.}{51}% 
 \contentsline {subsection}{\numberline {4.4.2}Subgrupos normales y caracteres.}{53}% 
+\contentsline {subsection}{\numberline {4.4.3}Caracteres lineales.}{54}% 
