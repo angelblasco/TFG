@@ -1,0 +1,18 @@
+gap> # Creamos el grupo S3 y vemos sus elementos
+gap> S3:=SymmetricGroup(3);
+Sym( [ 1 .. 3 ] )
+gap> Elements(S3);
+[ (), (2,3), (1,2), (1,2,3), (1,3,2), (1,3) ]
+gap> # Calculamos ahora el subgrupo derivado de S3 y mostramos los elementos que lo forman
+gap> de:=DerivedSubgroup(S3);
+Alt( [ 1 .. 3 ] )
+gap> Elements(de);
+[ (), (1,2,3), (1,3,2) ]
+gap> # En este caso veremos que el subgrupo derivado
+gap> # de el grupo simetrico S3, es el grupo alterno A3
+gap> # vamos a comprobarlo
+gap> A3:=AlternatingGroup(3);
+Alt( [ 1 .. 3 ] )
+gap> A3=de;
+true
+gap> LogTo();
