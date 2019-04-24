@@ -2270,6 +2270,40 @@ Por sencillez abreviaremos $g^{-1}h^{-1}gh$ como $[g,h]$. As'i
 \[
 G'=\langle [g,h] : g, h \in G \rangle
 \]
+\begin{ejemplo}
+Veamos como calcular el subgrupo derivado del grupo sim'etrico $S_{3}$ utilizando el software GAP:
+\begin{verbatim}
+gap> # Creamos el grupo S3 y vemos sus elementos
+gap> S3:=SymmetricGroup(3);
+Sym( [ 1 .. 3 ] )
+gap> Elements(S3);
+[ (), (2,3), (1,2), (1,2,3), (1,3,2), (1,3) ]
+gap> # Calculamos ahora el subgrupo derivado de S3 y mostramos
+gap> # los elementos que lo forman
+gap> de:=DerivedSubgroup(S3);
+Alt( [ 1 .. 3 ] )
+gap> Elements(de);
+[ (), (1,2,3), (1,3,2) ]
+gap> # En este caso vemos que el subgrupo derivado
+gap> # de el grupo simetrico S3, es el grupo alterno A3
+gap> # vamos a comprobarlo
+gap> A3:=AlternatingGroup(3);
+Alt( [ 1 .. 3 ] )
+gap> A3=de;
+true
+\end{verbatim}
+\end{ejemplo}
+Vamos a mostrar que $G' \triangleleft G$ y los caracteres lineales de $G$ son las elevaciones a $G'$ de los caracteres irreducibles de $G/G'$. Comencemos para ello con la siguiente proposici'on.
+\begin{proposicion}
+Si $\chi$ es un car'acter lineal de $G$, entonces $G' \leq Ker (\chi)$.
+\end{proposicion}
+\begin{proof}
+Sea $\chi$ un car'acter lineal de $G$. Entonces $\chi$ es un homomorfismo entre $G$ y el grupo multiplicativo de los n'umeros complejos diferentes a cero. Por lo tanto, par todo $g, h \in G$,
+\[
+\chi (g^{-1}h^{-1}gh)= \chi (g)^{-1} \chi (h)^{-1} \chi (g) \chi (h) = 1 
+\]
+Por lo que $G' \leq Ker (\chi)$.
+\end{proof}
 \newpage
 $\ $
 \thispagestyle{empty}
