@@ -2303,6 +2303,64 @@ Sea $\chi$ un car'acter lineal de $G$. Entonces $\chi$ es un homomorfismo entre 
 \chi (g^{-1}h^{-1}gh)= \chi (g)^{-1} \chi (h)^{-1} \chi (g) \chi (h) = 1 
 \]
 Por lo que $G' \leq Ker (\chi)$.
+\end{proof}\\
+\\
+Ahora pasaremos a ver algunas propiedades de los subgrupos derivados.
+\begin{proposicion}
+Sea $N \triangleleft G$. Entonces:
+\begin{enumerate}
+\item $G' \triangleleft G$.
+\item $G' \leq N$ si y solo si $G/N$ es abeliano. En particular $G/G'$ es abeliano.
+\end{enumerate}
+\end{proposicion}
+\begin{proof}
+(1) Sea $a, b, x \in G$, tenemos
+\[
+x^{-1}(ab)x=(x^{-1}ax)(x^{-1}bx)
+\]
+y,
+\[
+x^{-1}a^{-1}x=(x^{-1}ax)^{-1}.
+\]
+$G'$ est'a formado por elementos de la forma $[g, h]$ y sus inversos. Por lo tanto, para probar que $G' \triangleleft G$ es suficiente con probar que $x^{-1}[g, h]x \in G'$ para todo $g, h, x \in G$. Pero
+\[
+x^{-1}[g, h]x= x^{-1} g^{-1} h^{-1} ghx
+\]
+\[
+= (x^{-1}gx)^{-1} (x^{-1}hx)^{-1} (x^{-1}gx) (x^{-1}hx)
+\]
+\[
+[x^{-1}gx, x^{-1}hx]
+\]
+Por lo tanto, $G' \triangleleft G$.\\
+\\
+(2) Sea $g, h \in G$. Tenemos
+\[
+ghg^{-1}h^{-1} \in N \Leftrightarrow Ngh = Nhg \Leftrightarrow (Ng)(Nh) = (Nh)(Ng)
+\]
+As'i pues, $G' \leq N$ si, y solo si $G/N$ es abeliano. Ya que hemos probado que $G' \triangleleft G$ deducimos que $G/G'$ es abeliano.
+\end{proof}\\
+\\
+De esta proposici'on se deduce que $G'$ es el subgrupo normal mas peque\~no con factores abelianos.\\
+Dado el subgrupo derivado $G'$, podemos obtener los caracteres lineales de $G$ aplicando el siguiente teorema:
+\begin{teorema}
+Los caracteres lineales de $G$ son las elevaciones a $G$ de los caracteres irreducibles de $G/G'$. En particular, el n'umero de caracteres lineales distintos de $G$ es igual a $|G/G'|$ y divide a $|G|$.
+\end{teorema}
+\begin{proof}
+Sea $m=|G/G'|$. Como $G/G'$ es abeliano sabemos que $G/G'$ tiene, exactamente, $m$ caracteres irreducibles $\tilde \chi_{1}, \ldots \tilde \chi_{m}$, todos de grado 1, que son, precisamente, por el teorema 4.4.1, los caracteres irreducibles $\chi$ de $G$, tales que $G' \leq Ker (\chi)$. Seg'un lo visto en la anterior proposici'on los caracteres $ \chi_{1}, \ldots \chi_{m}$ son, por lo tanto, caracteres lineales de $G$.
+\end{proof}
+\begin{proposicion}
+Supongamos que $\chi$ es un car'acter de $G$ y $\lambda$ es un car'acter lineal de $G$. El producto $\chi^{\lambda}$, definido como
+\[
+\chi^{\lambda}(g)=\chi (g) \lambda (g)
+\]
+es un car'acter de $G$.
+\end{proposicion}
+\begin{proof}
+Sea $\rho : G \rightarrow GL(n, \mathbb{C}$ una representai'on con car'acter $\chi$. Definimos $\rho \lambda : G \rightarrow GL (n, \mathbb{C}$ como
+\[
+g(\rho \lambda) = \lambda (g)(g \rho)
+\]
 \end{proof}
 \newpage
 $\ $
