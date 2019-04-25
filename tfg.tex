@@ -7,6 +7,7 @@
 \usepackage{amsfonts}
 \usepackage{mathrsfs} % para letras de rubrica
 %\usepackage{listings} % para letras de codigo \begin{lstlisting} ... \end{lstlisting}
+\usepackage{hyperref}
 \usepackage{float}
 \usepackage{longtable} % Permite uso del entrono longtable
 \usepackage{booktabs} % Permite el uso de \toprule, \midrule y \bottonrule para realzar el acabado de las tablas
@@ -2369,6 +2370,8 @@ Sea $\rho : G \rightarrow GL(n, \mathbb{C}$ una representai'on con car'acter $\c
 \[
 g(\rho \lambda) = \lambda (g)(g \rho)
 \]
+As'i que $g(\rho \lambda$ es la matriz $\rho (g)$ multiplicada por el n'umero complejo $\lambda (g)$.\\
+Ya que $\rho$ y $\lambda$ son homomorfismos se deduce facilmente que $\rho \lambda$ es un homomorfismo. La matriz $g(\rho \lambda$ tiene traza $\lambda (g) tr(g \rho)$, que es $\lambda (g) \chi (g)$. Por lo tanto $\rho \lambda$ es una representaci'on de $G$ con car'acter $\chi^{\lambda}$. 
 \end{proof}
 \newpage
 $\ $
@@ -2386,5 +2389,11 @@ $\ $
 \bibitem{var} J. C. Varilly, \emph{Grupos y anillos}, Escuela de Matem'atica, Universidad de Costa Rica, 2014. 
 \bibitem{suz} M. Suzuki, \emph{Group theory I}, Springer-Verlag, 1982. 
 \bibitem{xam} S. Xamb'o, F. Delgado, C. Fuertes, \emph{Introducci'on al 'algebra}, Editorial Complutense, Madrid, 1993.
+\bibitem{GAP} GAP - Groups, Algorithms, Programming. A System for Computational Discrete Algebra, \url{https://www.gap-system.org/}
+\bibitem{CTb} CTblLib - The GAP Character Table Library, \url{http://www.math.rwth-aachen.de/~Thomas.Breuer/ctbllib/} 
+\bibitem{Rep} Repsn - Constructing representations of finite groups, \url{https://gap-packages.github.io/repsn/}
 \end{thebibliography}
+\newpage
+$\ $
+\thispagestyle{empty}
 \end{document}

@@ -1,0 +1,47 @@
+\BOOKMARK [0][-]{chapter.1}{Conceptos b\341sicos.}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Grupos.}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Subgrupos.}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Orden de un elemento.}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Grupos c\355clicos.}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Coclases, \355ndice de un grupo y Teorema de Lagrange.}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Subgrupos normales. Grupo cociente.}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.6.1}{Subgrupos normales.}{section.1.6}% 8
+\BOOKMARK [2][-]{subsection.1.6.2}{Grupo cociente.}{section.1.6}% 9
+\BOOKMARK [1][-]{section.1.7}{Homomorfismos de grupos.}{chapter.1}% 10
+\BOOKMARK [2][-]{subsection.1.7.1}{Teorema de Cayley.}{section.1.7}% 11
+\BOOKMARK [2][-]{subsection.1.7.2}{Factorizaci\363n de homomorfismos.}{section.1.7}% 12
+\BOOKMARK [2][-]{subsection.1.7.3}{Teoremas de isomorf\355a.}{section.1.7}% 13
+\BOOKMARK [1][-]{section.1.8}{Teorema de estructura de los grupos abelianos finitos.}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.9}{Automorfismos de grupos.}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.9.1}{Automorfismos interiores.}{section.1.9}% 16
+\BOOKMARK [2][-]{subsection.1.9.2}{Acci\363n de un grupo sobre un conjunto.}{section.1.9}% 17
+\BOOKMARK [2][-]{subsection.1.9.3}{Teorema de Sylow.}{section.1.9}% 18
+\BOOKMARK [0][-]{chapter.2}{Representaciones de grupos.}{}% 19
+\BOOKMARK [1][-]{section.2.1}{Representaciones de grupos.}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.2}{Representaciones equivalentes.}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.3}{N\372cleo de una representaci\363n.}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.4}{Representaciones irreducibles.}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.5}{FG-m\363dulos.}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{FG-m\363dulos y representaciones equivalentes.}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{FG-subm\363dulos.}{section.2.5}% 26
+\BOOKMARK [2][-]{subsection.2.5.3}{FG-m\363dulos irreducibles.}{section.2.5}% 27
+\BOOKMARK [2][-]{subsection.2.5.4}{FG-homomorfismos.}{section.2.5}% 28
+\BOOKMARK [2][-]{subsection.2.5.5}{Isomorfismos de FG-m\363dulos.}{section.2.5}% 29
+\BOOKMARK [2][-]{subsection.2.5.6}{Suma directa de FG-m\363dulos.}{section.2.5}% 30
+\BOOKMARK [0][-]{chapter.3}{Caracteres.}{}% 31
+\BOOKMARK [1][-]{section.3.1}{El lema de Schur.}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.2}{Car\341cter de una representaci\363n.}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.3}{Relaciones de ortogonalidad de los caracteres y descomposici\363n de la representaci\363n regular.}{chapter.3}% 34
+\BOOKMARK [1][-]{section.3.4}{N\372mero de representaciones irreducibles.}{chapter.3}% 35
+\BOOKMARK [0][-]{chapter.4}{Tabla de caracteres.}{}% 36
+\BOOKMARK [1][-]{section.4.1}{Clases de conjugaci\363n.}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.1.1}{Tama\361o de las clases de conjugaci\363n.}{section.4.1}% 38
+\BOOKMARK [1][-]{section.4.2}{N\372mero de caracteres irreducibles.}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.2.1}{Funciones de clase.}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Tablas de caracteres.}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.3.1}{Tablas de caracteres.}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.2}{Relaciones de ortogonalidad.}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{Subgrupos normales y elevaci\363n de caracteres.}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.1}{Elevaci\363n de caracteres.}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.2}{Subgrupos normales y caracteres.}{section.4.4}% 46
+\BOOKMARK [2][-]{subsection.4.4.3}{Caracteres lineales.}{section.4.4}% 47
