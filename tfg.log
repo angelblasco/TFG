@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  25 APR 2019 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.8)  26 APR 2019 14:53
 entering extended mode
 **./tfg.tex
 (tfg.tex
@@ -1231,25 +1231,29 @@ LaTeX Info: Redefining \% on input line 2376.
 [55] [56] [57
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2399.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2400.
  [58]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2399.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2400.
  (tfg.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2399.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2399.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2400.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2400.
 
 Package rerunfilecheck Info: File `tfg.out' has not changed.
 (rerunfilecheck)             Checksum: F59A65D8B97D7C5005E9FD9F1BE515CB;3688.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2399.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2400.
  ) 
 Here is how much of TeX's memory you used:
- 8854 strings out of 492946
- 130471 string characters out of 3120495
+ 8856 strings out of 492946
+ 130484 string characters out of 3120495
  234406 words of memory out of 3000000
- 12276 multiletter control sequences out of 15000+200000
+ 12277 multiletter control sequences out of 15000+200000
  18394 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,15n,32p,973b,680s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1284,9 +1288,9 @@ type1/public/amsfonts/symbols/msam10.pfb><C:/Users/angel.blasco.munoz/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Use
 rs/angel.blasco.munoz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/rsfs
 /rsfs10.pfb>
-Output written on tfg.pdf (64 pages, 580414 bytes).
+Output written on tfg.pdf (64 pages, 581085 bytes).
 PDF statistics:
- 1375 PDF objects out of 1440 (max. 8388607)
- 322 named destinations out of 1000 (max. 500000)
+ 1378 PDF objects out of 1440 (max. 8388607)
+ 323 named destinations out of 1000 (max. 500000)
  387 words of extra memory for PDF output out of 10000 (max. 10000000)
 
