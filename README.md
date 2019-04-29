@@ -18,6 +18,7 @@ Se introducira el concepto de representacion de un grupo finito, haciendo especi
 Para la realizacion del presente trabajo se han utilizado las notas personales de el [Dr. Javier Perez Alvarez](http://portal.uned.es/portal/page?_pageid=93,708575&_dad=portal&_schema=PORTAL) y las siguientes referencias bibliograficas:
 + J. L. Alperin, R. B. Bell, *Groups and representations*, Springer-Verlag, 1995.
 + E. Bujalance, J. J. Etayo, J. M. Gamboa, *Teoria elemental de grupos*, Publicaciones UNED, Madrid, 2007.
++ P. Sancho de Salas, *Algebra I*, Coleccion de manuales UEX, Extremadura, 2014.
 + E. Bujalance, J. A. Bujalance, A. F. Costa, E. Martinez, *Elementos de matematica discreta*, Sanz y Torres, Madrid, 2005.
 + W. Lederman, *Grupos finitos*, Dossat, Manchester, 1952.
 + W. Fulton, J. Harris, *Representation theory*, Springer-Verlag, 1991.
