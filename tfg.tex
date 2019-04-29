@@ -1553,28 +1553,48 @@ $a^{3}b$ & $\left(
 \end{longtable}
 \end{ejemplo}
 \section{Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}
-Introduzcamos la siguiente notaci'on: si $\varphi$ y $\psi$ son funciones del tipo $\varphi , \psi : G \rightarrow \mathbb{C}$, pondremos
+Introduzcamos la siguiente notaci'on: sean $\rho_{V}$ y $\rho_{W}$ dos representaciones lineales de $G$ y sean $\chi_{V}$ y $\chi_{W}$ sus caracteres. Se define su producto escalar como: 
 \[
-\langle \varphi , \psi \rangle = \frac{1}{|G|}\sum_{t \in G} \varphi (t)^{*} \psi (t)
+\langle \chi_{V} ,\chi_{W} \rangle = \frac{1}{|G|}\sum_{g_{i} \in G}\chi_{V}(g_{i})\chi_{W}^{*}(g_{i})
 \]
-siendo $|G|$ el orden de $G$. Esta expresi'on es un producto escalar.
+El producto escalar cumple las siguientes propiedades:
+\begin{enumerate}
+\item $\langle \chi_{V} ,\chi_{W} \rangle$ es un n'umero real. En efecto, podemos escribir
+\[
+\langle \chi_{V} ,\chi_{W} \rangle = \frac{1}{|G|}\sum_{g_{i} \in G}\chi_{V}(g_{i}^{-1})\chi_{W}^{*}(g_{i}^{-1}) = \frac{1}{|G|}\sum_{g_{i} \in G}\chi_{V}^{*}(g_{i})\chi_{W}(g_{i}) = \langle \chi_{V} ,\chi_{W} \rangle ^{*}
+\]
+\item $\langle \chi ,\chi \rangle \geq 0$ para cualquier car'acter $\chi$, y $\langle \chi ,\chi \rangle = 0$ si y solo si $\chi =0$.
+\end{enumerate}
+\begin{proposicion}
+Sea $V$ un G-espacio, entonces $dim_{\mathbb{C}}V^{G}=\frac{1}{|G|}\sum_{g \in G} \chi_{V}(g)$. 
+\end{proposicion}
+\begin{proof}
+La aplicaci'on
+\[
+\pi (v) = \frac{1}{|G|}\sum_{g_{i} \in V} g_{i}v, \, \, v \in V
+\]
+es un proyector sobre $V^{G}$. Como $V = ker (\pi) \oplus Im (\pi) = ker (\pi) \oplus V^{G}$, la traza de $\pi$ coincide con la traza de su restricci'on a $V^{G}$. Como esta restricci'on es la identidad esta traza vale  $dim_{\mathbb{C}}V^{G}$.\\
+Por ultimo, como la traza de la suma de aplicaciones lineales es la suma de las trazas, se concluye el enunciado.
+\end{proof}
 \begin{teorema}
-Si $\chi$ es el car'acter de una representaci'on irreducible, $\langle \chi , \chi \rangle =1$. Si $\chi$ y $\chi'$ son los caracrteres de dos representaciones irreducibles no isomorfas, entonces $\langle \chi , \chi' \rangle=0$, es decir, son ortogonales.
+$\langle \chi_{V} ,\chi_{W} \rangle$=$dim_{\mathbb{C}}Hom_{\mathbb{C}}(V,W)^{G}=Hom_{G}(V,W)$
 \end{teorema}
 \begin{proof}
-Sea $\rho: G \rightarrow GL(V)$ la representaci'on irreducible cuyo car'acter es $\chi$, y sea $n$ su grado. Entonces:
+Por la proposici'on anterior
 \[
-\langle \chi , \chi \rangle = \frac{1}{|G|}\sum_{t \in G} \chi (t)^{*} \chi (t)  = \frac{1}{|G|}\sum_{t \in G} \chi (t^{-1}) \chi (t) 
+dim_{\mathbb{C}}Hom_{\mathbb{C}}(V,W)^{G}=
+\frac{1}{|G|}\sum_{g_{i} \in G} \chi_{Hom_{\mathbb{C}}(V,W)}(g_{i})=
+\frac{1}{|G|}\sum_{g_{i} \in G} \chi_{V}^{*}(g_{i})\chi_{W}(g_{i})=
+\langle \chi_{V} ,\chi_{W} \rangle
 \]
-Ahora bien, si ponemos $\rho$ en forma matricial $\rho(t)=[r_{ij}(t)$, $\chi (t) = \sum_{i} r_{ii}(t)$, y por lo tanto
-\[
-\langle \chi , \chi \rangle = \frac{1}{|G|}\sum_{t, i, j} r_{ii} (t^{-1}) r_{jj} (t) 
-\]
-lo que implica que
-\[
-\frac{1}{|G|}\sum_{t \in G} r_{ii} (t^{-1}) r_{jj} (t)
-\]
-es igual a 0 si $i \neq j$ y a $\frac{1}{n}$ si $i=j$.
+\end{proof}
+\begin{corolario}
+Si $\chi$ es el car'acter de una representaci'on irreducible $W$ entonces $\langle \chi ,\chi \rangle =1$. Si $\chi$ y $\chi'$ son los caracteres de dos representaciones irreducibles $W$ y $W'$ no isomorfas, entonces $\langle \chi ,\chi' \rangle =0$
+\end{corolario}
+\begin{proof}
+En efecto, por el lema de Schur, si $W$ es irreducible los unicos isomorfismos de G-espacios son las constantes, con lo que $dim_{\mathbb{C}}Hom_{G}(W,W)=1$. \\
+\\
+Por otra parte, que $W$ y $W'$ sean G-espacios no isomorfos quiere decir que $dim_{\mathbb{C}}Hom_{G}(W,W')=0$, con lo que, por el teorema anterior, $\langle \chi_{W} ,\chi_{W'} \rangle = 0 $ 
 \end{proof}
 \begin{teorema}
 Sea $V$ una representaci'on lineal de $G$, de car'acter $\varphi$, descomponemos $V$ en suma directa de representaciones irreducibles
@@ -1638,104 +1658,6 @@ En efecto, el corolario 3.3.1 asegura que $\varphi = \sum n_{i} \chi_{i}$ y apli
 \end{proof}\\
 \\
 Este resultado se puede usar cuando se buscan las representaciones irreducibles de $G$; supongamos construidas representaciones irreducibles no isomorfas dos a dos, de grados $n_{1}, \ldots ,n_{k}$; a fin de que sean todas las representaciones irreducibles de $G$ (salvo isomorfismos) es necesario y suficiente que $n_{1}^{2}+ \ldots + n_{k}^{2}=|G|$.
-\section{N'umero de representaciones irreducibles.}
-Una aplicaci'on $f$ definida en $G$ se llama \emph{central} si $f(tst^{-1})=f(s)$ cualesquiera que sean $s, t \in G$.
-\begin{proposicion}
-Sea $f$ una funci'on central definida en $G$, y $\rho: G \rightarrow GL(V)$ una representaci'on lineal de $G$. Sea $\rho_{f}$ el endomorfismo de $V$ definido por:
-\[
-\rho_{f}=\sum_{t \in G} f(t)\rho (t)
-\]
-Si $V$ es irreducible, de grado $n$ y de car'acter $\chi$, $\rho_{f}$ es una homotecia de raz'on $\lambda$, donde
-\[
-\lambda = \frac{1}{n}\sum_{t \in G} f(t)\chi_{t}=\frac{|G|}{n}(f^{*}|_{\chi})
-\]
-\end{proposicion}
-\begin{proof}
-Calculamos $\rho (s)^{-1}\rho_{f}\rho (s) $:
-\[
-\rho (s)^{-1}\rho_{f}\rho (s)=\sum_{t \in G}f(t)\rho(s)^{-1}\rho(t)\rho(s)=\sum_{t \in G}f(t)\rho(s^{-1}ts)
-\]
-y poniendo $u=s^{-1}ts$, resulta
-\[
-\rho (s)^{-1}\rho_{f}\rho (s)=\sum_{u \in G}f(sus^{-1})\rho (u)=\sum_{u \in G}f(u)\rho (u)=\rho_{f}
-\]
-De modo que $\rho_{f}\rho(s)=\rho(s)\rho_{f}$. Esta igualdad implica que $\rho_{f}$ es una homotecia de raz'on $\lambda$. La traza de $\lambda$ es $n \lambda$; y la de $\rho_{f}$ es
-\[
-\sum_{t \in G}f(t)Tr(\rho (t))=\sum_{t \in G}f(t)\chi (t)
-\]
-de donde
-\[
-\lambda = \frac{1}{n}\sum_{t \in G} f(t)\chi_{t}=\frac{|G|}{n}(f^{*}|_{\chi})
-\]
-\end{proof}\\
-\\
-Introduzcamos ahora el espacio vectorial $H$ de las funciones centrales de $G$. Los caracteres 
-$\chi_{1}, \ldots ,\chi_{k}$ de las representaciones irreducibles de $G$ son elementos de $H$.
-\begin{teorema}
-Los caracteres $\chi_{1}, \ldots ,\chi_{h}$ forman una base ortonormal de $H$.
-\end{teorema}
-\begin{proof}
-El teorema 3.3.1 demuestra que $\chi_{1}, \ldots ,\chi_{h}$ es un sistema ortonormal de $H$. Falta demostrar que este sistema es completo, es decir, que todo elemento de $H$ ortogonal a los $\chi_{i}$ es nulo. Para ello, sea $f$ un elemento de $H$ ortogonal a los $\chi_{i}$. Si $\rho : G \rightarrow GL(V)$ es una representaci'on de $G$, ponemos
-\[
-\rho_{f}^{*}=\sum_{t \in G}f(t)^{*}\rho (t)
-\]
-La proposici'on 3.4.1 muestra que $\rho_{f}^{*}$ es nula si $V$ es irreducible; descomponiendo en suma directa concluimos que $\rho_{f}^{*}$ es siempre nula. Aplicando este resultado a la representaci'on regular $R$ y calculando la imagen del vector $e_{1}$ de la base por $\rho_{f}^{*}$:
-\[
-\rho_{f}^{*}e_{1}=\sum_{t \in G} f(t)^{*}\rho(t)e_{1}=\sum_{t \in G}f(t)^{*}e_{t}
-\]
-Como $\rho_{f}^{*}$ es nula, esta igualdad implica que $f(t)^{*}=0$ para todo $t$, de donde $f=0$, lo cual termina la demostraci'on.
-\end{proof}\\
-\\
-Recordemos que dos elementos $t$ y $t`$ de $G$ se dicen conjugados si existe $s \in G$ tal que $t'=sts^{-1}$; esta relaci'on es de equivalencia y divide a $G$ en clases.
-\begin{teorema}
-El n'umero de representaciones irreducibles de $G$ (salvo isomorfismos) es igual al n'umero de clases de $G$.
-\end{teorema}
-\begin{proof}
-Sean $C_{1}, \ldots ,C_{k}$ las clases de $G$. Una funci'on $f$ definida en $G$ es central si y solo si es constante en cada una de las clases $C_{1}, \ldots ,C_{k}$ y por tanto una tal funci'on est'a determinada por $k$ valores $\lambda_{1}, \ldots ,\lambda_{k}$, que se pueden poner al azar. Resulta de ello que la dimensi'on del espacio $H$ de funciones centrales es igual a $k$. Por otra parte, esta dimensi'on es igual, seg'un el teorema 3.4.1, al n'umero de representaciones irreducibles de $G$ (salvo isomorfismos).
-\end{proof}\\
-\\
-Otra consecuencia del teorema 3.4.1 es que siendo $s\in G$, el n'umero de elementos de la clase de $s$ y $f_{s}$ la funci'on igual a 1 sobre esta clase e igual a 0 en el complementario. Como esta funci'on es central, por el teorema 3.4.1 tendremos:
-\[
-f_{s}=\sum_{i=1}^{i=h}x_{i}\chi_{i}
-\]
-donde
-\[
-x_{i}=\langle \chi_{i} , f_{s} \rangle = \frac{c_{s}}{|G|}\chi_{i}(s)^{*}
-\]
-As'i pues, para todo $t \in G$
-\[
-f_{s}(t)=\frac{c_{s}}{|G|}\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(t)
-\]
-Si explicitamos resultan las formulas siguientes:(para $t=s$):
-\[
-\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(s)=\frac{|G|}{c_{s}}
-\]
-(para $t$ no conjugado de $s$):
-\[
-\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(t)=0
-\]
-\begin{ejemplo}
-Sea $G$ el grupo de permutaciones de 3 letras. Entonces $|G|=6$, y tiene tres clases: el elemento identidad, tres transposiciones y dos permutaciones c'iclicas. Sea $t$ una transposici'on, y $c$ una permutaci'on c'iclica. Tenemos $t^{2}=1$, $c^{3}=1$, $tc=c^{2}t$; de donde hay solo dos caracteres de grado 1: el car'acter identidad $\chi_{1}$ y e car'acter $\chi_{2}$ que nos varia el signo de la permutaci'on.\\
-El 'ultimo teorema nos muestra que existe otro car'acter irreducible $\theta$; si $n$ es su grado debemos tener $1+1+n^{2}=6$, por lo que $n=2$. Los valores de $\theta$ pueden ser deducidos del hecho de que $\chi_{1}+\chi_{2}+2\theta$ es el car'acter de la representaci'on regular de $G$. Obtenemos la siguiente tabla de caracteres de $G$:
-\begin{table}[H]
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-& 1 & t & c \\
-\hline \hline
-$\chi_{1}$ & 1 & 1 & 1 \\ 
-$\chi_{2}$ & 1 & -1 & 1 \\ 
-$\theta$ & 2 & 0 & -1 \\ 
-\hline
-\end{tabular}
-\caption{Tabla de caracteres de G.}
-\label{tabla:caracteresG}
-\end{center}
-\end{table}
-\end{ejemplo}
-%%% Capitulo 4
-\chapter{Tabla de caracteres.}
-Antes de hablar sobre las tablas de caracteres vamos a ampliar la informaci'on sobre un tema de la teoria de grupos que ser'a necesario mas adelante: las clases de conjugaci'on. Los resultados que veremos ahora ser'an de gran importancia para la creaci'on de las tablas de caracteres.
 \section{Clases de conjugaci'on.}
 \begin{definicion}
 Sean $x, y \in G$. Decimos que $x$ es un conjugado de $y$ en $G$ si 
@@ -1882,6 +1804,101 @@ gap> Size(c);
 gap> AsList(c);
 [ (1,2), (2,3), (1,3) ]
 \end{verbatim}
+\section{N'umero de representaciones irreducibles.}
+Una aplicaci'on $f$ definida en $G$ se llama \emph{central} si $f(tst^{-1})=f(s)$ cualesquiera que sean $s, t \in G$.
+\begin{proposicion}
+Sea $f$ una funci'on central definida en $G$, y $\rho: G \rightarrow GL(V)$ una representaci'on lineal de $G$. Sea $\rho_{f}$ el endomorfismo de $V$ definido por:
+\[
+\rho_{f}=\sum_{t \in G} f(t)\rho (t)
+\]
+Si $V$ es irreducible, de grado $n$ y de car'acter $\chi$, $\rho_{f}$ es una homotecia de raz'on $\lambda$, donde
+\[
+\lambda = \frac{1}{n}\sum_{t \in G} f(t)\chi_{t}=\frac{|G|}{n}(f^{*}|_{\chi})
+\]
+\end{proposicion}
+\begin{proof}
+Calculamos $\rho (s)^{-1}\rho_{f}\rho (s) $:
+\[
+\rho (s)^{-1}\rho_{f}\rho (s)=\sum_{t \in G}f(t)\rho(s)^{-1}\rho(t)\rho(s)=\sum_{t \in G}f(t)\rho(s^{-1}ts)
+\]
+y poniendo $u=s^{-1}ts$, resulta
+\[
+\rho (s)^{-1}\rho_{f}\rho (s)=\sum_{u \in G}f(sus^{-1})\rho (u)=\sum_{u \in G}f(u)\rho (u)=\rho_{f}
+\]
+De modo que $\rho_{f}\rho(s)=\rho(s)\rho_{f}$. Esta igualdad implica que $\rho_{f}$ es una homotecia de raz'on $\lambda$. La traza de $\lambda$ es $n \lambda$; y la de $\rho_{f}$ es
+\[
+\sum_{t \in G}f(t)Tr(\rho (t))=\sum_{t \in G}f(t)\chi (t)
+\]
+de donde
+\[
+\lambda = \frac{1}{n}\sum_{t \in G} f(t)\chi_{t}=\frac{|G|}{n}(f^{*}|_{\chi})
+\]
+\end{proof}\\
+\\
+Introduzcamos ahora el espacio vectorial $H$ de las funciones centrales de $G$. Los caracteres 
+$\chi_{1}, \ldots ,\chi_{k}$ de las representaciones irreducibles de $G$ son elementos de $H$.
+\begin{teorema}
+Los caracteres $\chi_{1}, \ldots ,\chi_{h}$ forman una base ortonormal de $H$.
+\end{teorema}
+\begin{proof}
+El teorema 3.3.1 demuestra que $\chi_{1}, \ldots ,\chi_{h}$ es un sistema ortonormal de $H$. Falta demostrar que este sistema es completo, es decir, que todo elemento de $H$ ortogonal a los $\chi_{i}$ es nulo. Para ello, sea $f$ un elemento de $H$ ortogonal a los $\chi_{i}$. Si $\rho : G \rightarrow GL(V)$ es una representaci'on de $G$, ponemos
+\[
+\rho_{f}^{*}=\sum_{t \in G}f(t)^{*}\rho (t)
+\]
+La proposici'on 3.5.1 muestra que $\rho_{f}^{*}$ es nula si $V$ es irreducible; descomponiendo en suma directa concluimos que $\rho_{f}^{*}$ es siempre nula. Aplicando este resultado a la representaci'on regular $R$ y calculando la imagen del vector $e_{1}$ de la base por $\rho_{f}^{*}$:
+\[
+\rho_{f}^{*}e_{1}=\sum_{t \in G} f(t)^{*}\rho(t)e_{1}=\sum_{t \in G}f(t)^{*}e_{t}
+\]
+Como $\rho_{f}^{*}$ es nula, esta igualdad implica que $f(t)^{*}=0$ para todo $t$, de donde $f=0$, lo cual termina la demostraci'on.
+\end{proof}\\
+\\
+Recordemos que dos elementos $t$ y $t`$ de $G$ se dicen conjugados si existe $s \in G$ tal que $t'=sts^{-1}$; esta relaci'on es de equivalencia y divide a $G$ en clases.
+\begin{teorema}
+El n'umero de representaciones irreducibles de $G$ (salvo isomorfismos) es igual al n'umero de clases de $G$.
+\end{teorema}
+\begin{proof}
+Sean $C_{1}, \ldots ,C_{k}$ las clases de $G$. Una funci'on $f$ definida en $G$ es central si y solo si es constante en cada una de las clases $C_{1}, \ldots ,C_{k}$ y por tanto una tal funci'on est'a determinada por $k$ valores $\lambda_{1}, \ldots ,\lambda_{k}$, que se pueden poner al azar. Resulta de ello que la dimensi'on del espacio $H$ de funciones centrales es igual a $k$. Por otra parte, esta dimensi'on es igual, seg'un el teorema 3.4.1, al n'umero de representaciones irreducibles de $G$ (salvo isomorfismos).
+\end{proof}\\
+\\
+Otra consecuencia del teorema 3.5.1 es que siendo $s\in G$, el n'umero de elementos de la clase de $s$ y $f_{s}$ la funci'on igual a 1 sobre esta clase e igual a 0 en el complementario. Como esta funci'on es central, por el teorema 3.5.1 tendremos:
+\[
+f_{s}=\sum_{i=1}^{i=h}x_{i}\chi_{i}
+\]
+donde
+\[
+x_{i}=\langle \chi_{i} , f_{s} \rangle = \frac{c_{s}}{|G|}\chi_{i}(s)^{*}
+\]
+As'i pues, para todo $t \in G$
+\[
+f_{s}(t)=\frac{c_{s}}{|G|}\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(t)
+\]
+Si explicitamos resultan las formulas siguientes:(para $t=s$):
+\[
+\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(s)=\frac{|G|}{c_{s}}
+\]
+(para $t$ no conjugado de $s$):
+\[
+\sum_{i=1}^{i=h}\chi_{i}(s)^{*}\chi_{i}(t)=0
+\]
+\begin{ejemplo}
+Sea $G$ el grupo de permutaciones de 3 letras. Entonces $|G|=6$, y tiene tres clases: el elemento identidad, tres transposiciones y dos permutaciones c'iclicas. Sea $t$ una transposici'on, y $c$ una permutaci'on c'iclica. Tenemos $t^{2}=1$, $c^{3}=1$, $tc=c^{2}t$; de donde hay solo dos caracteres de grado 1: el car'acter identidad $\chi_{1}$ y e car'acter $\chi_{2}$ que nos varia el signo de la permutaci'on.\\
+El 'ultimo teorema nos muestra que existe otro car'acter irreducible $\theta$; si $n$ es su grado debemos tener $1+1+n^{2}=6$, por lo que $n=2$. Los valores de $\theta$ pueden ser deducidos del hecho de que $\chi_{1}+\chi_{2}+2\theta$ es el car'acter de la representaci'on regular de $G$. Obtenemos la siguiente tabla de caracteres de $G$:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+& 1 & t & c \\
+\hline \hline
+$\chi_{1}$ & 1 & 1 & 1 \\ 
+$\chi_{2}$ & 1 & -1 & 1 \\ 
+$\theta$ & 2 & 0 & -1 \\ 
+\hline
+\end{tabular}
+\caption{Tabla de caracteres de G.}
+\label{tabla:caracteresG}
+\end{center}
+\end{table}
+\end{ejemplo}
 \section{N'umero de caracteres irreducibles.}
 En este punto desarrollaremos un resultado que afirma que el n'umero de caracteres irreducibles de un grupo finito es igual al n'umero de clases de conjugaci'on de el grupo.
 \subsection{Funciones de clase.}
@@ -1942,7 +1959,7 @@ A la inversa, supongamos que $\chi(g)=\chi(h)$ para todos los caracteres $\chi$ 
 Sea $g \in G$. Entonces $g$ es conjugado de $g^{-1}$ si, y solo si, $\chi (g)$ es real para todos los caracteres $\chi$ de $G$.
 \end{corolario}
 \begin{ejemplo}
-A continuaci'on veremos un simple ejemplo con GAP en el cual se verifica el teorema 4.2.1 que afirma que el n'umero de caracteres irreducibles de $G$ es igual al numero de clases de conjugaci'on de $G$.
+A continuaci'on veremos un simple ejemplo con GAP en el cual se verifica el teorema que afirma que el n'umero de caracteres irreducibles de $G$ es igual al numero de clases de conjugaci'on de $G$.
 \begin{verbatim}
 ## Creamos un grupo, en este caso el grupo dihedral asociado a un cuadrado 
 gap> d8:=DihedralGroup(IsPermGroup, 8);
@@ -1965,6 +1982,8 @@ gap> Size(cc);
 5
 \end{verbatim}
 \end{ejemplo}
+%%% Capitulo 4
+\chapter{Tabla de caracteres.}
 \section{Tablas de caracteres.}
 Los caracteres irreducibles de un grupo finito $G$ son funciones de clase, y el numero de ellos es igual al numero de las clases de conjugaci'on de $G$. En ocasiones es conveniente anotar los valores de los caracteres irreducibles de $G$ en una matriz cuadrada. Esta matriz se llama \emph{tabla de caracteres de G}. 
 \subsection{Tablas de caracteres.}
@@ -2029,7 +2048,7 @@ Para $1 \leq s \leq k$, sea $\psi_{s}$ una funci'on de clase que satisface
 \[
 \psi_{s}(g_{r})=\delta_{rs}
 \]
-Por el corolario 4.2.1, $\psi_{s}$ es una combinaci'on lineal de $\chi_{1}, \ldots ,\chi_{k}$, ya que
+Por el corolario 3.6.1, $\psi_{s}$ es una combinaci'on lineal de $\chi_{1}, \ldots ,\chi_{k}$, ya que
 \[
 \psi_{s}=\sum_{i=1}^{k}\lambda_{i}\chi_{i}
 \]
@@ -2037,7 +2056,7 @@ como $\langle \chi_{i} ,\chi_{j} \rangle = \delta_{ij}$, tenemos
 \[
 \lambda_{i}=\langle \psi_{s}, \chi_{i} \rangle = \frac{1}{|G|}\sum_{g \in G}\psi_{s}(g)\chi_{i}^{*}(g)
 \]
-$\phi_{s}(g)=1$ si $g$ es conjugado de $g_{s}$, y $\phi_{s}(g)=0$ en cualquier otro caso; asi que hay $|G|/|C_{G}(g_{s})|$ elementos de $G$ conjugados de $g_{s}$ por el teorema 4.1.1.\\
+$\phi_{s}(g)=1$ si $g$ es conjugado de $g_{s}$, y $\phi_{s}(g)=0$ en cualquier otro caso; asi que hay $|G|/|C_{G}(g_{s})|$ elementos de $G$ conjugados de $g_{s}$ por el teorema 3.4.1.\\
 Asi que
 \[
 \lambda_{i}=\frac{1}{|G|}\sum_{g \in G}\psi_{s}(g)\chi_{i}^{*}(g)=\frac{\chi_{i}^{*}(g_{s})}{|C_{G}(g_{s})|}
@@ -2238,7 +2257,7 @@ N=\bigcap_{i=1}^{s}Ker(\chi_{i})
 \]
 \end{proposicion} 
 \begin{proof}
-Si $g$ pertenece a el n'ucleo de cada car'acter irreducible de $G$, entonces $\chi (g) = \chi (1)$ para todo los carcateres $\chi$, asi $g=1$ por la proposici'on 4.2.1. Por lo tanto, la intersecci'on de los nucleos de todos los caracteres irreducibles de $G$ es $\{1\}$.\\
+Si $g$ pertenece a el n'ucleo de cada car'acter irreducible de $G$, entonces $\chi (g) = \chi (1)$ para todo los carcateres $\chi$, asi $g=1$ por la proposici'on 3.6.1. Por lo tanto, la intersecci'on de los nucleos de todos los caracteres irreducibles de $G$ es $\{1\}$.\\
 Sean $\tilde \chi_{1}, \ldots \tilde \chi_{s}$ caracteres irreducibles de $G/N$, por la observaci'on anterior 
 \[
 \bigcap_{i=1}^{s}Ker(\tilde \chi_{i})= \{N\}
@@ -2255,11 +2274,10 @@ N=\bigcap_{i=1}^{s}Ker(\chi_{i})
 \\
 Es particularmente f'acil distinguir de la tabla de caracteres de $G$ si $G$ es simple o no.
 \begin{proposicion}
-El grupo $G$ no es simple si, y solo si, 
+El grupo $G$ no es simple si, y solo si, para algun car'acter irreducible $\chi$ de $G$ existe $g \in G$ con
 \[
 \chi (g) = \chi (1)
 \]
-para algunos carcateres irreducibles no triviales $\chi$ de $G$ y algunos elementos $g$ de $G$ diferentes del elemento identidad.
 \end{proposicion}
 \begin{proof}
 Supongamos que existe un car'acter irreducible no trivial $\chi$ tal que $\chi (g)=\chi (1)$ para alg'un elemento $g$ diferente del elemento identidad. Entonces $g \in Ker (\chi)$, as'i que $Ker (\chi) \neq \{ 1 \}$. Si $\rho$ es una representaci'on de $G$ con car'acter $\chi$, entonces $Ker (\chi) = Ker (\rho)$. Ya que $\chi$ no es trivial y es irreducible, $Ker (\rho) \neq G$; por lo tanto $Ker (\chi) \neq G$. As'i $Ker (\chi)$ es un subgrupo normal de $G$ distinto de $\{ 1 \}$ y, por lo tanto, $G$ no es simple.\\
