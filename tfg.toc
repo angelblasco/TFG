@@ -46,14 +46,13 @@
 \contentsline {section}{\numberline {3.3}Relaciones de ortogonalidad de los caracteres y descomposici'on de la representaci'on regular.}{37}{section.3.3}% 
 \contentsline {section}{\numberline {3.4}Clases de conjugaci'on.}{39}{section.3.4}% 
 \contentsline {subsection}{\numberline {3.4.1}Tama\~no de las clases de conjugaci'on.}{41}{subsection.3.4.1}% 
-\contentsline {section}{\numberline {3.5}N'umero de representaciones irreducibles.}{42}{section.3.5}% 
-\contentsline {section}{\numberline {3.6}N'umero de caracteres irreducibles.}{44}{section.3.6}% 
-\contentsline {subsection}{\numberline {3.6.1}Funciones de clase.}{44}{subsection.3.6.1}% 
-\contentsline {chapter}{\numberline {4}Tabla de caracteres.}{47}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Tablas de caracteres.}{47}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}Tablas de caracteres.}{47}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}Relaciones de ortogonalidad.}{47}{subsection.4.1.2}% 
-\contentsline {section}{\numberline {4.2}Subgrupos normales y elevaci'on de caracteres.}{50}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Elevaci'on de caracteres.}{50}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Subgrupos normales y caracteres.}{52}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Caracteres lineales.}{53}{subsection.4.2.3}% 
+\contentsline {section}{\numberline {3.5}N'umero de caracteres irreducibles.}{42}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.5.1}Funciones de clase.}{42}{subsection.3.5.1}% 
+\contentsline {chapter}{\numberline {4}Tabla de caracteres.}{45}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Tablas de caracteres.}{45}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Tablas de caracteres.}{45}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Relaciones de ortogonalidad.}{45}{subsection.4.1.2}% 
+\contentsline {section}{\numberline {4.2}Subgrupos normales y elevaci'on de caracteres.}{48}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Elevaci'on de caracteres.}{48}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Subgrupos normales y caracteres.}{50}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Caracteres lineales.}{51}{subsection.4.2.3}% 
