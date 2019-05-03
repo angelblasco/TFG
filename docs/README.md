@@ -6,7 +6,7 @@ Trabajo final de Grado en Ciencias Matematicas por la UNED
 realizado por [Angel Blasco Muñoz](https://www.researchgate.net/profile/Angel_Blasco_Munoz2) y
 dirigido por el [Dr. Javier Perez Alvarez](http://portal.uned.es/portal/page?_pageid=93,708575&_dad=portal&_schema=PORTAL) del Dpto. de Matematicas 
 Fundamentales de la [UNED](https://www.uned.es/universidad/).
-
+[Descarga aqui.](https://github.com/angelblasco/TFG/blob/master/docs/tfg.pdf)
 ## Resumen
 
 Este trabajo versa sobre los grupos finitos y sus representaciones. Es importante destacar que en todo el trabajo al referirnos a grupo nos referimos a un conjunto finito en el cual se definira una operacion que debe cumplir unos condicionantes, al igual que en los grupos algebraicos propiamente dichos. En los grupos finitos se deben cumplir y respetar las mismas propiedades que en los grupos en general.
